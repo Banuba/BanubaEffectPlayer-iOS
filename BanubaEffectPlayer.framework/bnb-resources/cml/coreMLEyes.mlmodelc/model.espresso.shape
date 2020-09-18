@@ -1,0 +1,352 @@
+{
+  "layer_shapes" : {
+    "eye-decoder_upsampling_5_output" : {
+      "k" : 128,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-decoder_relu_2_output" : {
+      "k" : 48,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-encoder_relu_3_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-encoder_batch_4_output" : {
+      "k" : 96,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-decoder_concatenate_4_output" : {
+      "k" : 144,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-encoder_pool_1_output" : {
+      "k" : 20,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-decoder_batch_4_output" : {
+      "k" : 96,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-decoder_relu_3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-encoder_relu_4_output" : {
+      "k" : 48,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-skip_conv_2_output" : {
+      "k" : 24,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-decoder_concatenate_1_output" : {
+      "k" : 60,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-encoder_pool_2_output" : {
+      "k" : 24,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-skip_conv_5_output" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-encoder_relu_5_output" : {
+      "k" : 64,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-decoder_relu_4_output" : {
+      "k" : 96,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-decoder_upsampling_1_output" : {
+      "k" : 40,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-encoder_pool_3_output" : {
+      "k" : 32,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-decoder_batch_2_output" : {
+      "k" : 48,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-encoder_batch_2_output" : {
+      "k" : 48,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-decoder_upsampling_4_output" : {
+      "k" : 96,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-decoder_relu_5_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-decoder_concatenate_6_output" : {
+      "k" : 384,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-encoder_relu_6_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-encoder_pool_4_output" : {
+      "k" : 48,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "input1" : {
+      "k" : 6,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-decoder_relu_6_output" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "eye-decoder_concatenate_3_output" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-decoder_batch_5_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-skip_conv_0_output" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-encoder_batch_5_output" : {
+      "k" : 128,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-encoder_pool_5_output" : {
+      "k" : 64,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-skip_conv_3_output" : {
+      "k" : 32,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-decoder_concatenate_0_output" : {
+      "k" : 54,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-encoder_batch_0_output" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-skip_conv_6_output" : {
+      "k" : 128,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-encoder_pool_6_output" : {
+      "k" : 128,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "eye-decoder_batch_0_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-decoder_upsampling_0_output" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-decoder_upsampling_3_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-decoder_batch_3_output" : {
+      "k" : 64,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-encoder_batch_3_output" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "h" : 16
+    },
+    "eye-decoder_concatenate_5_output" : {
+      "k" : 192,
+      "w" : 4,
+      "n" : 1,
+      "h" : 4
+    },
+    "eye-decoder_upsampling_6_output" : {
+      "k" : 256,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-encoder_relu_0_output" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-decoder_concatenate_2_output" : {
+      "k" : 72,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-skip_conv_1_output" : {
+      "k" : 20,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-encoder_batch_6_output" : {
+      "k" : 256,
+      "w" : 2,
+      "n" : 1,
+      "h" : 2
+    },
+    "eye-decoder_batch_6_output" : {
+      "k" : 256,
+      "w" : 1,
+      "n" : 1,
+      "h" : 1
+    },
+    "eye-decoder_relu_0_output" : {
+      "k" : 32,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-encoder_relu_1_output" : {
+      "k" : 20,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "eye-skip_conv_4_output" : {
+      "k" : 48,
+      "w" : 8,
+      "n" : 1,
+      "h" : 8
+    },
+    "eye-decoder_batch_1_output" : {
+      "k" : 40,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-encoder_relu_2_output" : {
+      "k" : 24,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-decoder_relu_1_output" : {
+      "k" : 40,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-decoder_upsampling_2_output" : {
+      "k" : 48,
+      "w" : 32,
+      "n" : 1,
+      "h" : 32
+    },
+    "eye-encoder_batch_1_output" : {
+      "k" : 40,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    },
+    "output1" : {
+      "k" : 6,
+      "w" : 128,
+      "n" : 1,
+      "h" : 128
+    },
+    "eye-encoder_pool_0_output" : {
+      "k" : 16,
+      "w" : 64,
+      "n" : 1,
+      "h" : 64
+    }
+  }
+}

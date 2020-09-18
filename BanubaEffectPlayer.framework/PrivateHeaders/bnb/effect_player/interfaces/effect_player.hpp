@@ -354,13 +354,23 @@ public:
      * MUST be called from the render thread
      * @throw Exception Must be aborted with stop_video_processing()
      */
-    virtual void start_video_processing(int64_t screen_width, int64_t screen_height, camera_orientation orientation, bool reset_effect) = 0;
+    virtual void start_video_processing(int64_t screen_width, int64_t screen_height, camera_orientation orientation, bool reset_effect, bool offline_mode) = 0;
 
     /**
      * Finish processing and return renderer to normal state.
      * MUST be called from the render thread
      */
     virtual void stop_video_processing(bool reset_effect) = 0;
+
+    /**
+     * Provide frame data to evaluate video processing.
+     * MUST be called from the render thread
+     * @param input_frame_data Frame Data to process.
+     * @param params Processing params.
+     * @param recognizer_iterations Number of processing iterations. Higher number means higher processing quality, but lower speed. Must be greater than 1. Pass null value for default number.
+     * @return Frame data with frame processing results.
+     */
+    virtual std::shared_ptr<::bnb::interfaces::frame_data> process_video_frame_data(const std::shared_ptr<::bnb::interfaces::frame_data> & input_frame_data, const process_image_params & params, std::optional<int32_t> recognizer_iterations) = 0;
 
     /**
      * Provide frame to evaluate video processing.

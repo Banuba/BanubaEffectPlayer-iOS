@@ -11,6 +11,7 @@
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
 #include <memory>
+#include <string>
 
 namespace bnb { namespace interfaces {
 
@@ -20,6 +21,8 @@ public:
 
     /**must return unique id (e.g. a feature pointer or a true random number(most likely) satisfies this criteria) */
     virtual int64_t id() = 0;
+
+    virtual std::string name() = 0;
 
     virtual bool requires_main_thread() = 0;
 

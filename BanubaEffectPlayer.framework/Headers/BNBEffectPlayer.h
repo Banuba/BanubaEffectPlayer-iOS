@@ -362,13 +362,26 @@
 - (void)startVideoProcessing:(int64_t)screenWidth
                 screenHeight:(int64_t)screenHeight
                  orientation:(BNBCameraOrientation)orientation
-                 resetEffect:(BOOL)resetEffect;
+                 resetEffect:(BOOL)resetEffect
+                 offlineMode:(BOOL)offlineMode;
 
 /**
  * Finish processing and return renderer to normal state.
  * MUST be called from the render thread
  */
 - (void)stopVideoProcessing:(BOOL)resetEffect;
+
+/**
+ * Provide frame data to evaluate video processing.
+ * MUST be called from the render thread
+ * @param inputFrameData Frame Data to process.
+ * @param params Processing params.
+ * @param recognizerIterations Number of processing iterations. Higher number means higher processing quality, but lower speed. Must be greater than 1. Pass null value for default number.
+ * @return Frame data with frame processing results.
+ */
+- (nullable BNBFrameData *)processVideoFrameData:(nullable BNBFrameData *)inputFrameData
+                                          params:(nonnull BNBProcessImageParams *)params
+                            recognizerIterations:(nullable NSNumber *)recognizerIterations;
 
 /**
  * Provide frame to evaluate video processing.

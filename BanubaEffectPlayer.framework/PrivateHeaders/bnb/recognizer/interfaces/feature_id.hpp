@@ -19,6 +19,7 @@ enum class feature_id : int {
     eyes,
     skin,
     face,
+    face_skin,
     lips,
     lips_shine,
     occlussion,
@@ -36,6 +37,11 @@ enum class feature_id : int {
      * input image resulting a smoothed skin. 
      */
     skin_smoothing,
+    /**
+     * This feature will prepare blurred texture to apply on
+     * input image resulting a smoothed neck skin.
+     */
+    neck_smoothing,
     /** Body segmentation. I.e. bodies detection on the frame. */
     body,
     /** Draw NN-generated smile on user face */

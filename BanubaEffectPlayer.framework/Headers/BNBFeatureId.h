@@ -12,6 +12,7 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
     BNBFeatureIdEyes,
     BNBFeatureIdSkin,
     BNBFeatureIdFace,
+    BNBFeatureIdFaceSkin,
     BNBFeatureIdLips,
     BNBFeatureIdLipsShine,
     BNBFeatureIdOcclussion,
@@ -29,6 +30,11 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
      * input image resulting a smoothed skin. 
      */
     BNBFeatureIdSkinSmoothing,
+    /**
+     * This feature will prepare blurred texture to apply on
+     * input image resulting a smoothed neck skin.
+     */
+    BNBFeatureIdNeckSmoothing,
     /** Body segmentation. I.e. bodies detection on the frame. */
     BNBFeatureIdBody,
     /** Draw NN-generated smile on user face */

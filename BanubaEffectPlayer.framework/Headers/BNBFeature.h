@@ -10,6 +10,8 @@
 /**must return unique id (e.g. a feature pointer or a true random number(most likely) satisfies this criteria) */
 - (int64_t)id;
 
+- (nonnull NSString *)name;
+
 - (BOOL)requiresMainThread;
 
 - (void)clean;
