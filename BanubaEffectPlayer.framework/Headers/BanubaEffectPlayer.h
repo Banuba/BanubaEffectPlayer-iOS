@@ -19,8 +19,10 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBPixelFormat.h>
 #import <BanubaEffectPlayer/BNBRenderList.h>
 #import <BanubaEffectPlayer/BNBFrxRecognitionResult.h>
+#import <BanubaEffectPlayer/BNBMakeupTransferOutput.h>
 #import <BanubaEffectPlayer/BNBLowLightListener.h>
 #import <BanubaEffectPlayer/BNBSegmentationMask.h>
+#import <BanubaEffectPlayer/BNBMakeupTransfer.h>
 #import <BanubaEffectPlayer/BNBExternalFaceData.h>
 #import <BanubaEffectPlayer/BNBTransformedMaskByte.h>
 #import <BanubaEffectPlayer/BNBProjectionType.h>
@@ -33,6 +35,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBCelebrityMatchBackendData.h>
 #import <BanubaEffectPlayer/BNBProcessImageParams.h>
 #import <BanubaEffectPlayer/BNBCelebrityMatchIndex.h>
+#import <BanubaEffectPlayer/BNBHardwareClass.h>
 #import <BanubaEffectPlayer/BNBDebugRenderer.h>
 #import <BanubaEffectPlayer/BNBEyesState.h>
 #import <BanubaEffectPlayer/BNBTransformedMaskGpu.h>

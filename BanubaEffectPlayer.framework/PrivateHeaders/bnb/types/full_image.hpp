@@ -19,6 +19,7 @@ namespace bnb
     {
         uint32_t width = 0;
         uint32_t height = 0;
+        std::optional<float> fov = std::nullopt;
 
         camera_orientation orientation = camera_orientation::deg_270;
 
@@ -31,7 +32,8 @@ namespace bnb
         float x_scale() const;
 
         image_format() = default;
-        image_format(uint32_t width, uint32_t height, camera_orientation orientation, bool require_mirroring, int face_orientation);
+
+        image_format(uint32_t width, uint32_t height, camera_orientation orientation, bool require_mirroring, int face_orientation, std::optional<float> fov = std::nullopt);
     };
 
 
@@ -131,6 +133,12 @@ namespace bnb
         bnb::transformation get_subchannel_basis_transform(float inv_scale = 1.f) const
         {
             return basis_transform >> bnb::transformation(1.f / inv_scale, 1.f / inv_scale);
+        }
+
+        bnb::transformation image_basis() const
+        {
+            using rot_t = transformation::rotate_t;
+            return bnb::transformation(full_roi, full_roi, rot_t::deg_0, get_format().require_mirroring) >> basis_transform;
         }
 
         template<typename T>

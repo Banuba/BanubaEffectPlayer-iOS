@@ -15,6 +15,7 @@
 namespace bnb { namespace interfaces {
 
 class log_record_callback;
+enum class hardware_class;
 enum class severity_level;
 
 class BNB_EXPORT utility_manager {
@@ -35,11 +36,11 @@ public:
     static std::string cpu_env();
 
     /**
-     * Check if device have high-end SoC.
-     * Only Android supported now, for other platforms always return true
-     * @return true if device is fast
+     * Check device SoC class.
+     * Only Android supported now, for other platforms always return hardware_class::high
+     * @return hardware class of device
      */
-    static bool is_fast_device();
+    static hardware_class get_hardware_class();
 
     static void set_log_level(severity_level level);
 

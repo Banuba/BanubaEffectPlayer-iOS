@@ -28,7 +28,9 @@ namespace bnb
         static_pool_allocator() = default;
 
         template<class U>
-        inline constexpr explicit static_pool_allocator(const static_pool_allocator<U, MAX_ELEMENTS>& u) noexcept;
+        inline constexpr explicit static_pool_allocator(const static_pool_allocator<U, MAX_ELEMENTS>& u) noexcept
+        {
+        }
 
         template<class U>
         struct rebind
