@@ -450,7 +450,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2rYhYDhGFOwsACQbJ5I02bZkerc=
+		9ZYLo28ATWpChrn5+Sw8f/HdmCA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -983,30 +983,6 @@
 		<key>bnb-resources/MoMoFRX/head_au.tex</key>
 		<data>
 		p3snmjZUD9hVGCtVEsvRCS7hXgg=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/coremldata.bin</key>
-		<data>
-		4DK68DRc8Hg/ZBYn3FMou1t2JH4=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.net</key>
-		<data>
-		4P0oa3rJvZZbsCHDEwpjH6cESi0=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.shape</key>
-		<data>
-		0OpXaqarfZ75Nm+iwSZtA+tn0kk=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.weights</key>
-		<data>
-		Vwb5V27iMb/WqtOTap8/NSgymxM=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model/coremldata.bin</key>
-		<data>
-		yNfQ7w7t+oLS6hqlkoRbmm1LArc=
-		</data>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/neural_network_optionals/coremldata.bin</key>
-		<data>
-		4SnyfFEDvFzES83woV4WDURQZv8=
 		</data>
 		<key>bnb-resources/cml/coreMLEyesIris.mlmodelc/coremldata.bin</key>
 		<data>
@@ -3921,72 +3897,6 @@
 			<key>hash2</key>
 			<data>
 			vKlkhXcLSwPzAx8epKwQyVPS3utvtFo5hBRTTgp4E54=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/coremldata.bin</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4DK68DRc8Hg/ZBYn3FMou1t2JH4=
-			</data>
-			<key>hash2</key>
-			<data>
-			vkdII2guwufxFv5T3yKpSfcheP2AVdBIXwiYvuKQm14=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.net</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4P0oa3rJvZZbsCHDEwpjH6cESi0=
-			</data>
-			<key>hash2</key>
-			<data>
-			geKvmKw5wIehxpjYKzlbJyf/HH1DHkCn+HKQIwtKRv4=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.shape</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			0OpXaqarfZ75Nm+iwSZtA+tn0kk=
-			</data>
-			<key>hash2</key>
-			<data>
-			UMC5aoc/RCP9lM34M977hA1vOvuQC9SFyFPq2zp1iBQ=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model.espresso.weights</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Vwb5V27iMb/WqtOTap8/NSgymxM=
-			</data>
-			<key>hash2</key>
-			<data>
-			JYWSYG4w8bETzoJVXZmwICgajbrDqFJuzr0xjDkqLJ0=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/model/coremldata.bin</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yNfQ7w7t+oLS6hqlkoRbmm1LArc=
-			</data>
-			<key>hash2</key>
-			<data>
-			9aX9QtFqIDAnmO9u0wmXm0MAPSMg2fDo6pgxqSdZ+0s=
-			</data>
-		</dict>
-		<key>bnb-resources/cml/coreMLEyes.mlmodelc/neural_network_optionals/coremldata.bin</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			4SnyfFEDvFzES83woV4WDURQZv8=
-			</data>
-			<key>hash2</key>
-			<data>
-			N0cI//dxndWXnsh11WzSKG9tPPfsMXo7JWMqqyjsN7s=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLEyesIris.mlmodelc/coremldata.bin</key>
