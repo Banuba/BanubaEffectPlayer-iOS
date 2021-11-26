@@ -8,7 +8,7 @@
 /** Callback to get freshly processed frame_data. */
 @protocol BNBFrameDataListener
 
-/** Will be called only when amount of found faces changes. */
+/** Will be called each time when frame is processed. */
 - (void)onFrameDataProcessed:(nullable BNBFrameData *)frameData;
 
 @end

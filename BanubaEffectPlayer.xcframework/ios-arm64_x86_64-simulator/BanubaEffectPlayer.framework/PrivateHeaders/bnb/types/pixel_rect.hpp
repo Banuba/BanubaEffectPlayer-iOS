@@ -85,6 +85,11 @@ namespace bnb
         {
             return interfaces::pixel_rect{x, y, w, h};
         }
+
+        operator interfaces::pixel_rect() const
+        {
+            return interfaces::pixel_rect(x, y, w, h);
+        }
     };
 
 } // namespace bnb

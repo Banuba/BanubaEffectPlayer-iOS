@@ -37,7 +37,7 @@ namespace bnb
     };
 
 
-    class base_event_iface
+    class BNB_EXPORT base_event_iface
     {
     public:
         virtual ~base_event_iface() = default;

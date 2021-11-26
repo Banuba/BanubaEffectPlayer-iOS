@@ -2,6 +2,7 @@
 
 #include <bnb/types/base_types.hpp>
 #include <bnb/utils/event.hpp>
+#include <bnb/utils/defs.hpp>
 #include <bnb/utils/stack_pimpl.hpp>
 #include <bnb/types/pixel_rect.hpp>
 #include <bnb/types/interfaces/transformation.hpp>
@@ -55,7 +56,7 @@ namespace bnb
     //! | ^f
     //! v y
     //!
-    class transformation : public interfaces::transformation
+    class BNB_EXPORT transformation : public interfaces::transformation
     {
     public:
         static const int mat_s = 3;
@@ -110,6 +111,9 @@ namespace bnb
 
         transformation(transformation&& t) noexcept;
         transformation& operator=(transformation&& t) noexcept;
+
+        transformation(const transformation& t);
+        transformation& operator=(const transformation& t);
 
         /// Applies transform t after this
         /// e.g. {rotate >> translate;} rotates first: (initial -> rotated) >> (rotated -> translated) = (initial -> translated)

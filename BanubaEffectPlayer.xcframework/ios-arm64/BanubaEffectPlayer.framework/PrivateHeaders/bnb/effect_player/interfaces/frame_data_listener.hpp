@@ -18,7 +18,7 @@ class BNB_EXPORT frame_data_listener {
 public:
     virtual ~frame_data_listener() {}
 
-    /** Will be called only when amount of found faces changes. */
+    /** Will be called each time when frame is processed. */
     virtual void on_frame_data_processed(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data) = 0;
 };
 

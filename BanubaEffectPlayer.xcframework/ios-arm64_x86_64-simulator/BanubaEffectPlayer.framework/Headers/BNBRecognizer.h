@@ -71,7 +71,7 @@
 /** pause + clear */
 - (void)stop;
 
-/** clear input and output buffers and pipeline state */
+/** clear input and output buffers and pipeline state, also clean cached features */
 - (void)clear;
 
 @end

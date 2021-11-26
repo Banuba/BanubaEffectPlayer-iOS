@@ -4,7 +4,7 @@
 #include <bnb/types/base_types.hpp>
 #include <bnb/spal/camera/base.hpp>
 
-#if !BNB_OS_MACOS
+#if !BNB_OS_MACOS && !BNB_OS_WINDOWS
     #include <opencv2/videoio.hpp>
     #include <opencv2/videoio/videoio_c.h>
 

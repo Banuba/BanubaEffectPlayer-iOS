@@ -49,6 +49,7 @@ enum class feature_id : int {
     acne_eyebags,
     /** Combined face acne and eyebags removal, plus skin smoothing */
     acne_eyebags_skin_smoothing,
+    hand_gestures,
 };
 
 } }  // namespace bnb::interfaces

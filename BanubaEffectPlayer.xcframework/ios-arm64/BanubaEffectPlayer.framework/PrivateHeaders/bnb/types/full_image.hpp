@@ -3,10 +3,12 @@
 #include <bnb/types/interfaces/pixel_format.hpp>
 #include <bnb/types/base_types.hpp>
 #include <bnb/types/transformation.hpp>
+#include <bnb/utils/assert.hpp>
 #include <bnb/utils/event.hpp>
 #include <bnb/utils/defs.hpp>
 
 #include <type_traits>
+#include <variant>
 
 namespace bnb
 {
@@ -40,7 +42,9 @@ namespace bnb
     class BNB_EXPORT base_image_t
     {
     public:
-        image_format get_format() const;
+        base_image_t() = default;
+
+        const image_format& get_format() const;
 
         void set_fov(float fov)
         {
@@ -59,8 +63,13 @@ namespace bnb
     public:
         using pixel_format_t = bnb::interfaces::pixel_format;
 
+        bpc8_image_t() = default;
+
         bpc8_image_t(bpc8_image_t&&) = default;
-        bpc8_image_t& operator=(bpc8_image_t&& other) = delete; // `pixel_format_t` has no move assignment operator
+        bpc8_image_t& operator=(bpc8_image_t&& other) = default;
+
+        bpc8_image_t(const bpc8_image_t&) = default;
+        bpc8_image_t& operator=(const bpc8_image_t&) = default;
 
         bpc8_image_t(color_plane data, pixel_format_t type, const image_format& format);
 
@@ -68,15 +77,13 @@ namespace bnb
 
         uint8_t* get_data() const noexcept;
 
-        bpc8_image_t clone() const;
-
         static uint8_t bytes_per_pixel(pixel_format_t fmt);
         static std::tuple<int, int, int> rgb_offsets(pixel_format_t fmt);
 
         void normalize_orientation(bnb::transformation const& basis_transform, bnb::pixel_rect const& full_roi);
 
     private:
-        const pixel_format_t m_pixel_format;
+        pixel_format_t m_pixel_format;
         color_plane m_data;
     };
 
@@ -95,7 +102,7 @@ namespace bnb
     enum class yuv_format
     {
         yuv_nv12,
-        yuv_i402,
+        yuv_i420,
     };
 
     struct yuv_format_t
@@ -108,25 +115,64 @@ namespace bnb
     class BNB_EXPORT yuv_image_t BNB_FINAL : public base_image_t
     {
     public:
-        color_plane y_plane;
-        color_plane uv_plane;
+        template<size_t index>
+        const color_plane get_plane() const
+        {
+            switch (index) {
+                case 0: {
+                    return m_planes[0];
+                }
+                case 1: {
+                    return m_planes[1];
+                }
+                case 2: {
+                    switch (m_yuv_format.format) {
+                        case yuv_format::yuv_nv12: {
+                            BNB_THROW(std::invalid_argument, "yuv nv12 format has only 2 planes");
+                            return nullptr;
+                        }
+                        case yuv_format::yuv_i420: {
+                            return m_planes[2];
+                        }
+                        default: {
+                            BNB_THROW(std::invalid_argument, "Incorrect yuv format");
+                            return nullptr;
+                        }
+                    }
+                }
+                default: {
+                    BNB_THROW(std::invalid_argument, "Incorrect index of plane");
+                    return nullptr;
+                }
+            }
+        };
 
         yuv_image_t(color_plane y_plane, color_plane uv_plane, const image_format& format, const yuv_format_t& yuv_format)
             : base_image_t(format)
-            , y_plane(std::move(y_plane))
-            , uv_plane(std::move(uv_plane))
-            , yuv_format(yuv_format)
+            , m_yuv_format(yuv_format)
         {
+            m_planes[0] = std::move(y_plane);
+            m_planes[1] = std::move(uv_plane);
+        }
+
+        yuv_image_t(color_plane y_plane, color_plane u_plane, color_plane v_plane, const image_format& format, const yuv_format_t& yuv_format)
+            : base_image_t(format)
+            , m_yuv_format(yuv_format)
+        {
+            m_planes[0] = std::move(y_plane);
+            m_planes[1] = std::move(u_plane);
+            m_planes[2] = std::move(v_plane);
         }
 
         yuv_image_t(color_plane y_plane, color_plane uv_plane, const image_format& format)
             : base_image_t(format)
-            , y_plane(std::move(y_plane))
-            , uv_plane(std::move(uv_plane))
         {
-            yuv_format.range = color_range::full;
-            yuv_format.format = yuv_format::yuv_nv12;
-            yuv_format.standard = color_std::bt601;
+            m_yuv_format.range = color_range::full;
+            m_yuv_format.format = yuv_format::yuv_nv12;
+            m_yuv_format.standard = color_std::bt601;
+
+            m_planes[0] = std::move(y_plane);
+            m_planes[1] = std::move(uv_plane);
         }
 
         size_t y_size() const noexcept;
@@ -147,22 +193,24 @@ namespace bnb
         uint8_t u_pixel_at(uint32_t yi, uint32_t xi) const noexcept;
         uint8_t v_pixel_at(uint32_t yi, uint32_t xi) const noexcept;
 
-        yuv_image_t() = delete;
+        yuv_image_t() = default;
+
         yuv_image_t(yuv_image_t&&) = default;
-        yuv_image_t& operator=(yuv_image_t&& other) = delete;
+        yuv_image_t& operator=(yuv_image_t&& other) = default;
 
-        yuv_image_t(const yuv_image_t&) = delete;
-        yuv_image_t& operator=(const yuv_image_t&) = delete;
-
-        yuv_image_t clone() const;
+        yuv_image_t(const yuv_image_t&) = default;
+        yuv_image_t& operator=(const yuv_image_t&) = default;
 
         void normalize_orientation(bnb::transformation const& y_basis, bnb::transformation const& uv_basis, bnb::pixel_rect const& full_roi);
 
-        yuv_format_t get_yuv_format();
+        const yuv_format_t& get_yuv_format() const noexcept;
 
     private:
         std::tuple<float, float, float, float, float> get_yuv_standart_coeff() const;
-        yuv_format_t yuv_format;
+        yuv_format_t m_yuv_format;
+
+        color_plane m_planes[3];
+        //[3]] planes is optional for i420 formats
     };
 
     /// basis is the base basis:
@@ -174,18 +222,17 @@ namespace bnb
         static full_image_t load(const std::string& path, bool alpha = false);
 
         full_image_t();
+
         explicit full_image_t(bpc8_image_t image);
         explicit full_image_t(yuv_image_t image);
 
-        full_image_t(const full_image_t&) = delete;
-        full_image_t(full_image_t&&) noexcept;
-
         ~full_image_t() override;
 
-        full_image_t& operator=(full_image_t&& other) noexcept;
-        full_image_t& operator=(const full_image_t&) = delete;
-        full_image_t clone() const;
+        full_image_t(const full_image_t&);
+        full_image_t& operator=(const full_image_t&);
 
+        full_image_t(full_image_t&&) noexcept;
+        full_image_t& operator=(full_image_t&& other) noexcept;
 
         image_format get_format() const;
         bool is_landscape() const;
@@ -211,8 +258,8 @@ namespace bnb
         void normalize_orientation();
 
     private:
-        struct image_data;
-        std::unique_ptr<image_data> m_image_data;
+        using image_t = std::variant<yuv_image_t, bpc8_image_t>;
+        image_t m_image;
 
         template<typename T>
         const T& _get_data() const noexcept;
@@ -227,14 +274,15 @@ namespace bnb
     inline const T& bnb::full_image_t::get_data() const noexcept
     {
         static_assert(std::is_base_of<base_image_t, T>::value, "Type is not image_t");
-        return _get_data<T>();
+        BNB_ASSERT(std::holds_alternative<T>(m_image));
+        return *std::get_if<T>(&m_image);
     }
 
     template<typename T>
     inline bool full_image_t::has_data() const noexcept
     {
         static_assert(std::is_base_of<base_image_t, T>::value, "Type is not image_t");
-        return _has_data<T>();
+        return std::holds_alternative<T>(m_image);
     }
 
     /** @} */ // endgroup types

@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include "bnb/recognizer/interfaces/face_search_mode.hpp"
 #include "bnb/scene/interfaces/scene.hpp"
 #include "bnb/types/interfaces/frame_data.hpp"
 #include "bnb/types/interfaces/pixel_format.hpp"
@@ -521,6 +522,12 @@ public:
      * Thread-safe. May be called from any thread
      */
     virtual void set_recognizer_offline_mode(bool on) = 0;
+
+    /**
+     * Change face search mode
+     * Thread-safe. May be called from any thread
+     */
+    virtual void set_face_search_mode(::bnb::interfaces::face_search_mode face_search) = 0;
 };
 
 } }  // namespace bnb::interfaces

@@ -1,8 +1,10 @@
-//
-// Created by Lechenko on 9/1/17.
-//
-
 #pragma once
+
+#if BNB_SDK_PROJECT
+    #include <bnb/types/config.hpp>
+    #include <bnb/utils/assert.hpp>
+    #include <bnb/utils/log.hpp>
+#endif
 
 #include <vector>
 #include <string>
@@ -127,6 +129,38 @@ namespace bnb
         using uptr = std::unique_ptr<type, std::function<void(pointer)>>;
         uptr data;
         size_t size;
+
+        data_t() = default;
+
+        data_t(uptr d, size_t s)
+            : data(std::move(d))
+            , size(s)
+        {
+        }
+
+        data_t(data_t&&) = default;
+        data_t& operator=(data_t&&) = default;
+
+#if BNB_PYBIND_BUILD
+        // WARNING: it is NOT deep copy constructor, it provides weak (non-owning) copy
+        data_t(const data_t& other)
+            : data(other.data.get(), [](pointer) { /* DO NOTHING */ })
+            , size(other.size)
+        {
+            BNB_ASSERT_MSG(false, "bnb::data_t copy constructor!");
+            bnb::log_w("bnb::data_t", "copy constructor called, possible memory issue!");
+        }
+
+        // WARNING: it is NOT deep copy operator, it provides weak (non-owning) copy
+        data_t& operator=(const data_t& other)
+        {
+            BNB_ASSERT_MSG(false, "bnb::data_t copy operator!");
+            bnb::log_w("bnb::data_t", "copy operator called, possible memory issue!");
+            data = uptr(other.data.get(), [](pointer) { /* DO NOTHING */ });
+            size = other.size;
+            return *this;
+        }
+#endif
     };
 
     /** @} */ // endgroup types

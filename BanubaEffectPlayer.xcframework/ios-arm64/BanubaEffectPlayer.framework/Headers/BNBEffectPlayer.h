@@ -6,6 +6,7 @@
 #import "BNBConsistencyMode.h"
 #import "BNBEffectPlayerConfiguration.h"
 #import "BNBEffectPlayerPlaybackState.h"
+#import "BNBFaceSearchMode.h"
 #import "BNBFrameData.h"
 #import "BNBPixelFormat.h"
 #import "BNBPixelRect.h"
@@ -545,5 +546,11 @@
  * Thread-safe. May be called from any thread
  */
 - (void)setRecognizerOfflineMode:(BOOL)on;
+
+/**
+ * Change face search mode
+ * Thread-safe. May be called from any thread
+ */
+- (void)setFaceSearchMode:(BNBFaceSearchMode)faceSearch;
 
 @end

@@ -19,6 +19,17 @@ namespace bnb
             ptr()->~T();
         }
 
+        stack_pimpl(const stack_pimpl& v) noexcept(noexcept(T(std::declval<const T&>())))
+        {
+            new (ptr()) T(*v);
+        }
+
+        stack_pimpl& operator=(const stack_pimpl& rhs) noexcept(noexcept(std::declval<T&>() = std::declval<const T&>()))
+        {
+            *ptr() = *rhs;
+            return *this;
+        }
+
         stack_pimpl(stack_pimpl&& v) noexcept(noexcept(T(std::declval<T>())))
         {
             new (ptr()) T(std::move(*v));

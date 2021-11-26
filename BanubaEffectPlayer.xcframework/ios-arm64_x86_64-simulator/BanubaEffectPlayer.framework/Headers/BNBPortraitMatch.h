@@ -23,7 +23,7 @@
                                 brightness:(BOOL)brightness;
 
 - (nullable BNBPortraitMatchOutput *)processPortrait:(nonnull BNBFullImageData *)sourceImage
-                                         targetImage:(nonnull BNBFullImageData *)targetImage
+                                       portraitImage:(nonnull BNBFullImageData *)portraitImage
                                                  fov:(float)fov;
 
 @end

@@ -19,11 +19,14 @@ class frx_recognition_result;
 enum class face_data_source;
 struct acne_regions;
 struct action_units_data;
+struct brows_mask;
 struct depth_map;
 struct external_face_data;
+struct eyes_mask;
 struct eyes_state;
 struct feature_parameter;
 struct lips_shine_mask;
+struct neuro_beauty_data;
 struct transformed_mask_byte;
 struct transformed_mask_gpu;
 
@@ -46,6 +49,8 @@ public:
     virtual action_units_data get_action_units() = 0;
 
     virtual acne_regions get_acne_regions() = 0;
+
+    virtual neuro_beauty_data get_neuro_beauty_data() = 0;
 
     virtual bool get_is_smile() = 0;
 
@@ -84,6 +89,14 @@ public:
     virtual transformed_mask_byte get_body() = 0;
 
     virtual lips_shine_mask get_lips_shine() = 0;
+
+    virtual brows_mask get_brows() = 0;
+
+    virtual eyes_mask get_eyes() = 0;
+
+    virtual transformed_mask_byte get_face() = 0;
+
+    virtual transformed_mask_byte get_face_skin() = 0;
 
     virtual void add_full_img(::bnb::full_image_t img) = 0;
 

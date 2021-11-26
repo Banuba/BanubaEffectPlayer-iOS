@@ -37,7 +37,8 @@ public:
 
     /**
      * Check device SoC class.
-     * Only Android supported now, for other platforms always return hardware_class::high
+     * On Android first call may require presence of OpenGL context to 
+     * get info about GPU. 
      * @return hardware class of device
      */
     static ::bnb::interfaces::hardware_class get_hardware_class();

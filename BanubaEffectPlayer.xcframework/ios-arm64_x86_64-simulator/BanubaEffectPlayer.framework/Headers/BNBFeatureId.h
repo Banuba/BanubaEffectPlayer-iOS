@@ -42,4 +42,5 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
     BNBFeatureIdAcneEyebags,
     /** Combined face acne and eyebags removal, plus skin smoothing */
     BNBFeatureIdAcneEyebagsSkinSmoothing,
+    BNBFeatureIdHandGestures,
 };

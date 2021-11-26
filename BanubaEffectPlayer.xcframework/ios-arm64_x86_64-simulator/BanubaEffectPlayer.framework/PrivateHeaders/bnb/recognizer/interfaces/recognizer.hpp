@@ -81,7 +81,7 @@ public:
     /** pause + clear */
     virtual void stop() = 0;
 
-    /** clear input and output buffers and pipeline state */
+    /** clear input and output buffers and pipeline state, also clean cached features */
     virtual void clear() = 0;
 };
 

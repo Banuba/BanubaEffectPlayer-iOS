@@ -3,12 +3,15 @@
 
 #import "BNBAcneRegions.h"
 #import "BNBActionUnitsData.h"
+#import "BNBBrowsMask.h"
 #import "BNBDepthMap.h"
 #import "BNBExternalFaceData.h"
+#import "BNBEyesMask.h"
 #import "BNBEyesState.h"
 #import "BNBFaceDataSource.h"
 #import "BNBFeatureParameter.h"
 #import "BNBLipsShineMask.h"
+#import "BNBNeuroBeautyData.h"
 #import "BNBTransformedMaskByte.h"
 #import "BNBTransformedMaskGpu.h"
 #import "BanubaEffectPlayer/BNBFullImageData.h"
@@ -34,6 +37,8 @@
 - (nonnull BNBActionUnitsData *)getActionUnits;
 
 - (nonnull BNBAcneRegions *)getAcneRegions;
+
+- (nonnull BNBNeuroBeautyData *)getNeuroBeautyData;
 
 - (BOOL)getIsSmile;
 
@@ -72,6 +77,14 @@
 - (nonnull BNBTransformedMaskByte *)getBody;
 
 - (nonnull BNBLipsShineMask *)getLipsShine;
+
+- (nonnull BNBBrowsMask *)getBrows;
+
+- (nonnull BNBEyesMask *)getEyes;
+
+- (nonnull BNBTransformedMaskByte *)getFace;
+
+- (nonnull BNBTransformedMaskByte *)getFaceSkin;
 
 - (void)addFullImg:(nonnull BNBFullImageData *)img;
 
