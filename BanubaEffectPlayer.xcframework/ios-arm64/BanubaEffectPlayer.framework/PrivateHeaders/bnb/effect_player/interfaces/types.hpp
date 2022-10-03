@@ -5,20 +5,10 @@
 
 namespace bnb::interfaces
 {
-    using analytics_listener_sptr = std::shared_ptr<analytics_listener>;
-    using analytics_listener_wptr = std::weak_ptr<analytics_listener>;
-    using analytics_listener_uptr = std::unique_ptr<analytics_listener>;
-    using analytics_listener_ptr = bnb::interfaces::analytics_listener*;
-
     using camera_poi_listener_sptr = std::shared_ptr<camera_poi_listener>;
     using camera_poi_listener_wptr = std::weak_ptr<camera_poi_listener>;
     using camera_poi_listener_uptr = std::unique_ptr<camera_poi_listener>;
     using camera_poi_listener_ptr = bnb::interfaces::camera_poi_listener*;
-
-    using debug_interface_sptr = std::shared_ptr<debug_interface>;
-    using debug_interface_wptr = std::weak_ptr<debug_interface>;
-    using debug_interface_uptr = std::unique_ptr<debug_interface>;
-    using debug_interface_ptr = bnb::interfaces::debug_interface*;
 
     using effect_sptr = std::shared_ptr<effect>;
     using effect_wptr = std::weak_ptr<effect>;
@@ -85,14 +75,14 @@ namespace bnb::interfaces
     using input_manager_uptr = std::unique_ptr<input_manager>;
     using input_manager_ptr = bnb::interfaces::input_manager*;
 
+    using js_callback_sptr = std::shared_ptr<js_callback>;
+    using js_callback_wptr = std::weak_ptr<js_callback>;
+    using js_callback_uptr = std::unique_ptr<js_callback>;
+    using js_callback_ptr = bnb::interfaces::js_callback*;
+
     using low_light_listener_sptr = std::shared_ptr<low_light_listener>;
     using low_light_listener_wptr = std::weak_ptr<low_light_listener>;
     using low_light_listener_uptr = std::unique_ptr<low_light_listener>;
     using low_light_listener_ptr = bnb::interfaces::low_light_listener*;
-
-    using push_frame_mocker_sptr = std::shared_ptr<push_frame_mocker>;
-    using push_frame_mocker_wptr = std::weak_ptr<push_frame_mocker>;
-    using push_frame_mocker_uptr = std::unique_ptr<push_frame_mocker>;
-    using push_frame_mocker_ptr = bnb::interfaces::push_frame_mocker*;
 
 }

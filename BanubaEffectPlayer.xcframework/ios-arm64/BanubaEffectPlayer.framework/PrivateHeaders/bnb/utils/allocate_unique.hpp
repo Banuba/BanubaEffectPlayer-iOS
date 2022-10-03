@@ -28,7 +28,8 @@ namespace bnb
                 auto ptr = const_cast<T*>(reinterpret_cast<const T*>(p));
                 traits::destroy(alloc, ptr);
                 traits::deallocate(alloc, ptr, 1);
-            });
+            }
+        );
     }
 
     /** @} */ // endgroup utils

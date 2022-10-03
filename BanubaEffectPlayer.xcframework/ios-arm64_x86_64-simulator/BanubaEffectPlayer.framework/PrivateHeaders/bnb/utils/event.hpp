@@ -46,13 +46,15 @@ namespace bnb
 
     template<typename Event, size_t MaxElements = 3 * 2>
     // align to common cacheline(16) to prevent false sharing
-    class BNB_ALIGNAS(16) base_event : public base_event_iface,
-                                       public identified_class<event_id_t, Event>
+    class alignas(16) base_event : public base_event_iface,
+                                   public identified_class<event_id_t, Event>
     {
     public:
+        inline const static event_id_t id = identified_class<event_id_t, Event>::get_id();
+
         event_id_t get_type_id() const noexcept final
         {
-            return identified_class<event_id_t, Event>::get_id();
+            return id;
         }
 
         using allocator = static_pool_allocator_fallback<Event, MaxElements>;
@@ -84,6 +86,11 @@ namespace bnb
         T value;
     };
 
+    template<int Count>
+    class empty_event : public base_event<empty_event<Count>>
+    {
+    };
+
     using base_event_ptr = std::shared_ptr<const base_event_iface>;
     using base_event_deleter = std::function<void(const bnb::base_event_iface*)>;
 
@@ -98,7 +105,8 @@ namespace bnb
     {
         return allocate_unique<T, typename T::allocator, base_event_deleter, Args&&...>(
             typename T::allocator(),
-            std::forward<Args>(args)...);
+            std::forward<Args>(args)...
+        );
     }
     /** @} */ // endgroup utils
 } // namespace bnb

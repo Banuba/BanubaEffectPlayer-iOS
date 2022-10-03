@@ -20,10 +20,12 @@
 #include <bnb/types/interfaces/frx_recognition_result.hpp>
 #include <bnb/types/interfaces/lips_shine_mask.hpp>
 #include <bnb/types/interfaces/neuro_beauty_data.hpp>
+#include <bnb/types/interfaces/pixel_buffer.hpp>
 #include <bnb/types/interfaces/pixel_format.hpp>
 #include <bnb/types/interfaces/pixel_rect.hpp>
 #include <bnb/types/interfaces/point2d.hpp>
 #include <bnb/types/interfaces/rotation.hpp>
+#include <bnb/types/interfaces/touch.hpp>
 #include <bnb/types/interfaces/transformable_event.hpp>
 #include <bnb/types/interfaces/transformation.hpp>
 #include <bnb/types/interfaces/transformed_mask.hpp>

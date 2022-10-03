@@ -5,16 +5,6 @@
  * @{
  */
 
-#ifdef SWIG
-/// SWIG can't hadle "final" specifier in class definition
-    #define BNB_FINAL
-/// SWIG doesn't support "alignas" specifier
-    #define BNB_ALIGNAS(x)
-#else
-    #define BNB_FINAL final
-    #define BNB_ALIGNAS(x) alignas(x)
-#endif
-
 #ifdef _WIN32
     #if BNB_SDK_SHARED_LIBRARY
         #define BNB_EXPORT __declspec(dllexport)
@@ -125,13 +115,25 @@
 #endif
 
 
-//-----------------------
-
 #define BNB_APPLE 0
 
 #if defined(macintosh) || defined(Macintosh) || defined(__APPLE__)
     #undef BNB_APPLE
     #define BNB_APPLE 1
+#endif
+
+//-----------------------
+
+#if BNB_OS_ANDROID || BNB_OS_IOS || BNB_OS_EMSCRIPTEN
+    #define BNB_GLSL_VERSION "#version 300 es\n"
+#elif BNB_OS_WINDOWS || BNB_OS_MACOS || BNB_OS_UNIX
+    #define BNB_GLSL_VERSION "#version 410 core\n"
+#else
+    #error "Can't determine GLSL version for OS"
+#endif
+
+#if !defined(__cpp_char8_t)
+typedef char char8_t;
 #endif
 
 /** @} */ // endgroup utils

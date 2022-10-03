@@ -22,7 +22,8 @@ namespace bnb
         const bpc8_image_t::pixel_format_t pixel_format,
         uint8_t* buffer,
         int32_t row_stride,
-        memory_deletter free_memory);
+        memory_deletter free_memory
+    );
 
     full_image_t make_full_image_from_yuv_planes(
         // clang-format off
@@ -84,10 +85,12 @@ namespace bnb
     );
 
     color_plane convert_bpc8_to_y_plane(
-        const bpc8_image_t& image, uint32_t width, uint32_t height);
+        const bpc8_image_t& image, uint32_t width, uint32_t height
+    );
 
     color_plane convert_bpc8_to_uv_plane(
-        const bpc8_image_t& image, uint32_t width, uint32_t height, bool legacy_yuv = true);
+        const bpc8_image_t& image, uint32_t width, uint32_t height, bool legacy_yuv = true
+    );
 
     full_image_t convert_image_to_yuv(full_image_t input_image, bool legacy_yuv = true);
 

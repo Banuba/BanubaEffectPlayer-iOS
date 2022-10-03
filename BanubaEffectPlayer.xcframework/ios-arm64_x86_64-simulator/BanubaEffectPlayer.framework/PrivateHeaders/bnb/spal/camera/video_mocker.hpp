@@ -26,7 +26,6 @@ namespace bnb
 
         void set_device_by_index(uint32_t device_index) override;
         void set_device_by_id(const std::string& device_id) override;
-        void start() override;
 
     private:
         void update_image_content() final;

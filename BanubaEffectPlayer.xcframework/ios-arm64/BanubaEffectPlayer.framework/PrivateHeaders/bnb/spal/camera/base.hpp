@@ -25,6 +25,13 @@ namespace bnb
     public:
         using push_frame_cb_t = std::function<void(bnb::full_image_t image)>;
 
+        enum class camera_format
+        {
+            RGBA,
+            YUV
+        };
+        inline static camera_format current_format = camera_format::RGBA;
+
         /*
          * Main thread
          */
@@ -69,5 +76,4 @@ namespace bnb
     using camera_sptr = std::shared_ptr<camera_base>;
 
     BNB_EXPORT camera_sptr create_camera_device(camera_base::push_frame_cb_t cb, size_t index);
-
 } // namespace bnb

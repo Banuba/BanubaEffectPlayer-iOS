@@ -3,10 +3,6 @@
 #include <bnb/utils/defs.hpp>
 #include <bnb/utils/interfaces/log_record_callback.hpp>
 
-#if BNB_OS_WINDOWS || BNB_OS_MACOS
-    #include <glad/glad.h>
-#endif
-
 #include <vector>
 #include <string>
 #include <memory>
@@ -20,11 +16,11 @@ namespace bnb
     class BNB_EXPORT utility
     {
     public:
-        utility(const std::vector<std::string>& paths, const std::string& client_token);
+        utility(const std::vector<std::string>& paths, const std::string& client_token, const std::string& dump_path = std::string());
         ~utility();
 
-#if BNB_OS_WINDOWS || BNB_OS_MACOS
-        static void load_glad_functions(GLADloadproc load);
+#if BNB_OS_WINDOWS || BNB_OS_MACOS || BNB_OS_LINUX
+        static void load_gl_functions();
 #endif
 
         void set_log_record_callback(const std::shared_ptr<bnb::interfaces::log_record_callback>& cb, bnb::interfaces::severity_level lvl);

@@ -5,6 +5,11 @@
 
 namespace bnb::interfaces
 {
+    using egl_context_sptr = std::shared_ptr<egl_context>;
+    using egl_context_wptr = std::weak_ptr<egl_context>;
+    using egl_context_uptr = std::unique_ptr<egl_context>;
+    using egl_context_ptr = bnb::interfaces::egl_context*;
+
     using image_releaser_sptr = std::shared_ptr<image_releaser>;
     using image_releaser_wptr = std::weak_ptr<image_releaser>;
     using image_releaser_uptr = std::unique_ptr<image_releaser>;

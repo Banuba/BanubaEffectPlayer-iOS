@@ -4,7 +4,7 @@
 
 namespace bnb
 {
-    /** 
+    /**
      * @addtogroup types
      * @{
      */

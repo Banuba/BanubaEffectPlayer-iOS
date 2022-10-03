@@ -3,7 +3,6 @@
 #include <bnb/types/base_types.hpp>
 #include <bnb/utils/event.hpp>
 #include <bnb/utils/defs.hpp>
-#include <bnb/utils/stack_pimpl.hpp>
 #include <bnb/types/pixel_rect.hpp>
 #include <bnb/types/interfaces/transformation.hpp>
 #include <bnb/types/interfaces/point2d.hpp>
@@ -83,7 +82,7 @@ namespace bnb
             rotate_t rotate = rotate_t::deg_0;
             bool flip_x = false, flip_y = false;
 
-            //approximate comparison for float components
+            // approximate comparison for float components
             bool operator==(const affine_coeffs_t& t) const noexcept;
         };
 
@@ -158,7 +157,7 @@ namespace bnb
         /// Get reference to static flip-only transform
         static const transformation& get_flip_instance(bool flip_x, bool flip_y);
 
-        //iface
+        // iface
         std::shared_ptr<interfaces::transformation> chain_right(const std::shared_ptr<interfaces::transformation>& t) const override
         {
             return std::make_shared<transformation>(*this >> static_cast<transformation&>(*t));
@@ -184,10 +183,7 @@ namespace bnb
         }
 
     private:
-        struct impl;
-
-        using impl_t = stack_pimpl<impl, 36, 4>;
-        impl_t m_impl;
+        mat_t m_mat;
     };
 
     template<typename T>
@@ -211,12 +207,12 @@ namespace bnb
 
 
     /**
- * Transform src image to dst
- * @param src, src_w, src_h source 32 bit float image buffer, width and height
- * @param dst, dst_w, dst_h destination 32 bit float image buffer, width and height
- * @param channels number of channels per pixel
- * @param t transformation (src -> dst) to apply
- */
+     * Transform src image to dst
+     * @param src, src_w, src_h source 32 bit float image buffer, width and height
+     * @param dst, dst_w, dst_h destination 32 bit float image buffer, width and height
+     * @param channels number of channels per pixel
+     * @param t transformation (src -> dst) to apply
+     */
     void transform(const float* src, uint32_t src_w, uint32_t src_h, float* dst, uint32_t dst_w, uint32_t dst_h, uint32_t channels, const transformation& t);
 
 

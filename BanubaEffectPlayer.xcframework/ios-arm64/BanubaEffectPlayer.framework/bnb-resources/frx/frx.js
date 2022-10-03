@@ -1,3 +1,4 @@
+var Api = require('bnb_js/legacy.js')
 
 var effect;
 

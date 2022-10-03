@@ -3,6 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /** Various helper method to improve Obj-C -- Swift interoperability. */
+__attribute__((__visibility__("default")))
 @interface BNBObjC : NSObject
 
 /**

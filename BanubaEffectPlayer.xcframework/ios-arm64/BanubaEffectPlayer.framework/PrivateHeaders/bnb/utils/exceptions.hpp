@@ -62,7 +62,8 @@ namespace bnb
     {
     public:
         resource_loading_error(
-            std::string domain, std::string message, std::string resource) noexcept
+            std::string domain, std::string message, std::string resource
+        ) noexcept
             : bnb::runtime_error(std::move(domain), message + ". For: " + resource)
             , m_resource(std::move(resource))
         {
