@@ -1,3 +1,0 @@
-*.xcframework filter=lfs diff=lfs merge=lfs -text
-BanubaEffectPlayer.xcframework/ios-arm64/BanubaEffectPlayer.framework/BanubaEffectPlayer filter=lfs diff=lfs merge=lfs -text
-BanubaEffectPlayer.xcframework/ios-arm64_x86_64-simulator/BanubaEffectPlayer.framework/BanubaEffectPlayer filter=lfs diff=lfs merge=lfs -text
