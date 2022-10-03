@@ -614,7 +614,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UwTTdvpe4pwFRThPONdfOO1JA6E=
+		zsmyB54kzxRxVmrSpylc8V7cdBE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1902,35 +1902,35 @@
 		</data>
 		<key>bnb-resources/flow/brows_corrector.tflite.bbin</key>
 		<data>
-		ORq2p0/HhTQjXO9Pe4RCJkWTmyc=
+		wppmRlebg2TwIiz3xlZx/ZbyJ84=
 		</data>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<data>
-		cO4Esb1Ts41YoFJoeJ6hm9JCrqM=
+		HdjCIgZ9uEspdB+3WKWkTFt0C6U=
 		</data>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<data>
-		h6ESGazJPkLNi8V/3gchbWfipy8=
+		LkFCy/2/EhIROVWtW1+HjO1Ya2I=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<data>
-		zbO3b/5kG65rtC5SjVT/oyRsIqE=
+		PjgPNmLg2P2cuyhFUQS4Vxzjreg=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<data>
-		CeQAujHXPs3cMulDpqotgxVBR/E=
+		k85Qm9Ubs+5NvaeLQB4RGuqdZ5o=
 		</data>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<data>
-		gxviLIOgtARP9j84sbRhM+9kFgA=
+		pmqxfBEVmi2UkfmrLtAsS8WT8tc=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<data>
-		eRvf1Pi0k/8kSItukyVjx9W0FTo=
+		LBRfALRXgSet4GPpReJ5VPKYy5U=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<data>
-		F9a6QjnLDOSX9qTFPF5LMxGMcxc=
+		la1zP+rOply98NSZSaAwPpuIb/8=
 		</data>
 		<key>bnb-resources/frx/frx.js</key>
 		<data>
@@ -1938,7 +1938,7 @@
 		</data>
 		<key>bnb-resources/resources-versions.txt</key>
 		<data>
-		Ci8QFanLxBaLG59UJB9/FPVO46c=
+		aP5/VvflACKB0fukTfCWJyxaG1I=
 		</data>
 		<key>bnb-resources/watermark.png</key>
 		<data>
@@ -1950,7 +1950,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		hbiMcvGu5hYRyIQktWtuifn0SbE=
+		9hhGvTzOaLkmkLSLkJPyiAYxA40=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -5270,56 +5270,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rbvZUTRH0w/OkHqGAlR9OnrSBYD2g4jynCmxZL6tiac=
+			fByRDujbAIyqo0EFeUTQHeQ10lhrmCp2Z9C7V+6VveI=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ungHsWLftKy7i/f0pIO4K9pB/Ns04osi1GX/el5uS6Y=
+			tPz89BdRu4eaqbiQadrOw6VDGQ5TtC31xnMZWTDkDIM=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			irV76LZGtsY+B3m4SPIbSTIXOG6TjWTnJUEbul1irrc=
+			Bzw01Z0DgQYYZvM1zN9lxLuRH3rxwebG1hmPjMiXbfQ=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			llejfq9s1/CZY1cVKLHkrGQLhtfh61H3rWMb6fA9PBQ=
+			+IiN0Gn2MFfzf5BlniyAkXg4nc6mpJUT5ugMssWp4RI=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JDCdH+/b0KE1MR77ZJrGdEz66PfCgeX/q7k9Vw/N6U0=
+			ddC3LoGEF7jr9Te4Po3+AVU3JnjqCuG/nkq4UPefNuU=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x2dnKubNnFDCMsqmZnny8MPEpzdiuI5rBtx/9Vg4qjg=
+			gLWa2h1f9IqjcFIee6ZD2rYVB1lRAEtOPGoinzK3IzA=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Su/BAQFesud9/Pu+8Y80UR9EHxk4j6ogeEIvwK/Ijyg=
+			UmAzZkLVhM+EQkCoypJIA7XfFYROsCXxcRpkaNx1lTg=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DfCKE+oJCi7cGY5mNZyTBoBeIOHit+mwGXLYj2AmLNU=
+			DFijsjbuL2ZW78zVNJ7vZ8AiZvaJ5I67//rYASP4LRk=
 			</data>
 		</dict>
 		<key>bnb-resources/frx/frx.js</key>
@@ -5333,7 +5333,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXptrYXefubtD6mpM5fLy1ccuM0yl8LL4UYzau7X7S4=
+			SVnNGT44n54f1564a3eqffdi2WfKojaEYDeg6g8SbTc=
 			</data>
 		</dict>
 		<key>bnb-resources/watermark.png</key>
@@ -5354,7 +5354,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qwue/bMsp/x7l/bNDp0YqJ8HZx9Si1jcOtFwpwLWfnE=
+			nPvbLw0llNe7ZC3E31GdZ+cZWwEHbft6x2ekW6offCo=
 			</data>
 		</dict>
 	</dict>
