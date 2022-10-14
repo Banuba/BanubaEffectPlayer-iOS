@@ -13,15 +13,6 @@ __attribute__((__visibility__("default"))) @interface BNBVideo : NSObject
 /**@return current loaded video file (string). */
 - (nonnull NSString *)getCurrentVideo;
 
-/**@return current video rate (float). */
-- (float)getRate;
-
-/**
- *set video rate. 1.0 - normal video rate
- *@param rate (float)
- */
-- (void)setRate:(float)rate;
-
 /**@return current loaded video pixels width (int). */
 - (int32_t)getWidth;
 

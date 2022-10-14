@@ -12,12 +12,6 @@ typedef NS_ENUM(NSInteger, BNBProceduralAlgorithmType)
      */
     BNBProceduralAlgorithmTypeCameraComposer,
     /**
-     * Requires src image on input. Currently image must be full screen resolution attachment, otherwise blur will be applied with incorrect kernel.
-     * Only OpenGL(es) 3+ feature. (i.e. currently will not work in Safari).
-     * Result: blurred image.
-     */
-    BNBProceduralAlgorithmTypeDualFilterBlur,
-    /**
      * Doesn't requires any src image on input.
      * Result: RGBA processed image using neural networks beautification.
      */

@@ -26,15 +26,6 @@ public:
     /**@return current loaded video file (string). */
     virtual std::string get_current_video() const = 0;
 
-    /**@return current video rate (float). */
-    virtual float get_rate() const = 0;
-
-    /**
-     *set video rate. 1.0 - normal video rate
-     *@param rate (float)
-     */
-    virtual void set_rate(float rate) = 0;
-
     /**@return current loaded video pixels width (int). */
     virtual int32_t get_width() const = 0;
 
