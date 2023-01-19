@@ -338,11 +338,7 @@
 		</data>
 		<key>Headers/BNBLicenseManager.h</key>
 		<data>
-		ziHxSyezeUpLIgZlehLjZuR7Wxw=
-		</data>
-		<key>Headers/BNBLicenseStatus.h</key>
-		<data>
-		M4yua3+DpUf6AaSt8DeWiE9fZm4=
+		263Z1Z+eioMvXZaQV9d+1MgpGr8=
 		</data>
 		<key>Headers/BNBLipsShineMask.h</key>
 		<data>
@@ -614,11 +610,11 @@
 		</data>
 		<key>Headers/BanubaEffectPlayer.h</key>
 		<data>
-		Ap/dJrbgFsZUO5vbqWVBYqZ4REo=
+		XsYeVv5dTBKzELsHr2ILE1Jfpxk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2qQ1NtBqFlM07E6x9FxlZN0aAzg=
+		plvQJaExoHv+WEKL0+H/pvvwvC4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1926,35 +1922,35 @@
 		</data>
 		<key>bnb-resources/flow/brows_corrector.tflite.bbin</key>
 		<data>
-		lqY/EnFr1Sa0lt+yN6NODGLsDMM=
+		ZqlXW9N8IHSUMIh7slMYH4qCUZI=
 		</data>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<data>
-		cawO35ihswQ4/dq7hSXyzGzZqgk=
+		Otkd6Bj2sX98c2O8u4LdBOTIwXU=
 		</data>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<data>
-		RI3zEULBfv/5HEckj4qfx9W5Wdc=
+		tcDkA6WMfZdvUA/ZbMGSviunzAg=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<data>
-		bP8Q//N8Iw+dBdz+CGT+b3BFrVM=
+		Z4hs4wBV5c2FP9hWFtNO199J/6U=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<data>
-		F0a9dFvYjPclMW2kVBUVcvFn/yQ=
+		CuPbdeGnxKMuL/4+/Aksj9wfuD4=
 		</data>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<data>
-		+Nkn5rqJ2GvG1xqkwf4t6ZFrrFw=
+		rz3ArZ7QFJD35W3Bs3HxUrhzvtk=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<data>
-		D1cagOifi3ObqwSY9YjSjYnXkSw=
+		0Mv0i2r5mtYLw2vpv+eZXpkIQrM=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<data>
-		4h3ivABlBxN6GW3HjejKhs/cajA=
+		Zen49g3aYYIHlOt1W5cJAe0LJUg=
 		</data>
 		<key>bnb-resources/frx/frx.js</key>
 		<data>
@@ -1962,7 +1958,7 @@
 		</data>
 		<key>bnb-resources/resources-versions.txt</key>
 		<data>
-		bUNVD9lMrDGA8cvZPBAky1Ne8uQ=
+		QpXW+A9AVMO/H4EOStNd2xH5Mp8=
 		</data>
 		<key>bnb-resources/watermark.png</key>
 		<data>
@@ -2564,14 +2560,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k54uTQfHRSCZeGMt8BHm1dY78vbbTDAr0EstxJ+GMP8=
-			</data>
-		</dict>
-		<key>Headers/BNBLicenseStatus.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			x+q+g+UHueAzS7QHr0IaG8Eo1KbVHVVTyolcyrxvYt8=
+			alMl2IDxpMDd+XjTkyswL9xAWUnrS2BS1FwVrrkW/Dw=
 			</data>
 		</dict>
 		<key>Headers/BNBLipsShineMask.h</key>
@@ -3047,7 +3036,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+9998KZP+VKFYaGTYHJ0FLZfGS/+hHB3YFa9H/iMQRY=
+			ILKMm50m3ZfBugqKBnyKUFLOPxYILjL/DUOdhOWGWnA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -5336,56 +5325,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kllBHXb1i578JDg3RSGcLfG3fvbGZLm9mrQXdI+LhXY=
+			+5kem2xuRd08gxux3ylI09zaaFwHofW6TL+/jFp3X0Y=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lgcmGSR1QSnq2nzKNBNUNJzaVxO0Vh1WoXkzqJS0Bz4=
+			GnKyHeNHdf0fBQFLOWk2j01+dG40H/8NeRK613Dji6I=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s5NWyd95AFLWecqcrTXaJ5HdkQs4cz37wue7t7IIDM0=
+			lvPURHqUPFZ1X7qrXbJNEncl7k7vxUFuPVToVu+2QlE=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j+XBfqd675hpGAMvcangBPDFV27TrV56Ymm+SevWc/I=
+			BiwSsi6Us5r/nXsH0yb5nmJafzVivXBla0FtLcPpGAs=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9mFTAG7Cjt3/jDQ1Um56FtZYhhUvlpUP36g+ARA2f9c=
+			c8v20lqzLcKeHr+rUQtn58kwYCSxwCZlA8G1JAZjCaQ=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lV4P3R5VaZWnawNUNDVmLQ5IWbHqQOMe1A8HTAGndWI=
+			X8lpGIK7St1oyz7WR1NlV47AVCwqxrEIMhjVSxAoMQ4=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BllrXLbQQuGySEuANN8BWBHKNmt3H3KlyTRI3lbKk2A=
+			qR28gWOvN9pQ4f61k4IcMVEYMgDUEaP1IsxmJ9K/6rY=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BWFeyianrtZK28Fcf5abPepBZVWwy6ZM/pP8CUx23n0=
+			M1t6ET1obkMMjQPjauF8GI0Jj/AF0Tn3gNgQBAG0hCw=
 			</data>
 		</dict>
 		<key>bnb-resources/frx/frx.js</key>
@@ -5399,7 +5388,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pnEXEJrD6wdIShOG7jCkhLn92zifmHTLdVXexuWUURM=
+			CV8lJJXlZY20at6scb9iehdfazlmKDfr3ZIVwvLhq/8=
 			</data>
 		</dict>
 		<key>bnb-resources/watermark.png</key>

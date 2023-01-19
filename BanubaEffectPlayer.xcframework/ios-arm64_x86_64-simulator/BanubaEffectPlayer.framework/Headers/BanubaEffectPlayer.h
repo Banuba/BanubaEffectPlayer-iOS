@@ -125,7 +125,6 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBProceduralAlgorithmType.h>
 #import <BanubaEffectPlayer/BNBSurfaceData.h>
 #import <BanubaEffectPlayer/BNBJsCallback.h>
-#import <BanubaEffectPlayer/BNBLicenseStatus.h>
 #import <BanubaEffectPlayer/BNBEyesMask.h>
 #import <BanubaEffectPlayer/BNBFaceDataSource.h>
 #import <BanubaEffectPlayer/BNBCameraParameters.h>
