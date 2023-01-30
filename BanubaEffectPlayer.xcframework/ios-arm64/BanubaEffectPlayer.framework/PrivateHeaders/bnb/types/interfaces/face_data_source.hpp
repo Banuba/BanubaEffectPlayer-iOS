@@ -13,6 +13,7 @@ namespace bnb { namespace interfaces {
 
 enum class face_data_source : int {
     ar_kit,
+    rnd,
 };
 
 } }  // namespace bnb::interfaces

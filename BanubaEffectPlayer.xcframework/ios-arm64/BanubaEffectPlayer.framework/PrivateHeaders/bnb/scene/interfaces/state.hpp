@@ -18,17 +18,20 @@ struct state final {
     bool z_test;
     bool color_write;
     bool back_faces;
+    bool coverage;
 
     state(blending_mode blending_,
           bool z_write_,
           bool z_test_,
           bool color_write_,
-          bool back_faces_)
+          bool back_faces_,
+          bool coverage_)
     : blending(std::move(blending_))
     , z_write(std::move(z_write_))
     , z_test(std::move(z_test_))
     , color_write(std::move(color_write_))
     , back_faces(std::move(back_faces_))
+    , coverage(std::move(coverage_))
     {}
 };
 

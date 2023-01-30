@@ -7,7 +7,13 @@
 @class BNBFrxRecognitionResult;
 
 
-__attribute__((__visibility__("default"))) @interface BNBFrxRecognitionResult : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFrxRecognitionResult : NSObject
 
 + (nullable BNBFrxRecognitionResult *)create;
 
@@ -17,11 +23,7 @@ __attribute__((__visibility__("default"))) @interface BNBFrxRecognitionResult : 
 
 - (nonnull NSArray<NSNumber *> *)getTexCoords;
 
-- (void)setTexCoords:(nonnull NSArray<NSNumber *> *)texCoords;
-
 - (nonnull NSArray<NSNumber *> *)getTriangles;
-
-- (void)setTriangles:(nonnull NSArray<NSNumber *> *)triangles;
 
 - (nonnull BNBTransformableEvent *)getTransform;
 

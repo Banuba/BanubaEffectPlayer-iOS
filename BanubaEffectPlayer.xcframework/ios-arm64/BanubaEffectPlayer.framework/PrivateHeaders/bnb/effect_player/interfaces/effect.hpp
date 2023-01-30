@@ -48,10 +48,16 @@ public:
     virtual std::string eval_js_sync(const std::string & script) = 0;
 
     /**
-     * reset effect state
+     * Reset effect state
      * MUST be called from the render thread
      */
     virtual void reset() = 0;
+
+    /**
+     * Update effect state (evaluate scheduled JS calls)
+     * MUST be called from the render thread
+     */
+    virtual void update() = 0;
 
     /**
      * If effect is based on Scene engine and it is activated completly - returns Scene object from the effect.

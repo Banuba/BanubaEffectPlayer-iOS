@@ -5,7 +5,13 @@
 
 
 /** Information getters */
-__attribute__((__visibility__("default"))) @interface BNBRenderInfo : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBRenderInfo : NSObject
 
 /** Recognition engine version */
 + (int32_t)getFrxVersion;

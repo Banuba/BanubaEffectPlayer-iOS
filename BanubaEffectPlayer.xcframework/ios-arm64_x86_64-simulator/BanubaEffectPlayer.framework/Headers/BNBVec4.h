@@ -3,7 +3,13 @@
 
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBVec4 : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBVec4 : NSObject
 - (nonnull instancetype)initWithX:(float)x
                                 y:(float)y
                                 z:(float)z

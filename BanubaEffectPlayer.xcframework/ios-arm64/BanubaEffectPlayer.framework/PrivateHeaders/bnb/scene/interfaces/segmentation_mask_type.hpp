@@ -32,6 +32,7 @@ enum class segmentation_mask_type : int {
     l_brow,
     r_brow,
     nails,
+    face,
 };
 
 } }  // namespace bnb::interfaces

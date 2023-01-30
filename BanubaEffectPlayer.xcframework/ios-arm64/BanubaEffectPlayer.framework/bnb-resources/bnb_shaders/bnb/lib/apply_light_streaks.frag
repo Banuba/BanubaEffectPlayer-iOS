@@ -6,7 +6,7 @@ vec2 var_uv;
 
 void main()
 {
-    float streak = dot(BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), var_uv), vec4(1.));
+    float streak = dot(textureLod(BNB_SAMPLER_2D(s), var_uv, 0.), vec4(1.));
     if (streak < 1. / 255.)
         discard;
     vec3 color = light_streaks_color.rgb;

@@ -7,7 +7,13 @@
 
 
 /**Class, which repesent cubemap texture interface. Subclass of image */
-__attribute__((__visibility__("default"))) @interface BNBCubemap : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBCubemap : NSObject
 
 - (void)loadResource:(nullable BNBResource *)res;
 

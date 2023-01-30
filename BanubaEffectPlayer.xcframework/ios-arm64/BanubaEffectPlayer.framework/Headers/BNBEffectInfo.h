@@ -4,7 +4,13 @@
 #import "BNBFeatureId.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBEffectInfo : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEffectInfo : NSObject
 - (nonnull instancetype)initWithUrl:(nonnull NSString *)url
                  recognizerFeatures:(nonnull NSSet<NSNumber *> *)recognizerFeatures
                           usesAudio:(BOOL)usesAudio

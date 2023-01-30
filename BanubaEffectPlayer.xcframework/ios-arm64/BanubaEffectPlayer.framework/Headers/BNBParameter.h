@@ -11,7 +11,13 @@
 
 
 /**Class, represent shader parameter. */
-__attribute__((__visibility__("default"))) @interface BNBParameter : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBParameter : NSObject
 
 /**
  *Fabric method for parameter creating.

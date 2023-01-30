@@ -1,6 +1,6 @@
 #include <bnb/glsl.frag>
 
-BNB_CENTROID BNB_IN(0) vec2 var_c;
+centroid BNB_IN(0) vec2 var_c;
 
 void main()
 {

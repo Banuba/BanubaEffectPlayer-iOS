@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include "bnb/types/interfaces/size.hpp"
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
 #include <memory>
@@ -31,15 +32,6 @@ public:
      * Thread-safe. May be called from any thread
      */
     virtual void add_error_listener(const std::shared_ptr<error_listener> & error_listener) = 0;
-
-    /** Create empty effect. If working directory path is empty string then effect assumed as an in-memory effect. */
-    virtual std::shared_ptr<effect> create_effect(const std::string & work_dir) const = 0;
-
-    /**
-     * Set current effect.
-     * Thread-safe. May be called from any thread
-     */
-    virtual void set_current_effect(const std::shared_ptr<effect> & effect) = 0;
 
     /**
      * Remove callback to receive errors messages from Effect Player.
@@ -84,6 +76,15 @@ public:
      */
     virtual void remove_effect_activated_listener(const std::shared_ptr<effect_activated_listener> & effect_activated_listener) = 0;
 
+    /** Create empty effect. If working directory path is empty string then effect assumed as an in-memory effect. */
+    virtual std::shared_ptr<effect> create_effect(const std::string & work_dir) const = 0;
+
+    /**
+     * Set current effect.
+     * Thread-safe. May be called from any thread
+     */
+    virtual void set_current_effect(const std::shared_ptr<effect> & effect) = 0;
+
     /**
      * load and activate effect sync
      * MUST be called from the render thread
@@ -111,22 +112,29 @@ public:
     virtual void unload(const std::shared_ptr<effect> & effect) = 0;
 
     /**
-     * get active
+     * Get active effect
      * Thread-safe. May be called from any thread
      */
-    virtual std::shared_ptr<effect> current() = 0;
+    virtual std::shared_ptr<effect> current() const = 0;
 
     /**
-     * size in Mb, effects count
-     * Thread-safe. May be called from any thread
+     * Update effect loading state
+     * @param sync syncronize effect manager, block until effect loaded
+     * MUST be called from the render thread
      */
-    virtual void change_cache_quota(int32_t size, int32_t count) = 0;
+    virtual void update(bool sync) = 0;
 
     /**
-     * Forces cache reload on the next load/load_async call
+     * Get current effect size
      * Thread-safe. May be called from any thread
      */
-    virtual void force_cache_reload() = 0;
+    virtual ::bnb::interfaces::size effect_size() const = 0;
+
+    /**
+     * Get current surface size
+     * Thread-safe. May be called from any thread
+     */
+    virtual ::bnb::interfaces::size surface_size() const = 0;
 
     /**
      * Set effect audio volume.

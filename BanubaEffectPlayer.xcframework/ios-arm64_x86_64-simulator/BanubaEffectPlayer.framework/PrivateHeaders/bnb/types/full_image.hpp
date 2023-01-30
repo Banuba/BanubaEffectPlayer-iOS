@@ -160,6 +160,11 @@ namespace bnb
         static std::tuple<int, int, int> rgb_offsets(pixel_format_t fmt);
 
         /**
+         * @return Returns RGB pixel at position
+         */
+        std::tuple<uint8_t, uint8_t, uint8_t> rgb_pixel_at(uint32_t x, uint32_t y) const noexcept;
+
+        /**
          * Normalize image data if it is required to be mirrored or camera orientation isn't deg_0.
          */
         void normalize_orientation(bnb::transformation const& basis_transform, bnb::pixel_rect const& full_roi);
@@ -234,20 +239,17 @@ namespace bnb
                     switch (m_yuv_format.format) {
                         case yuv_format::yuv_nv12: {
                             BNB_THROW(std::invalid_argument, "yuv nv12 format has only 2 planes");
-                            return nullptr;
                         }
                         case yuv_format::yuv_i420: {
                             return m_planes[2];
                         }
                         default: {
                             BNB_THROW(std::invalid_argument, "Incorrect yuv format");
-                            return nullptr;
                         }
                     }
                 }
                 default: {
                     BNB_THROW(std::invalid_argument, "Incorrect index of plane");
-                    return nullptr;
                 }
             }
         };

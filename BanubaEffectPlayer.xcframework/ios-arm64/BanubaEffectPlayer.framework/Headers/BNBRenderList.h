@@ -12,7 +12,13 @@
  *Every task consist of entites layer to draw, render target in which draw, and optional
  *list of sub geomteries names. Cannot be changed after effect activation.
  */
-__attribute__((__visibility__("default"))) @interface BNBRenderList : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBRenderList : NSObject
 
 /**
  *Fabric method for render_list creating.

@@ -1,20 +1,7 @@
 #ifndef BNB_DECODE_INT1010102_GLSL
 #define BNB_DECODE_INT1010102_GLSL
 
-#ifdef BNB_GL_ES_1
-vec4 bnb_decode_int1010102(vec4 bytes)
-{
-    float ux = bytes[0] + mod(bytes[1], 4.) * 256.;
-    float uy = floor(bytes[1] / 4.) + mod(bytes[2], 16.) * 64.;
-    float uz = floor(bytes[2] / 16.) + mod(bytes[3], 64.) * 16.;
-    float uw = floor(bytes[3] / 64.);
-    float x = (ux <= 511. ? ux : ux - 1024.) / 511.;
-    float y = (uy <= 511. ? uy : uy - 1024.) / 511.;
-    float z = (uz <= 511. ? uz : uz - 1024.) / 511.;
-    float w = uw <= 1. ? uw : uw - 4.;
-    return vec4(x, y, z, w);
-}
-#elif defined(BNB_VK_1)
+#if defined(BNB_VK_1)
 vec4 bnb_decode_int1010102(uint u)
 {
     float ux = u & 1023u;

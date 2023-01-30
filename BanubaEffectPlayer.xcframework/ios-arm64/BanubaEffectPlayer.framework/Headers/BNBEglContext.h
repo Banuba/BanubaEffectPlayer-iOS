@@ -5,7 +5,13 @@
 @class BNBEglContext;
 
 
-__attribute__((__visibility__("default"))) @interface BNBEglContext : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEglContext : NSObject
 
 + (nullable BNBEglContext *)create:(int32_t)width
                             height:(int32_t)height;

@@ -11,7 +11,13 @@
 
 
 /**Base component class. */
-__attribute__((__visibility__("default"))) @interface BNBComponent : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBComponent : NSObject
 
 /**@return component type. Can be face_tracker, transformation, mesh_instance or face_morphing. */
 - (BNBComponentType)getComponentType;

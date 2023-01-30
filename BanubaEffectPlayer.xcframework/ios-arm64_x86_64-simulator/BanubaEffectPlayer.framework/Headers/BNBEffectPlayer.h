@@ -3,19 +3,18 @@
 
 #import "BNBCameraOrientation.h"
 #import "BNBConsistencyMode.h"
-#import "BNBEffectPlayerConfiguration.h"
 #import "BNBEffectPlayerPlaybackState.h"
-#import "BNBFaceSearchMode.h"
 #import "BNBFrameData.h"
 #import "BNBPixelBuffer.h"
 #import "BNBPixelFormat.h"
-#import "BNBPixelRect.h"
 #import "BNBProcessImageParams.h"
 #import "BNBRenderBackendType.h"
 #import "BanubaEffectPlayer/BNBFullImageData.h"
 #import <Foundation/Foundation.h>
 @class BNBEffectManager;
 @class BNBEffectPlayer;
+@class BNBEffectPlayerConfiguration;
+@class BNBFrameProcessor;
 @class BNBInputManager;
 @protocol BNBCameraPoiListener;
 @protocol BNBEffectActivationCompletionListener;
@@ -71,23 +70,15 @@
  *   <br/> - "Camera" thread for handling and push()-ing frames into EffectPlayer
  *   <br/> - UI Thread for handling user interactions and other tasks
  */
-__attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
 
-+ (nullable BNBEffectPlayer *)create:(nonnull BNBEffectPlayerConfiguration *)configuration;
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
 
-/**
- * Get major version of EffectPlayer. Use this method to filter out breaking changes in
- * implementation of this class.
- * @note this is not version of SDK.
- * @see EffectPlayer.versionMinor
- */
-+ (int32_t)versionMajor;
+DJINNI_EXPORT
+@interface BNBEffectPlayer : NSObject
 
-/**
- * Get minor version of EffectPlayer
- * @see EffectPlayer.versionMajor
- */
-+ (int32_t)versionMinor;
++ (nullable BNBEffectPlayer *)create:(nullable BNBEffectPlayerConfiguration *)configuration;
 
 /**
  * Add callback to receive FPS information.
@@ -259,19 +250,6 @@ __attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
 - (void)setRenderConsistencyMode:(BNBConsistencyMode)value;
 
 /**
- * Request display of sub-area of the input image into sub-area of the output surface, with optional x,y flips
- * imageRect is fitted inside viewportRect
- * Resets transform to default if either rect has 0 dimensions
- * @param imageRect rectangle in input image coordinates(pixels) after applying input rotations and flips
- * @param viewportRect rectangle in output surface coordinates(pixels)
- * MUST be called from the render thread
- */
-- (void)setRenderTransform:(nonnull BNBPixelRect *)imageRect
-              viewportRect:(nonnull BNBPixelRect *)viewportRect
-                     xFlip:(BOOL)xFlip
-                     yFlip:(BOOL)yFlip;
-
-/**
  * Process an image with current effect.
  *
  * Must be called from the render thread.
@@ -342,7 +320,7 @@ __attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
  * Thread-safe. May be called from any thread
  */
 - (void)pushFrameDataWithNumber:(nullable BNBFrameData *)frameData
-                    frameNumber:(int32_t)frameNumber;
+                    frameNumber:(int64_t)frameNumber;
 
 /** MUST be called from the main(render) thread */
 - (void)playbackPlay;
@@ -353,9 +331,6 @@ __attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
 
 /** Thread-safe. May be called from any thread */
 - (BNBEffectPlayerPlaybackState)getPlaybackState;
-
-/** Set audio enabled */
-- (void)enableAudio:(BOOL)enable;
 
 /**
  * Get interface to control user iterations. This events will be passed to effect.
@@ -453,13 +428,6 @@ __attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
 - (void)onVideoRecordEnd;
 
 /**
- * Check is device compatible with Neural Networks player
- * Thread-safe. May be called from any thread
- * On some platforms (e.g. Android) may require the first invocation to be on the render thread
- */
-- (BOOL)isDeviceNnCompatible;
-
-/**
  * Get effect manager object
  * Thread-safe. May be called from any thread
  */
@@ -478,20 +446,20 @@ __attribute__((__visibility__("default"))) @interface BNBEffectPlayer : NSObject
  */
 - (void)setRecognizerUseFutureFilter:(BOOL)on;
 
+/**
+ * Set frame processor as current
+ * Thread-safe. May be called from any thread
+ */
+- (void)setFrameProcessor:(nullable BNBFrameProcessor *)processor;
+
+/**
+ * Get current frame processor
+ * Thread-safe. May be called from any thread
+ */
+- (nullable BNBFrameProcessor *)frameProcessor;
+
 + (void)setRenderBackend:(BNBRenderBackendType)backendType;
 
 + (BNBRenderBackendType)getCurrentRenderBackendType;
-
-/**
- * Change face search mode
- * Thread-safe. May be called from any thread
- */
-- (void)setFaceSearchMode:(BNBFaceSearchMode)faceSearch;
-
-/**
- * process pushed frame, if available (for syncronous recognizer mode)
- * return true if frame was processed
- */
-- (BOOL)recognizerProcessFromBuffer;
 
 @end

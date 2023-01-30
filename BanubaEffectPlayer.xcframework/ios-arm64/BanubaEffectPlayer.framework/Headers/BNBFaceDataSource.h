@@ -6,4 +6,5 @@
 typedef NS_ENUM(NSInteger, BNBFaceDataSource)
 {
     BNBFaceDataSourceArKit,
+    BNBFaceDataSourceRnd,
 };

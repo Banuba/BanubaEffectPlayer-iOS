@@ -6,7 +6,13 @@
 @class BNBResource;
 
 
-__attribute__((__visibility__("default"))) @interface BNBWeightedLut : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBWeightedLut : NSObject
 
 - (void)loadResource:(nullable BNBResource *)res;
 

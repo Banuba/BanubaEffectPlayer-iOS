@@ -7,7 +7,13 @@
 
 
 /**Class, which repesent neural networks segmentation mask texture interface. Subclass of image */
-__attribute__((__visibility__("default"))) @interface BNBSegmentationMask : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBSegmentationMask : NSObject
 
 /**@return segmentation mask type. Can be background, hair, skin, lips, l_eye, r_eye. */
 - (BNBSegmentationMaskType)getMaskType;

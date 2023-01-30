@@ -4,7 +4,13 @@
 #import "BNBActionUnits.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBActionUnitsData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBActionUnitsData : NSObject
 - (nonnull instancetype)initWithFaces:(nonnull NSArray<BNBActionUnits *> *)faces;
 + (nonnull instancetype)actionUnitsDataWithFaces:(nonnull NSArray<BNBActionUnits *> *)faces;
 

@@ -5,7 +5,13 @@
 
 
 /**class which is controller for beauty morphing update. Subclass of face_morphing. */
-__attribute__((__visibility__("default"))) @interface BNBBeautyMorphing : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBBeautyMorphing : NSObject
 
 /**
  *Sets face morphing weight.

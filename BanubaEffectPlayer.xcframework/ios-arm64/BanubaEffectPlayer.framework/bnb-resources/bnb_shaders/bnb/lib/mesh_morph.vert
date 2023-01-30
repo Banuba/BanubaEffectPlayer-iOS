@@ -1,37 +1,21 @@
 #include <bnb/glsl.vert>
 
-BNB_LAYOUT_LOCATION(0)
-BNB_IN vec3 attrib_pos;
-
+layout(location = 0) in vec3 attrib_pos;
 #if defined(BNB_VK_1)
-BNB_LAYOUT_LOCATION(1)
-BNB_IN uint attrib_n;
-BNB_LAYOUT_LOCATION(2)
-BNB_IN uint attrib_t;
+layout(location = 1) in uint attrib_n;
+layout(location = 2) in uint attrib_t;
 #else
-BNB_LAYOUT_LOCATION(1)
-BNB_IN vec4 attrib_n;
-BNB_LAYOUT_LOCATION(2)
-BNB_IN vec4 attrib_t;
+layout(location = 1) in vec4 attrib_n;
+layout(location = 2) in vec4 attrib_t;
 #endif
-
-BNB_LAYOUT_LOCATION(3)
-BNB_IN vec2 attrib_uv;
-
-#if defined(BNB_GL_ES_3) || defined(BNB_VK_1)
-BNB_LAYOUT_LOCATION(4)
-BNB_IN uvec4 attrib_bones;
-#else
-BNB_LAYOUT_LOCATION(4)
-BNB_IN vec4 attrib_bones;
-#endif
-BNB_LAYOUT_LOCATION(5)
-BNB_IN vec4 attrib_weights;
+layout(location = 3) in vec2 attrib_uv;
+layout(location = 4) in uvec4 attrib_bones;
+layout(location = 5) in vec4 attrib_weights;
 
 BNB_DECLARE_SAMPLER_2D(0, 1, bnb_UVMORPH);
 BNB_DECLARE_SAMPLER_2D(2, 3, bnb_STATICPOS);
 
-BNB_CENTROID BNB_OUT(0) vec2 var_c;
+centroid BNB_OUT(0) vec2 var_c;
 
 void main()
 {
@@ -50,7 +34,7 @@ void main()
     vec4 npush_scale = vec4(NPUSH * float(i) / float(EXPAND_PASSES), scale * 0.5 * MORPH_WEIGHT, (d1 - d0) * 0.5, (d0 + d1) * 0.5);
 #endif
     const float max_range = 40.;
-    vec3 translation = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_UVMORPH), smoothstep(0., 1., attrib_uv)).xyz * (2. * max_range) - max_range;
+    vec3 translation = textureLod(BNB_SAMPLER_2D(bnb_UVMORPH), smoothstep(0., 1., attrib_uv), 0.).xyz * (2. * max_range) - max_range;
     vec3 vpos = attrib_pos + translation;
 
     gl_Position = bnb_MVP * vec4(vpos * (1. + npush_scale.x / length(vpos)), 1.);
@@ -58,10 +42,10 @@ void main()
 
     vec4 pos_no_push = bnb_MVP * vec4(vpos, 1.);
     vec2 uv = attrib_uv;
-#if defined(BNB_GL_ES_3) || defined(BNB_GL) || defined(BNB_GL_ES_1)
+#ifndef BNB_VK_1
     uv.y = 1.0 - uv.y;
 #endif
-    vec3 static_pos = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_STATICPOS), uv).xyz;
+    vec3 static_pos = textureLod(BNB_SAMPLER_2D(bnb_STATICPOS), uv, 0.).xyz;
     vec4 original_pos = bnb_MVP * vec4(static_pos + translation, 1.);
     var_c = npush_scale.y * (original_pos.xy / original_pos.w - pos_no_push.xy / pos_no_push.w);
 }

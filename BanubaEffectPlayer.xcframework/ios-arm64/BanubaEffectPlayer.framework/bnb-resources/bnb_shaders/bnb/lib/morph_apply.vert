@@ -1,7 +1,6 @@
 #include <bnb/glsl.vert>
 
-BNB_LAYOUT_LOCATION(0)
-BNB_IN vec2 attrib_v;
+layout(location = 0) in vec2 attrib_v;
 
 BNB_DECLARE_SAMPLER_2D(0, 1, tex_warp);
 
@@ -21,24 +20,24 @@ void main()
 #endif
 
     float bottom_margin = 0.;
-    bottom_margin = max(bottom_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.25, bottom_coord)).y);
-    bottom_margin = max(bottom_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.50, bottom_coord)).y);
-    bottom_margin = max(bottom_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.75, bottom_coord)).y);
+    bottom_margin = max(bottom_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.25, bottom_coord), 0.).y);
+    bottom_margin = max(bottom_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.50, bottom_coord), 0.).y);
+    bottom_margin = max(bottom_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.75, bottom_coord), 0.).y);
 
     float top_margin = 0.;
-    top_margin = max(top_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.25, top_coord)).y);
-    top_margin = max(top_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.50, top_coord)).y);
-    top_margin = max(top_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0.75, top_coord)).y);
+    top_margin = max(top_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.25, top_coord), 0.).y);
+    top_margin = max(top_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.50, top_coord), 0.).y);
+    top_margin = max(top_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0.75, top_coord), 0.).y);
 
     float left_margin = 0.;
-    left_margin = max(left_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.25)).x);
-    left_margin = max(left_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.50)).x);
-    left_margin = max(left_margin, -BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.75)).x);
+    left_margin = max(left_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.25), 0.).x);
+    left_margin = max(left_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.50), 0.).x);
+    left_margin = max(left_margin, -textureLod(BNB_SAMPLER_2D(tex_warp), vec2(0., 0.75), 0.).x);
 
     float right_margin = 0.;
-    right_margin = max(right_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.25)).x);
-    right_margin = max(right_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.50)).x);
-    right_margin = max(right_margin, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.75)).x);
+    right_margin = max(right_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.25), 0.).x);
+    right_margin = max(right_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.50), 0.).x);
+    right_margin = max(right_margin, textureLod(BNB_SAMPLER_2D(tex_warp), vec2(1., 0.75), 0.).x);
 
     float size_x = 1. - left_margin - right_margin;
     float size_y = 1. - bottom_margin - top_margin;

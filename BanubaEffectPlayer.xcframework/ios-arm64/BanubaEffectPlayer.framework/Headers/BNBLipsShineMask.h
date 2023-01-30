@@ -4,7 +4,13 @@
 #import "BNBTransformedMaskByte.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBLipsShineMask : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBLipsShineMask : NSObject
 - (nonnull instancetype)initWithMeta:(nonnull BNBTransformedMaskByte *)meta
                                 vMin:(float)vMin
                                 vMax:(float)vMax;

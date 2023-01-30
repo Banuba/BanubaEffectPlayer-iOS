@@ -9,7 +9,13 @@
  * The interface required for the correct closing of java image,
  * after pointers of the image planes have been freed on the cpp side.
  */
-__attribute__((__visibility__("default"))) @interface BNBImageReleaser : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBImageReleaser : NSObject
 
 /**
  * Increments the reference count by 1 for an interface pointer to a object.

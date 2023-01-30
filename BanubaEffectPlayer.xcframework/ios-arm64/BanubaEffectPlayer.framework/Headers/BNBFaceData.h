@@ -7,7 +7,13 @@
 @class BNBFaceData;
 
 
-__attribute__((__visibility__("default"))) @interface BNBFaceData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFaceData : NSObject
 
 + (nullable BNBFaceData *)create;
 

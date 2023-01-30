@@ -20,11 +20,16 @@
 #include <bnb/effect_player/interfaces/face_number_listener.hpp>
 #include <bnb/effect_player/interfaces/frame_data_listener.hpp>
 #include <bnb/effect_player/interfaces/frame_duration_listener.hpp>
+#include <bnb/effect_player/interfaces/frame_processor.hpp>
 #include <bnb/effect_player/interfaces/hint_listener.hpp>
 #include <bnb/effect_player/interfaces/input_manager.hpp>
 #include <bnb/effect_player/interfaces/js_callback.hpp>
 #include <bnb/effect_player/interfaces/low_light_listener.hpp>
-#include <bnb/effect_player/interfaces/nn_mode.hpp>
 #include <bnb/effect_player/interfaces/process_image_params.hpp>
+#include <bnb/effect_player/interfaces/processor_configuration.hpp>
+#include <bnb/effect_player/interfaces/processor_result.hpp>
+#include <bnb/effect_player/interfaces/processor_status.hpp>
+#include <bnb/effect_player/interfaces/processor_type.hpp>
+#include <bnb/effect_player/interfaces/realtime_processor_mode.hpp>
 #include <bnb/effect_player/interfaces/surface_data.hpp>
 #include <bnb/effect_player/interfaces/types.hpp>

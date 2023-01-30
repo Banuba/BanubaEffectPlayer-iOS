@@ -9,7 +9,13 @@
  *A container for entities, which is needed for explicit grouping entities in order in which they will be sent to render.
  *All morph entities must lay on the same layer.
  */
-__attribute__((__visibility__("default"))) @interface BNBLayer : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBLayer : NSObject
 
 /**
  *Fabric method for layer creating.

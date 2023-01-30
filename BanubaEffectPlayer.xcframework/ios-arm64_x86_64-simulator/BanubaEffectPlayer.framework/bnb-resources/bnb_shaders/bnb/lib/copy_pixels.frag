@@ -7,5 +7,5 @@ BNB_DECLARE_SAMPLER_2D(0, 1, tex_src);
 
 void main()
 {
-    bnb_FragColor = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_src), var_uv);
+    bnb_FragColor = textureLod(BNB_SAMPLER_2D(tex_src), var_uv, 0.);
 }

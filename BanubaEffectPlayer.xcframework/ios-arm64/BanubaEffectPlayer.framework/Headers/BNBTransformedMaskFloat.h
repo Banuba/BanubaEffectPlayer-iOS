@@ -4,7 +4,13 @@
 #import "BNBTransformedMask.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBTransformedMaskFloat : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTransformedMaskFloat : NSObject
 - (nonnull instancetype)initWithMeta:(nonnull BNBTransformedMask *)meta
                                 mask:(nonnull NSArray<NSNumber *> *)mask;
 + (nonnull instancetype)transformedMaskFloatWithMeta:(nonnull BNBTransformedMask *)meta

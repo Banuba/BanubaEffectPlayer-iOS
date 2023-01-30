@@ -10,7 +10,13 @@
 
 
 /**class which is the container for morphind and update it's resources. Subclass of component. */
-__attribute__((__visibility__("default"))) @interface BNBFaceMorphing : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFaceMorphing : NSObject
 
 /**
  *Fabric method for face_morphing creating.

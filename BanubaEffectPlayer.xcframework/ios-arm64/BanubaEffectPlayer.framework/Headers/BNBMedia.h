@@ -5,7 +5,13 @@
 
 
 /**Base class, represents media files handling. */
-__attribute__((__visibility__("default"))) @interface BNBMedia : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBMedia : NSObject
 
 /**
  *set playback start position.

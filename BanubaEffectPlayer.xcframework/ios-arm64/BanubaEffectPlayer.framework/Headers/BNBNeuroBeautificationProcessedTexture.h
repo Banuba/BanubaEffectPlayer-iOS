@@ -5,7 +5,13 @@
 
 
 /** Class, which provide neural beautification algorithms adjust interface. */
-__attribute__((__visibility__("default"))) @interface BNBNeuroBeautificationProcessedTexture : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBNeuroBeautificationProcessedTexture : NSObject
 
 /** Receive map with neural beautification parameters. */
 - (void)setParameters:(nonnull NSDictionary<NSString *, NSString *> *)parameters;

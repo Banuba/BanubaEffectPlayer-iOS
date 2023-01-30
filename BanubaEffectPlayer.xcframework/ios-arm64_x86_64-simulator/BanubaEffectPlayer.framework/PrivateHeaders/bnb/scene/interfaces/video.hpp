@@ -17,6 +17,7 @@ namespace bnb { namespace interfaces {
 class image;
 class media;
 class video_loading_result_listener;
+enum class texture_filtering_mode;
 
 /**Class, represents video texture interface. Subclass of image, also subclass of media. */
 class BNB_EXPORT video {
@@ -52,6 +53,15 @@ public:
 
     /** Video own rotation angle */
     virtual float get_rotation_angle() = 0;
+
+    /**
+     *set gpu video texture filtering mode
+     *param mode (texture_filtering_mode)
+     */
+    virtual void set_filtering_mode(texture_filtering_mode value) = 0;
+
+    /**@return filtering mode (texture_filtering_mode) */
+    virtual texture_filtering_mode get_filtering_mode() const = 0;
 };
 
 } }  // namespace bnb::interfaces

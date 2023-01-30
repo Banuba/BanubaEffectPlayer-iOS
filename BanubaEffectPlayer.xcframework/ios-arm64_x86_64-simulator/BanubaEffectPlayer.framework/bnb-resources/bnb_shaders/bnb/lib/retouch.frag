@@ -27,10 +27,10 @@ vec3 sharpen(vec3 originalColor, float factor)
     const float dy = 1.0 / 1280.0;
 
     vec3 total = 5.0 * originalColor
-                 - BNB_TEXTURE_2D_LOD(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w - dy), 0.).xyz
-                 - BNB_TEXTURE_2D_LOD(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w - dy), 0.).xyz
-                 - BNB_TEXTURE_2D_LOD(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w + dy), 0.).xyz
-                 - BNB_TEXTURE_2D_LOD(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w + dy), 0.).xyz;
+                 - textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w - dy), 0.).xyz
+                 - textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w - dy), 0.).xyz
+                 - textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w + dy), 0.).xyz
+                 - textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w + dy), 0.).xyz;
 
     vec3 result = mix(originalColor, total, factor);
     return clamp(result, 0.0, 1.0);
@@ -44,10 +44,10 @@ vec3 softSkin(vec3 originalColor, float factor)
     const float dx = 4.5 / 960.0;
     const float dy = 4.5 / 1280.0;
 
-    vec3 nextColor0 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w - dy)).xyz;
-    vec3 nextColor1 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w - dy)).xyz;
-    vec3 nextColor2 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w + dy)).xyz;
-    vec3 nextColor3 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w + dy)).xyz;
+    vec3 nextColor0 = textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w - dy), 0.).xyz;
+    vec3 nextColor1 = textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w - dy), 0.).xyz;
+    vec3 nextColor2 = textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z - dx, var_uv_bg_uv.w + dy), 0.).xyz;
+    vec3 nextColor3 = textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), vec2(var_uv_bg_uv.z + dx, var_uv_bg_uv.w + dy), 0.).xyz;
 
     float intensity = screenColor.g;
     vec4 nextIntensity = vec4(nextColor0.g, nextColor1.g, nextColor2.g, nextColor3.g);
@@ -78,7 +78,7 @@ vec3 blendSoftLight(vec3 base, vec3 blend)
 
 void main()
 {
-    vec3 res = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_BACKGROUND), var_uv_bg_uv.zw).xyz;
+    vec3 res = textureLod(BNB_SAMPLER_2D(bnb_BACKGROUND), var_uv_bg_uv.zw, 0.).xyz;
     res = softSkin(res, maskColor.r * skinSoftIntensity.x);
 
     if (maskColor.g > 1. / 255.) {
@@ -91,8 +91,8 @@ void main()
     res = sharpen(res, maskColor.b * eyesSharpenIntensity.x);
     res = whitening(res, maskColor.b * eyesWhiteningCoeff.x, BNB_PASS_SAMPLER_ARGUMENT(lookupTexEyes));
     vec2 uvh = vec2(abs(2.0 * (var_uv_bg_uv.x - 0.5)), var_uv_bg_uv.y);
-    res.xyz = blendSoftLight(res.xyz, BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_softLight), uvh).xyz);
-    vec4 makeup2 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_normalMakeup), var_uv_bg_uv.xy);
+    res.xyz = blendSoftLight(res.xyz, texture(BNB_SAMPLER_2D(tex_softLight), uvh).xyz);
+    vec4 makeup2 = texture(BNB_SAMPLER_2D(tex_normalMakeup), var_uv_bg_uv.xy);
     res.xyz = mix(res.xyz, makeup2.xyz, makeup2.w);
 
     bnb_FragColor = vec4(res, 1.);

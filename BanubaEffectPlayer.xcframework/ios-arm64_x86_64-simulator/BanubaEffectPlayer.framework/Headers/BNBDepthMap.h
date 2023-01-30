@@ -4,7 +4,13 @@
 #import <Foundation/Foundation.h>
 
 /** Results from depth camera */
-__attribute__((__visibility__("default"))) @interface BNBDepthMap : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBDepthMap : NSObject
 - (nonnull instancetype)initWithDepthData:(nonnull NSData *)depthData
                             depthMapWidth:(int32_t)depthMapWidth
                            depthMapHeight:(int32_t)depthMapHeight;

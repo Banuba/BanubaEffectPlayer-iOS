@@ -25,6 +25,7 @@
 #include <bnb/types/interfaces/pixel_rect.hpp>
 #include <bnb/types/interfaces/point2d.hpp>
 #include <bnb/types/interfaces/rotation.hpp>
+#include <bnb/types/interfaces/size.hpp>
 #include <bnb/types/interfaces/touch.hpp>
 #include <bnb/types/interfaces/transformable_event.hpp>
 #include <bnb/types/interfaces/transformation.hpp>

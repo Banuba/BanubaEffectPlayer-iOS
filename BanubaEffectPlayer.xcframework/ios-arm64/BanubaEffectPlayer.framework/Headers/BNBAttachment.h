@@ -11,7 +11,13 @@
 
 
 /**Class, represents render target attachment. Subclass of image */
-__attribute__((__visibility__("default"))) @interface BNBAttachment : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBAttachment : NSObject
 
 /**@return attachment type (attachment_type). Can be color, or depth */
 - (BNBAttachmentType)getAttachmentType;

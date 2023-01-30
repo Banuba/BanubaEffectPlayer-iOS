@@ -29,11 +29,7 @@ public:
 
     virtual std::vector<float> get_tex_coords() = 0;
 
-    virtual void set_tex_coords(const std::vector<float> & tex_coords) = 0;
-
     virtual std::vector<int32_t> get_triangles() = 0;
-
-    virtual void set_triangles(const std::vector<int32_t> & triangles) = 0;
 
     virtual transformable_event get_transform() = 0;
 

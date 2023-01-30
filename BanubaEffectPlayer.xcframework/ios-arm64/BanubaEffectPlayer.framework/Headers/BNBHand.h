@@ -6,7 +6,13 @@
 @class BNBMesh;
 
 
-__attribute__((__visibility__("default"))) @interface BNBHand : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBHand : NSObject
 
 /**@return hand name (string) */
 - (nonnull NSString *)getName;

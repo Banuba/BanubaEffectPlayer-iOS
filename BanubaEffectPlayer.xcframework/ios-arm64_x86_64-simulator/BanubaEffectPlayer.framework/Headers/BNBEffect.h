@@ -6,7 +6,13 @@
 @protocol BNBJsCallback;
 
 
-__attribute__((__visibility__("default"))) @interface BNBEffect : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEffect : NSObject
 
 /** Thread-safe. May be called from any thread */
 - (nonnull NSString *)url;
@@ -37,10 +43,16 @@ resultCallback:(nullable id<BNBJsCallback>)resultCallback;
 - (nonnull NSString *)evalJsSync:(nonnull NSString *)script;
 
 /**
- * reset effect state
+ * Reset effect state
  * MUST be called from the render thread
  */
 - (void)reset;
+
+/**
+ * Update effect state (evaluate scheduled JS calls)
+ * MUST be called from the render thread
+ */
+- (void)update;
 
 /**
  * If effect is based on Scene engine and it is activated completly - returns Scene object from the effect.

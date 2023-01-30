@@ -43,9 +43,9 @@ void main()
         uv2m[1] -= o2;
     }
 
-    vec2 o_blurred = s0 * BNB_TEXTURE_2D(BNB_SAMPLER_2D(s_color_source), var_uv).xy
-                     + s1 * (BNB_TEXTURE_2D(BNB_SAMPLER_2D(s_color_source), uv1p).xy + BNB_TEXTURE_2D(BNB_SAMPLER_2D(s_color_source), uv1m).xy)
-                     + s2 * (BNB_TEXTURE_2D(BNB_SAMPLER_2D(s_color_source), uv2p).xy + BNB_TEXTURE_2D(BNB_SAMPLER_2D(s_color_source), uv2m).xy);
+    vec2 o_blurred = s0 * textureLod(BNB_SAMPLER_2D(s_color_source), var_uv, 0.).xy
+                     + s1 * (textureLod(BNB_SAMPLER_2D(s_color_source), uv1p, 0.).xy + textureLod(BNB_SAMPLER_2D(s_color_source), uv1m, 0.).xy)
+                     + s2 * (textureLod(BNB_SAMPLER_2D(s_color_source), uv2p, 0.).xy + textureLod(BNB_SAMPLER_2D(s_color_source), uv2m, 0.).xy);
 
     bnb_FragColor = vec4(o_blurred, 0, 1.);
 }

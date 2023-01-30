@@ -4,7 +4,13 @@
 #import "BNBPixelFormat.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBPixelBuffer : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBPixelBuffer : NSObject
 - (nonnull instancetype)initWithData:(nonnull NSData *)data
                               format:(BNBPixelFormat)format
                                width:(int32_t)width

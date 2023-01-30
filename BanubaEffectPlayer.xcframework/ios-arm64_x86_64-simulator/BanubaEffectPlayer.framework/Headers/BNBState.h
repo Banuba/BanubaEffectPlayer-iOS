@@ -4,17 +4,25 @@
 #import "BNBBlendingMode.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBState : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBState : NSObject
 - (nonnull instancetype)initWithBlending:(BNBBlendingMode)blending
                                   zWrite:(BOOL)zWrite
                                    zTest:(BOOL)zTest
                               colorWrite:(BOOL)colorWrite
-                               backFaces:(BOOL)backFaces;
+                               backFaces:(BOOL)backFaces
+                                coverage:(BOOL)coverage;
 + (nonnull instancetype)stateWithBlending:(BNBBlendingMode)blending
                                    zWrite:(BOOL)zWrite
                                     zTest:(BOOL)zTest
                                colorWrite:(BOOL)colorWrite
-                                backFaces:(BOOL)backFaces;
+                                backFaces:(BOOL)backFaces
+                                 coverage:(BOOL)coverage;
 
 @property (nonatomic, readonly) BNBBlendingMode blending;
 
@@ -25,5 +33,7 @@ __attribute__((__visibility__("default"))) @interface BNBState : NSObject
 @property (nonatomic, readonly) BOOL colorWrite;
 
 @property (nonatomic, readonly) BOOL backFaces;
+
+@property (nonatomic, readonly) BOOL coverage;
 
 @end

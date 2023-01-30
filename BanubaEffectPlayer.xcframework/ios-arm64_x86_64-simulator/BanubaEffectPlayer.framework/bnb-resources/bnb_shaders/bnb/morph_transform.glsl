@@ -19,7 +19,7 @@ vec3 bnb_auto_morph(vec3 v)
         #ifdef BNB_VK_1
     morph_uv.y = 1. - morph_uv.y;
         #endif
-    vec3 translation = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_MORPH), morph_uv).xyz;
+    vec3 translation = textureLod(BNB_SAMPLER_2D(bnb_MORPH), morph_uv, 0.).xyz;
     return v + translation;
 }
     #else
@@ -29,7 +29,7 @@ vec3 bnb_auto_morph_bone(vec3 v, mat4 m)
         #ifdef BNB_VK_1
     morph_uv.y = 1. - morph_uv.y;
         #endif
-    vec3 translation = BNB_TEXTURE_2D(BNB_SAMPLER_2D(bnb_MORPH), morph_uv).xyz;
+    vec3 translation = textureLod(BNB_SAMPLER_2D(bnb_MORPH), morph_uv, 0.).xyz;
     return v + translation;
 }
     #endif // BNB_AUTOMORPH_BONE

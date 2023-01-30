@@ -3,18 +3,12 @@
 
 #include <bnb/utils/defs.hpp>
 
-#if BNB_OS_WINDOWS || BNB_OS_EMSCRIPTEN
-    #include <filesystem>
-#else
-    #include <boost/filesystem.hpp>
-#endif
+#include <filesystem>
 
 // we can't pollute global namespace in header
 namespace bnb
 {
-#if BNB_OS_WINDOWS
     namespace fs = std::filesystem;
-
     using error_code = std::error_code;
     using file_time_type = std::filesystem::file_time_type;
 
@@ -23,6 +17,7 @@ namespace bnb
         return p.replace_extension(std::string(".") + ext);
     }
 
+#if BNB_OS_WINDOWS
     inline std::string path_to_utf8(const fs::path& p)
     {
         return std::string(reinterpret_cast<const char*>(p.generic_u8string().c_str()));
@@ -32,37 +27,7 @@ namespace bnb
     {
         return fs::path(reinterpret_cast<const char8_t*>(s.c_str()));
     }
-#elif BNB_OS_EMSCRIPTEN
-    namespace fs = std::filesystem;
-
-    using error_code = std::error_code;
-    using file_time_type = std::filesystem::file_time_type;
-
-    inline fs::path replace_extension(fs::path p, const std::string& ext)
-    {
-        return p.replace_extension(std::string(".") + ext);
-    }
-
-    inline std::string path_to_utf8(const fs::path& p)
-    {
-        return p.string();
-    }
-
-    inline fs::path utf8_to_path(const std::string& s)
-    {
-        return fs::path(s);
-    }
 #else
-    namespace fs = boost::filesystem;
-
-    using error_code = boost::system::error_code;
-    using file_time_type = std::time_t;
-
-    inline fs::path replace_extension(const fs::path& p, const std::string& ext)
-    {
-        return fs::change_extension(p, ext);
-    }
-
     inline std::string path_to_utf8(const fs::path& p)
     {
         return p.generic_string();
@@ -72,7 +37,16 @@ namespace bnb
     {
         return fs::path(s);
     }
-#endif
+#endif /* #if BNB_OS_WINDOWS */
+
+    inline std::string remove_trailing_separator(std::string strpath)
+    {
+        if (!strpath.empty() && (fs::path::preferred_separator == strpath[strpath.size() - 1])) {
+            strpath.erase(strpath.size() - 1);
+        }
+        return strpath;
+    }
+
     template<typename... T>
     bool match_extesions(const fs::path& path, T&&... extensions)
     {

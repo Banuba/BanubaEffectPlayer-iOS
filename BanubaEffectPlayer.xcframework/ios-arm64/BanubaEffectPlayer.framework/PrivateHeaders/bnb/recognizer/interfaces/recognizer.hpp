@@ -11,13 +11,11 @@
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
 #include <memory>
-#include <optional>
 #include <unordered_set>
 
 namespace bnb { namespace interfaces {
 
 class feature;
-enum class face_search_mode;
 enum class feature_id;
 enum class recognizer_mode;
 
@@ -25,15 +23,7 @@ class BNB_EXPORT recognizer {
 public:
     virtual ~recognizer() {}
 
-    /**
-     * @param max_tokens If greater than 0: recognizer will run processing on push-ed() frame only if it can "consume" a token -
-     *                   and will wait for the token to become available if all max_tokens tokens have been used up.
-     *                   Consumed tokens are "produced" again one-by-one when pop-ping() processed frame(s).
-     *                   This mode prevents processing frames more often than a consumer(e.g. renderer) can use:
-     *                   potentially reducing energy consumption at the cost of higher latency.
-     *                   Only for asynchronous mode.
-     */
-    static std::shared_ptr<recognizer> create(recognizer_mode mode, std::optional<int32_t> max_tokens);
+    static std::shared_ptr<recognizer> create(recognizer_mode mode);
 
     static int64_t get_feature_id(feature_id feature);
 
@@ -41,7 +31,7 @@ public:
 
     virtual void set_features(const std::unordered_set<feature_id> & features) = 0;
 
-    virtual void add_feature(const std::shared_ptr<feature> & feature, const std::unordered_set<feature_id> & dependencies, bool needs_gpu) = 0;
+    virtual void add_feature(const std::shared_ptr<feature> & feature, const std::unordered_set<feature_id> & dependencies) = 0;
 
     virtual void remove_feature(const std::shared_ptr<feature> & feature) = 0;
 
@@ -58,25 +48,7 @@ public:
      */
     virtual void set_use_future_filter(bool on) = 0;
 
-    /**
-     * Set flag which enable NN's features. True by default, if device compatible with NN player
-     * When this flag is false, recognizer will skip NN-dependent features during set_features call.
-     * In case when device have no NN player support (is_device_nn_compatible return false),
-     * setting enable to true have no any effect
-     */
-    virtual void set_nn_enable(bool enable) = 0;
-
-    virtual bool get_nn_enable() const = 0;
-
-    /** Check if device compatible with NN player. */
-    virtual bool is_device_nn_compatible() = 0;
-
-    /** Clear pipeline state and set face search mode */
-    virtual void set_face_search_mode(face_search_mode mode) = 0;
-
     virtual void process(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data) = 0;
-
-    virtual bool process_from_buffer() = 0;
 
     virtual void push_camera_frame(const std::shared_ptr<::bnb::interfaces::frame_data> & input_frame_data) = 0;
 

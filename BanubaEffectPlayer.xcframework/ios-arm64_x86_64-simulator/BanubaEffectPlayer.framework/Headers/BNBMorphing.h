@@ -7,7 +7,13 @@
 
 
 /**Class, represents morphing resources */
-__attribute__((__visibility__("default"))) @interface BNBMorphing : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBMorphing : NSObject
 
 /**@return morphing type (morphing_type) */
 - (BNBMorphingType)getType;

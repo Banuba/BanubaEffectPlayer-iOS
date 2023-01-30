@@ -5,7 +5,13 @@
 
 
 /**Class, represents 3D mesh interface */
-__attribute__((__visibility__("default"))) @interface BNBMesh : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBMesh : NSObject
 
 /**@return mesh name (string) */
 - (nonnull NSString *)getName;

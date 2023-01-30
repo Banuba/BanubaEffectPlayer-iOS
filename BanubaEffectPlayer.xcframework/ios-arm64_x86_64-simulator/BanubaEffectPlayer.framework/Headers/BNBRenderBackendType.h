@@ -6,6 +6,5 @@
 typedef NS_ENUM(NSInteger, BNBRenderBackendType)
 {
     BNBRenderBackendTypeOpengl,
-    BNBRenderBackendTypeWebgl1,
     BNBRenderBackendTypeMetal,
 };

@@ -10,7 +10,13 @@
  *
  * Key in each map is id of an event.
  */
-__attribute__((__visibility__("default"))) @interface BNBInputManager : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBInputManager : NSObject
 
 - (void)onTouchesBegan:(nonnull NSDictionary<NSNumber *, BNBTouch *> *)tocuhes;
 

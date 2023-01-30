@@ -2,34 +2,17 @@
 #include <bnb/matrix_operations.glsl>
 #include <bnb/decode_int1010102.glsl>
 
-BNB_LAYOUT_LOCATION(0)
-BNB_IN vec3 attrib_pos;
-
+layout(location = 0) in vec3 attrib_pos;
 #if defined(BNB_VK_1)
-BNB_LAYOUT_LOCATION(1)
-BNB_IN uint attrib_n;
-BNB_LAYOUT_LOCATION(2)
-BNB_IN uint attrib_t;
+layout(location = 1) in uint attrib_n;
+layout(location = 2) in uint attrib_t;
 #else
-BNB_LAYOUT_LOCATION(1)
-BNB_IN vec4 attrib_n;
-BNB_LAYOUT_LOCATION(2)
-BNB_IN vec4 attrib_t;
+layout(location = 1) in vec4 attrib_n;
+layout(location = 2) in vec4 attrib_t;
 #endif
-
-BNB_LAYOUT_LOCATION(3)
-BNB_IN vec2 attrib_uv;
-
-#ifndef BNB_GL_ES_1
-BNB_LAYOUT_LOCATION(4)
-BNB_IN uvec4 attrib_bones;
-#else
-BNB_LAYOUT_LOCATION(4)
-BNB_IN vec4 attrib_bones;
-#endif
-
-BNB_LAYOUT_LOCATION(5)
-BNB_IN vec4 attrib_weights;
+layout(location = 3) in vec2 attrib_uv;
+layout(location = 4) in uvec4 attrib_bones;
+layout(location = 5) in vec4 attrib_weights;
 
 BNB_DECLARE_SAMPLER_2D(10, 11, bnb_BONES);
 

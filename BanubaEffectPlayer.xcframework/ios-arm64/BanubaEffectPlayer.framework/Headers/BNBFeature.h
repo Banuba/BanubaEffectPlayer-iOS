@@ -18,4 +18,7 @@
 
 - (void)process:(nullable BNBFrameData *)frameData;
 
+- (void)postprocess:(nullable BNBFrameData *)fd
+           futureFd:(nullable BNBFrameData *)futureFd;
+
 @end

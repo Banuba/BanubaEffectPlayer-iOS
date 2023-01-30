@@ -4,7 +4,13 @@
 #import "BNBPixelRect.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBTransformableEvent : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTransformableEvent : NSObject
 - (nonnull instancetype)initWithBasisTransform:(nonnull NSArray<NSNumber *> *)basisTransform
                                        fullRoi:(nonnull BNBPixelRect *)fullRoi;
 + (nonnull instancetype)transformableEventWithBasisTransform:(nonnull NSArray<NSNumber *> *)basisTransform

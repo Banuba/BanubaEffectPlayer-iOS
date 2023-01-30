@@ -10,19 +10,11 @@
  * `vec4 res = BNB_TEXTURE_LUT(original_color, BNB_PASS_SAMPLER_ARGUMENT(lookup_texture));`.
  * `vec3` overload is also present.
  */
-#ifdef BNB_GL_ES_1
-    #define BNB_DECLARE_SAMPLER_LUT BNB_DECLARE_SAMPLER_2D
-    // #define BNB_SAMPLER_LUT BNB_SAMPLER_2D
-    #define BNB_DECLARE_SAMPLER_LUT_ARGUMENT BNB_DECLARE_SAMPLER_2D_ARGUMENT
-    #define BNB_TEXTURE_LUT bnb_texture_lookup_512
-    #define BNB_TEXTURE_LUT_SMALL bnb_texture_lookup_16x256
-#else
-    #define BNB_DECLARE_SAMPLER_LUT(binding_index_1, binding_index_2, sampler_name) BNB_DECLARE_SAMPLER_3D(binding_index_1, binding_index_2, sampler_name)
-    #define BNB_DECLARE_SAMPLER_LUT_ARGUMENT(lookup_texture) BNB_DECLARE_SAMPLER_3D_ARGUMENT(lookup_texture)
-    #define BNB_TEXTURE_LUT bnb_texture_3d_lookup_512
-    #define BNB_TEXTURE_LUT_SMALL bnb_texture_3d_lookup_16
-    #define BNB_TEXTURE_LUT_LOD BNB_TEXTURE_3D_LOD
-#endif // BNB_GL_ES_1
+#define BNB_DECLARE_SAMPLER_LUT(binding_index_1, binding_index_2, sampler_name) BNB_DECLARE_SAMPLER_3D(binding_index_1, binding_index_2, sampler_name)
+#define BNB_DECLARE_SAMPLER_LUT_ARGUMENT(lookup_texture) BNB_DECLARE_SAMPLER_3D_ARGUMENT(lookup_texture)
+#define BNB_TEXTURE_LUT bnb_texture_3d_lookup_512
+#define BNB_TEXTURE_LUT_SMALL bnb_texture_3d_lookup_16
+#define BNB_TEXTURE_LUT_LOD BNB_TEXTURE_3D_LOD
 
 #define BNB_SAMPLER_LUT BNB_PASS_SAMPLER_ARGUMENT
 
@@ -50,14 +42,16 @@ vec4 bnb_texture_lookup_512(
 
     float factor = blue_value - mul_b.x;
 
-    vec3 sampled1 = BNB_TEXTURE_2D(
+    vec3 sampled1 = textureLod(
                         BNB_SAMPLER_2D(lookup_texture),
-                        lookup.zx
+                        lookup.zx,
+                        0.
     )
                         .rgb;
-    vec3 sampled2 = BNB_TEXTURE_2D(
+    vec3 sampled2 = textureLod(
                         BNB_SAMPLER_2D(lookup_texture),
-                        lookup.wy
+                        lookup.wy,
+                        0.
     )
                         .rgb;
 
@@ -93,9 +87,9 @@ vec4 bnb_texture_lookup_16x256(
     float factor = blue_value - blue_plane;
     vec2 uv = original_color.rg * vec2(15. / 16., 15. / 256.) + vec2(0.5 / 16., 0.5 / 256.);
     uv.y += blue_plane / 16.;
-    vec3 sampled1 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(lookup_texture), uv).rgb;
+    vec3 sampled1 = textureLod(BNB_SAMPLER_2D(lookup_texture), uv, 0.).rgb;
     uv.y += 1. / 16.;
-    vec3 sampled2 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(lookup_texture), uv).rgb;
+    vec3 sampled2 = textureLod(BNB_SAMPLER_2D(lookup_texture), uv, 0.).rgb;
 
     vec3 res = mix(sampled1, sampled2, factor);
     return vec4(res, original_color.a);
@@ -108,8 +102,6 @@ vec3 bnb_texture_lookup_16x256(
 {
     return bnb_texture_lookup_16x256(vec4(original_color, 1.0), BNB_PASS_SAMPLER_ARGUMENT(lookup_texture)).rgb;
 }
-
-#ifndef BNB_GL_ES_1
 
 /**
  * Prefer `BNB_TEXTURE_LUT` instead of this call.
@@ -133,7 +125,5 @@ vec3 bnb_texture_3d_lookup_16(vec3 original_color, BNB_DECLARE_SAMPLER_3D_ARGUME
 {
     return textureLod(BNB_SAMPLER_3D(lookup_texture), original_color * (15. / 16.) + 0.5 / 16., 0.).rgb;
 }
-
-#endif // BNB_GL_ES_1
 
 #endif // BNB_LUT_GLSL

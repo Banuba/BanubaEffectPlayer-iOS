@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/BNBAcneRegions.h</key>
 		<data>
-		GXtf4Cq+8FRuzbOXTeYa6cizkoA=
+		pQ7mPcv1/1rX9E+sspjTAwTbnVQ=
 		</data>
 		<key>Headers/BNBActionUnits.h</key>
 		<data>
-		6r/DXCOhTGEM5T+6FxUwQas/JR4=
+		UmV16yTAHAdXcXj6b5hELg55y4Y=
 		</data>
 		<key>Headers/BNBActionUnitsData.h</key>
 		<data>
-		Y8aL+Yp05zcDRWDtp9xtsb9rC3k=
+		j+zpGy4uoJSKVKi1oea2nQ7sPDo=
 		</data>
 		<key>Headers/BNBActionUnitsIndices.h</key>
 		<data>
@@ -26,15 +26,15 @@
 		</data>
 		<key>Headers/BNBAssetManager.h</key>
 		<data>
-		2KSaqVfh5W8ByHpdexwtde7wSEg=
+		TVn6nk1HG/Gork5CzWqh0Fzevlw=
 		</data>
 		<key>Headers/BNBAttachment.h</key>
 		<data>
-		cQdli95o/Lpvfg9HcimagHQhn88=
+		emj2JJYsNBXQ5FYmgcVsPGK9ZWE=
 		</data>
 		<key>Headers/BNBAttachmentInfo.h</key>
 		<data>
-		yBgkOARrfafata1n4c4ntUrSg8g=
+		v0z04Dis/sxbmqHDj/mjJFHVRJA=
 		</data>
 		<key>Headers/BNBAttachmentLoadOp.h</key>
 		<data>
@@ -50,31 +50,35 @@
 		</data>
 		<key>Headers/BNBAudioTrack.h</key>
 		<data>
-		tjgLx+9VviRgSWMJHm6d+1/ryyk=
+		CxvmKniFHl6Kd0xGX2svRSpIZsg=
 		</data>
 		<key>Headers/BNBAutoTuneOutput.h</key>
 		<data>
-		8zTbnymjr4s+kn/hOIfTHBGFexo=
+		yBaA1xxPaJVumS4HZ8KQ7OqArBY=
 		</data>
 		<key>Headers/BNBBeautyMorphing.h</key>
 		<data>
-		vLHRiV1XTTn2NxZ52RjEonyH+jY=
+		Mumcq75Hghv3pDM7DqlyC5QgMEg=
 		</data>
 		<key>Headers/BNBBlendingMode.h</key>
 		<data>
 		sP48Gx2oNn7kQq0MoYsGX9F6t/4=
 		</data>
+		<key>Headers/BNBBnbMorphResult.h</key>
+		<data>
+		LYdwrBzHs6j1456nbKT5vlZ+fMo=
+		</data>
 		<key>Headers/BNBBrowsMask.h</key>
 		<data>
-		zBg23XoeQaebjmgicycQ5D0lzyQ=
+		z8stIIkrrBigiLgZdLT58zPlXsU=
 		</data>
 		<key>Headers/BNBCamera.h</key>
 		<data>
-		0cmg+46XEIUguVuoBTBMiEbnlhs=
+		JuXt7fP5SDvOyMZZ3aQSVV7tRi0=
 		</data>
 		<key>Headers/BNBCameraComposer.h</key>
 		<data>
-		Wb0HHD+tSTbxwTW54o+p1Cyx9zs=
+		xvHK9fWZKzP/M4geqovz9IW0k8I=
 		</data>
 		<key>Headers/BNBCameraOrientation.h</key>
 		<data>
@@ -82,7 +86,7 @@
 		</data>
 		<key>Headers/BNBCameraParameters.h</key>
 		<data>
-		1G6s1Pkx0898jgf7VPHKobGhb4I=
+		O0bjYDzYzGhiIz/tdsZOIkB01Bo=
 		</data>
 		<key>Headers/BNBCameraPoiListener.h</key>
 		<data>
@@ -90,11 +94,11 @@
 		</data>
 		<key>Headers/BNBCameraPosition.h</key>
 		<data>
-		A1ZrgjRb+G+KWEolSO90KfEvZv0=
+		m2j8f3icROOH4nrrtxEuUKRGmK8=
 		</data>
 		<key>Headers/BNBCameraTexture.h</key>
 		<data>
-		A7ATg17IJEtIk+vy7v+MrANdfD0=
+		PkpLVitpj97AilEoIX7c9D+jHZI=
 		</data>
 		<key>Headers/BNBCameraTextureFormat.h</key>
 		<data>
@@ -110,7 +114,7 @@
 		</data>
 		<key>Headers/BNBComponent.h</key>
 		<data>
-		3M4ffUvxGvygBUMzsQIx0wjy8fo=
+		2tiYO/0mXY0WuMExkJM62UxB6qA=
 		</data>
 		<key>Headers/BNBComponentType.h</key>
 		<data>
@@ -122,19 +126,15 @@
 		</data>
 		<key>Headers/BNBCubemap.h</key>
 		<data>
-		v4JJenO3C7k+n1BZcOJqoVUjyuI=
+		QOmTNPTy/lmPUEmBgvpFYxuzj4I=
 		</data>
 		<key>Headers/BNBDepthMap.h</key>
 		<data>
-		D/YHaG9yazmWHaj13XNxhpBGK9I=
-		</data>
-		<key>Headers/BNBDualFilterBlur.h</key>
-		<data>
-		FX9ML7KTK/WdEL3mIGMEvW/RbM4=
+		RTFG5A1MUt0aAAbSOiqXjMhM3Mg=
 		</data>
 		<key>Headers/BNBEffect.h</key>
 		<data>
-		tKqdv57fbZZ002dGE8hZs9jMra0=
+		pxwmez7g/PrMCX4DjNXURSCMbHI=
 		</data>
 		<key>Headers/BNBEffectActivatedListener.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Headers/BNBEffectInfo.h</key>
 		<data>
-		9qGni4g5w2dm8MDCOYEcBQusGtU=
+		LCQwaFDtDtQzqcKQ7BqC1euXsk4=
 		</data>
 		<key>Headers/BNBEffectInfoListener.h</key>
 		<data>
@@ -158,15 +158,15 @@
 		</data>
 		<key>Headers/BNBEffectManager.h</key>
 		<data>
-		A3z4/IxnpkGMeUYOvFXTfkEYI0g=
+		1MOfalXos55egBTtk2dLor/PccI=
 		</data>
 		<key>Headers/BNBEffectPlayer.h</key>
 		<data>
-		yCx/bqyWLNahIbaCDmMbCbJXCuA=
+		Jv6ONGGWHx73Nf1561Np87RMT9M=
 		</data>
 		<key>Headers/BNBEffectPlayerConfiguration.h</key>
 		<data>
-		5ePrHzdwevzbhyYXB2jonYkxpEc=
+		0d6/Eb33UCxFSda4c7fsoyTtU5Q=
 		</data>
 		<key>Headers/BNBEffectPlayerPlaybackState.h</key>
 		<data>
@@ -178,11 +178,11 @@
 		</data>
 		<key>Headers/BNBEglContext.h</key>
 		<data>
-		77gZyojh/4nwWYC4KNsiVKvCDvU=
+		rZprnJHT8WSlKT+IPsSJ8VqmEl8=
 		</data>
 		<key>Headers/BNBEntity.h</key>
 		<data>
-		6ucpQpuW2g5WsZcrjNDtV9+LQrM=
+		iWjcR4qlQK5Cc+JxVNgcWOwvMV4=
 		</data>
 		<key>Headers/BNBErrorListener.h</key>
 		<data>
@@ -190,75 +190,71 @@
 		</data>
 		<key>Headers/BNBExternalFaceData.h</key>
 		<data>
-		UvF0HM8SrSeCbhtM9vzBpi+HmFk=
+		Px+qzEA7lDhOQOTco2ZtAaG7tBg=
 		</data>
 		<key>Headers/BNBEyesCorneoscleraMask.h</key>
 		<data>
-		jpfE2l1149ufWX+HK3Iq0kmk8fU=
+		2/EZzqPO1wEJe8FAovKV94hmeqk=
 		</data>
 		<key>Headers/BNBEyesIrisMask.h</key>
 		<data>
-		C5usJP8TRpCOXPctXlvY+069jCk=
+		/Dp4BhGpjE/7k2HQj+6njuUcIOk=
 		</data>
 		<key>Headers/BNBEyesMask.h</key>
 		<data>
-		YUgZ2owoiEl1Cg2HwAW1PGtv9Ns=
+		VZ07mq1F1NXwKn18AkCBPIrt4m4=
 		</data>
 		<key>Headers/BNBEyesPupilMask.h</key>
 		<data>
-		bxNDe6M9u3rUfKf8ePksy9LCPt0=
+		5+XTOfXcVFFIai6a6sghYx1kPb0=
 		</data>
 		<key>Headers/BNBEyesState.h</key>
 		<data>
-		6Y2gnu0j5HIA629PbGkDJmduqeU=
+		2wbTvLPtg0By3We8YE0inHw9eIA=
 		</data>
 		<key>Headers/BNBEyesStatus.h</key>
 		<data>
-		1U7RcMnBx3Q28S2UjRFmz26u5Kc=
+		I2a+VHCpfJ5GgwdIVB40tDTk7ks=
 		</data>
 		<key>Headers/BNBFace.h</key>
 		<data>
-		WPB14AoMwgijUImBpj8y8Xi77O0=
+		R+pt4+oVZUVvm6aCHDaxxV6Dblk=
 		</data>
 		<key>Headers/BNBFaceData.h</key>
 		<data>
-		b0CtaVo7xFNJWdr5vB2JnKlYU+g=
+		KrRceMqMm6AdgxurMhInVKEZ5/c=
 		</data>
 		<key>Headers/BNBFaceDataSource.h</key>
 		<data>
-		0BUp+4WOdJOfMEj0KCjpYrlXHhM=
+		lk1g8+ywN3tCWfNuowh/gYlkigo=
 		</data>
 		<key>Headers/BNBFaceMorphing.h</key>
 		<data>
-		OgIE1kHcZM1fk3EiSeU/AwZ4Dd8=
+		bEtPPt/GlhVcJvfbaaN9b/zV1Wc=
 		</data>
 		<key>Headers/BNBFaceNumberListener.h</key>
 		<data>
 		5SYLFDZgzmkCDFS8uxxe4z1FuAA=
 		</data>
-		<key>Headers/BNBFaceSearchMode.h</key>
-		<data>
-		pB1biiFm1cmb9hCQmfP5Q2XLvBc=
-		</data>
 		<key>Headers/BNBFaceTracker.h</key>
 		<data>
-		AxyrsnCI5xZijuxerF10R4v4bYc=
+		mCWR33k+rAu8kKTVU8fIn7q4zws=
 		</data>
 		<key>Headers/BNBFeature.h</key>
 		<data>
-		9+Xvje3y9Tl+UUgqFdSSVL4w+pM=
+		LU/JVqwF/O/KwOMCmviYTupWQj8=
 		</data>
 		<key>Headers/BNBFeatureId.h</key>
 		<data>
-		frngtrNp4WcVqn6Udy1yJMFXiVI=
+		XvHHCGmJSyE7q0AaB1ZRgoLR9z8=
 		</data>
 		<key>Headers/BNBFeatureParameter.h</key>
 		<data>
-		IXk/t8Eg9/fZZNUYndyT0GgKfE4=
+		fmTZhVweNJYmdV0BA8RCgoVyVr0=
 		</data>
 		<key>Headers/BNBFrameData.h</key>
 		<data>
-		VncDOLQsDUy5QKXKvH4ZGz4xPOk=
+		xgWV4KjuEDZmlMB60YsgiLPZ8+s=
 		</data>
 		<key>Headers/BNBFrameDataListener.h</key>
 		<data>
@@ -268,9 +264,13 @@
 		<data>
 		ISxK8Cme3spBbhl1c6v+4CSIco4=
 		</data>
+		<key>Headers/BNBFrameProcessor.h</key>
+		<data>
+		PI+ohP8b4zxNodcjFBLV/ZNp43c=
+		</data>
 		<key>Headers/BNBFrxRecognitionResult.h</key>
 		<data>
-		WRH2UMUR3zBFcaqjMZAevNCsb4w=
+		1P5Rffq5ONGoWZUwhwWor+i1jw8=
 		</data>
 		<key>Headers/BNBFullImageData.h</key>
 		<data>
@@ -286,11 +286,11 @@
 		</data>
 		<key>Headers/BNBHand.h</key>
 		<data>
-		kheqwx4dqiumZChGUaknRLH4/s4=
+		0xAnVw14VlKIBtkM7h7+aTCFPuk=
 		</data>
 		<key>Headers/BNBHandTracker.h</key>
 		<data>
-		zHu3zDi9aNTfpaH1ZfQ4kEV+5n0=
+		vrf+2HPJl6hRS0r7WlQBgbMhyjw=
 		</data>
 		<key>Headers/BNBHandTrackerType.h</key>
 		<data>
@@ -298,7 +298,7 @@
 		</data>
 		<key>Headers/BNBHaptic.h</key>
 		<data>
-		NI4w+GZTpHG/eoGN59KSfnsw3oo=
+		3ZhpKoTpNOoGpAGjc9FxSvG55N4=
 		</data>
 		<key>Headers/BNBHardwareClass.h</key>
 		<data>
@@ -310,11 +310,11 @@
 		</data>
 		<key>Headers/BNBImage.h</key>
 		<data>
-		ZQHE2N1S0wxLlre7MGjv5rZjuBg=
+		ut8+4JZBg8L1ydQhaJJkx6RhmJQ=
 		</data>
 		<key>Headers/BNBImageReleaser.h</key>
 		<data>
-		sNa+ksJzoBr3o+q5VGRP7LI2MHc=
+		LCKv96NMy9legvacgBn3EfjknvI=
 		</data>
 		<key>Headers/BNBImageType.h</key>
 		<data>
@@ -322,11 +322,11 @@
 		</data>
 		<key>Headers/BNBInformer.h</key>
 		<data>
-		+0P496BWWRAux8rQSnKCUf7Ncp8=
+		Qk3a67W3m+CrkZ+l0m4Z6PS3Cpk=
 		</data>
 		<key>Headers/BNBInputManager.h</key>
 		<data>
-		E7cKLJ7swAYix+V0WasF6kuNgzk=
+		3Qoeb7QUbx2/K3TfIfdQmHAqb2E=
 		</data>
 		<key>Headers/BNBJsCallback.h</key>
 		<data>
@@ -334,15 +334,19 @@
 		</data>
 		<key>Headers/BNBLayer.h</key>
 		<data>
-		6R3YR0QMPgnzuxCg8vfpxB6ZhwY=
+		fiVbE3NND/nGaHXrWyo5Ee1+4lw=
 		</data>
 		<key>Headers/BNBLicenseManager.h</key>
 		<data>
-		263Z1Z+eioMvXZaQV9d+1MgpGr8=
+		UrP0KXf6J1v26iMfVjQ902RkI5s=
+		</data>
+		<key>Headers/BNBLicenseStatus.h</key>
+		<data>
+		M4yua3+DpUf6AaSt8DeWiE9fZm4=
 		</data>
 		<key>Headers/BNBLipsShineMask.h</key>
 		<data>
-		7EJc632PRltMBy78BVuCZelvUjA=
+		Hp0sKhF14t7C17ccX16EXAN0KG0=
 		</data>
 		<key>Headers/BNBLogRecordCallback.h</key>
 		<data>
@@ -354,35 +358,35 @@
 		</data>
 		<key>Headers/BNBMat2x4.h</key>
 		<data>
-		y+uY0MZqyLlKd8r0mINMolQAo50=
+		9huB5bV1Nhj482zEwxNl1j8RE+g=
 		</data>
 		<key>Headers/BNBMat3x4.h</key>
 		<data>
-		s+eZOiFbOK/+h1BCvgHyCdWzxqE=
+		4FWjqr/hC8T3dGNuDL/mmQ6YMF4=
 		</data>
 		<key>Headers/BNBMat4x4.h</key>
 		<data>
-		SEeeJ5o3G4a307kghc3E1HzmAeo=
+		Mcx2rFb1b0D+RdnvavMRtUcTJKg=
 		</data>
 		<key>Headers/BNBMaterial.h</key>
 		<data>
-		j6QINNLp7Y18AGPIXYkxH0sbAg8=
+		yOCJk+1ct6HbJCDMGkZ7HZQuans=
 		</data>
 		<key>Headers/BNBMedia.h</key>
 		<data>
-		I7jZ8uXh4dXhR9JAnkuYaBdHBns=
+		HHNAnCiqGp/IxdvxCUAFlg6rrX8=
 		</data>
 		<key>Headers/BNBMesh.h</key>
 		<data>
-		FjoURSDJdAFmFyuzF86i1nuPPIs=
+		MzxyNJpaDMOXv/1zm0bRuLBHbW8=
 		</data>
 		<key>Headers/BNBMeshInstance.h</key>
 		<data>
-		VUutgpFTU7wO/GUpfb1we++JZi4=
+		2+gQPfKVgnwMcGOdPNN1iHlN+v4=
 		</data>
 		<key>Headers/BNBMorphing.h</key>
 		<data>
-		+V1gap3JNuHOariPX1SaQoF+tOQ=
+		xYycIb0xlHI0Yf7Pd4AyOfcm4+A=
 		</data>
 		<key>Headers/BNBMorphingType.h</key>
 		<data>
@@ -390,27 +394,23 @@
 		</data>
 		<key>Headers/BNBNeuroBeautificationProcessedTexture.h</key>
 		<data>
-		kGAwb4oFvM9T832C6PgX6j2Gsbg=
+		PxEv4iEK2TyDsdz5pSYWQsmDeQI=
 		</data>
 		<key>Headers/BNBNeuroBeauty.h</key>
 		<data>
-		iQ5CPUb2+aXPbR+dOD7mLKt17KM=
+		SPaHFky34v0QAF9qy7S/tBSz7AU=
 		</data>
 		<key>Headers/BNBNeuroBeautyData.h</key>
 		<data>
-		z2ZKJMVgtIub3SnOg6cek48imfQ=
+		GERdCb7wy9QxZywn6vvQg4Lw+u0=
 		</data>
 		<key>Headers/BNBNeuroBeautyInput.h</key>
 		<data>
-		yUF8hqd+Q+PzHk3H7v+IOg0WU/k=
+		/k4CRdNdxG0ik+W6pVbdZHOqYUM=
 		</data>
 		<key>Headers/BNBNeuroBeautyOutput.h</key>
 		<data>
-		/Ti8PL88Wh+ZdubQMrc4UZrWTzk=
-		</data>
-		<key>Headers/BNBNnMode.h</key>
-		<data>
-		BZq16W769+1F46mg3VENRthrxgo=
+		OATpSaFyptKOzLAHJScOjLWQvOA=
 		</data>
 		<key>Headers/BNBObjC.h</key>
 		<data>
@@ -422,15 +422,15 @@
 		</data>
 		<key>Headers/BNBParameter.h</key>
 		<data>
-		8sXxrNJGyWKZCJwjdZ5P82iRKXA=
+		Si0TgYyU0FX6VuwsQHbfxtrQlrE=
 		</data>
 		<key>Headers/BNBPhysicsSimulator.h</key>
 		<data>
-		iH5F37+0Sl5cuq5XLtuTu472F2s=
+		GlXg0CVwLikmNzZ/veeuHx6Bi1U=
 		</data>
 		<key>Headers/BNBPixelBuffer.h</key>
 		<data>
-		yrGQLzUpf4T0ClS7ZePrUYRkD9A=
+		jpukz5V2ej57QWECSXB17xcsDNw=
 		</data>
 		<key>Headers/BNBPixelFormat.h</key>
 		<data>
@@ -442,11 +442,11 @@
 		</data>
 		<key>Headers/BNBPixelRect.h</key>
 		<data>
-		Y2rHJP0Vq3AGIlm67INAEma/8Fc=
+		vFkdE8y7GlWXOJGRje2uEegDb4I=
 		</data>
 		<key>Headers/BNBPoint2d.h</key>
 		<data>
-		RHQm7dkE1TP1UEcpkFwZSZhxHuo=
+		jU39RReWlgUHznpBaAIyP7ilsiw=
 		</data>
 		<key>Headers/BNBProceduralAlgorithmType.h</key>
 		<data>
@@ -454,19 +454,39 @@
 		</data>
 		<key>Headers/BNBProceduralTexture.h</key>
 		<data>
-		Sq/ANPZlN0zO7UCXsmjDlojUTRY=
+		TZ6ZgZXaiVsG308OoFgIyJMlkog=
 		</data>
 		<key>Headers/BNBProcessImageParams.h</key>
 		<data>
-		dTIa74AYuSnkAgD6j/OWNTR4yUk=
+		fYjqPRlps2KeCJQnVxlzAUnd1Ik=
+		</data>
+		<key>Headers/BNBProcessorConfiguration.h</key>
+		<data>
+		8BdK5naZzLG/Z6jdaRDnypNB/ns=
+		</data>
+		<key>Headers/BNBProcessorResult.h</key>
+		<data>
+		QvSZqFftg6hIss9bpsffsTBbqN4=
+		</data>
+		<key>Headers/BNBProcessorStatus.h</key>
+		<data>
+		D8mwjJAteuL+KzStOyOk64Gro8g=
+		</data>
+		<key>Headers/BNBProcessorType.h</key>
+		<data>
+		RGSOOYZJGbN56WDBXtEXVc5XTl8=
 		</data>
 		<key>Headers/BNBProjectionType.h</key>
 		<data>
 		zR/cTx4ItMKYFNkeXtSX4DiQyPE=
 		</data>
+		<key>Headers/BNBRealtimeProcessorMode.h</key>
+		<data>
+		ZAX/lkgW2KUJ+1ZPsOJXn5rYmPc=
+		</data>
 		<key>Headers/BNBRecognizer.h</key>
 		<data>
-		u0pioL4bxjVRqXcEiZSPQONWxqA=
+		4UeP+jSE+JkqpC6eyJad0yNao0w=
 		</data>
 		<key>Headers/BNBRecognizerMode.h</key>
 		<data>
@@ -474,27 +494,27 @@
 		</data>
 		<key>Headers/BNBRenderBackendType.h</key>
 		<data>
-		BR98e0i0f3RgFA/UEi+gkGLZjA8=
+		lRPkV6YWBXnJqqaUFtleR+0GkXI=
 		</data>
 		<key>Headers/BNBRenderInfo.h</key>
 		<data>
-		VCZZK/y8TFicNMkpMtGm/k/mG0c=
+		5f8T5XXFmuLpnufv+OPDaAZu4hc=
 		</data>
 		<key>Headers/BNBRenderList.h</key>
 		<data>
-		F5NdGHoXj2iGxixL99ZeNeL6ptQ=
+		3sdhntBiHJ7JtdbFvhMqcuzpYB0=
 		</data>
 		<key>Headers/BNBRenderTarget.h</key>
 		<data>
-		YaYpb+QQ4wN2lHgVtAX42WUD0+Q=
+		9WJMJ1+B41usYu2kz7AVEoqAHW4=
 		</data>
 		<key>Headers/BNBRendererCommon.h</key>
 		<data>
-		HVUDXn6Me2WVyooQGpZSgptO2Wc=
+		jRMDevSWkjIuzupvkFOla+coF0I=
 		</data>
 		<key>Headers/BNBResource.h</key>
 		<data>
-		Z6Rnl/X8tkYc+345/NEqH5nmDOY=
+		HK/uf1RDyhlz5vi1c9dTU6OiY7I=
 		</data>
 		<key>Headers/BNBRotation.h</key>
 		<data>
@@ -502,15 +522,15 @@
 		</data>
 		<key>Headers/BNBScene.h</key>
 		<data>
-		wCwE0B5Ch2G1ogBonI6a7ugA+tA=
+		Pe9jc2KE3enOA2VKLFqbSvXVvLY=
 		</data>
 		<key>Headers/BNBSegmentationMask.h</key>
 		<data>
-		mr4XnWy3M9yDzzelC1+lu7Fqq6E=
+		nqku1fA0/UcCqTunX0GVlmCM5Bo=
 		</data>
 		<key>Headers/BNBSegmentationMaskType.h</key>
 		<data>
-		6RfjhiKUjHTFjez6/8DDlMDE7VA=
+		SwxekvOyCt2q5RFcHapPsfr5r50=
 		</data>
 		<key>Headers/BNBSelectedLips.h</key>
 		<data>
@@ -522,23 +542,27 @@
 		</data>
 		<key>Headers/BNBShaderSource.h</key>
 		<data>
-		NGdoq4LlTh1uigo0yWwAtu1J8DU=
+		tEp7RC4hpxwLZwRQMIJdLhi7jrQ=
+		</data>
+		<key>Headers/BNBSize.h</key>
+		<data>
+		F9cxZkEeyjNQHz+/JUpBMdVOdzc=
 		</data>
 		<key>Headers/BNBState.h</key>
 		<data>
-		0Ij0eBIMrDdg49Po2sJvG8Dig7o=
+		fFm4O4rvjvIxjAcn8Fp8qllyBHY=
 		</data>
 		<key>Headers/BNBSurfaceData.h</key>
 		<data>
-		r+9o0ivcOmRhcaT5xB7zqwHYJGg=
+		xuIr6osaWrSD2BpjdwlfaJSgihQ=
 		</data>
 		<key>Headers/BNBTextTexture.h</key>
 		<data>
-		3u/Z6EFgDY8UefLcy1XsL2Y3yv4=
+		o8i64UEHjyXSOXjytNcZNPilqSY=
 		</data>
 		<key>Headers/BNBTexture.h</key>
 		<data>
-		U8iDqBpyk3wc/eyleCNS9zOsuTE=
+		+3sHTiIWfXjPc1nG8WyFwzZmxC4=
 		</data>
 		<key>Headers/BNBTextureFilteringMode.h</key>
 		<data>
@@ -546,35 +570,35 @@
 		</data>
 		<key>Headers/BNBTouch.h</key>
 		<data>
-		ATalpsKeUDV50jxSv002VG4aveI=
+		jflzLO7w+UpwXKApJN14fALoZio=
 		</data>
 		<key>Headers/BNBTransformableEvent.h</key>
 		<data>
-		VP02e6QY4rbSI3vbEqx8jgEoD8I=
+		ny3lnEpl6UV6UwQOo1/ZDsBv7Vk=
 		</data>
 		<key>Headers/BNBTransformation.h</key>
 		<data>
-		0w18oIyfAUljbXK0E5+ROdAYBik=
+		/cjMz4QjqcEjUKBrfjjsXo6HZzQ=
 		</data>
 		<key>Headers/BNBTransformation3d.h</key>
 		<data>
-		wBT7lzizowqXCfESzZGEOagI+jY=
+		LgJ5sZcbk7OVABOuCzZDqscHmPw=
 		</data>
 		<key>Headers/BNBTransformedMask.h</key>
 		<data>
-		bLrG20YsusBTtUqoEX0mHxV0La4=
+		r0AG3aIP390TJoPbv6ROUbkFpWg=
 		</data>
 		<key>Headers/BNBTransformedMaskByte.h</key>
 		<data>
-		mKovIk91d9GVijkG4g/P1+an3JE=
+		OF9reICBzjFbK32PVdCLAkRLmwk=
 		</data>
 		<key>Headers/BNBTransformedMaskFloat.h</key>
 		<data>
-		Uk3BogQ1Kf3V49La8O86ExPHbhc=
+		MNNnDbNQE8H7HR6A3rnmc8BLyJs=
 		</data>
 		<key>Headers/BNBTransformedMaskGpu.h</key>
 		<data>
-		yMbaFmoimqW0w5LG+Axk0UeqMHQ=
+		TZ3coMo00XVI9hD8W08aMHekc9Y=
 		</data>
 		<key>Headers/BNBTriggerStatusType.h</key>
 		<data>
@@ -586,19 +610,19 @@
 		</data>
 		<key>Headers/BNBUtilityManager.h</key>
 		<data>
-		uHnbk7feEtW4JDTpsKUbJPMZL0E=
+		vlQs8x/3medJiA/QttssnctKPiQ=
 		</data>
 		<key>Headers/BNBVec3.h</key>
 		<data>
-		MM3FVvDpidTaPiuF1r+GuEOQTYY=
+		nLsZrPHOe2vi5ONs4N1rMmlvLhE=
 		</data>
 		<key>Headers/BNBVec4.h</key>
 		<data>
-		F86PCv3+WpnLftb+yxBPwcUR2RE=
+		TNvmMxrH1rOSIvw838mT6hGE0VE=
 		</data>
 		<key>Headers/BNBVideo.h</key>
 		<data>
-		z0aDi9ag64tdsVr4D4Vs0ACHUXU=
+		J34w4LRou4yKRxn7EUNZebhJrg4=
 		</data>
 		<key>Headers/BNBVideoLoadingResultListener.h</key>
 		<data>
@@ -606,19 +630,23 @@
 		</data>
 		<key>Headers/BNBWeightedLut.h</key>
 		<data>
-		bDpYAQR1+BEv9J+vgAxW8ze9bNU=
+		cKXf7rg5kc4h0t9n0LbFDA0WDXg=
 		</data>
 		<key>Headers/BanubaEffectPlayer.h</key>
 		<data>
-		XsYeVv5dTBKzELsHr2ILE1Jfpxk=
+		erv/ChJCshG16FNsUE3M6Gaev+Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		plvQJaExoHv+WEKL0+H/pvvwvC4=
+		auKSTeQc+wEWBSVg0YbRMA5fyFk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		sPhlEAXJICkWiwhCQx8SR7lCrKM=
+		</data>
+		<key>OEPShaders.dat</key>
+		<data>
+		RMszI7otXcQc6NBzkkn18yx24Sc=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/helpers.hpp</key>
 		<data>
@@ -626,7 +654,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/all.hpp</key>
 		<data>
-		+U2LzpCSa8UQUCdvRibhwHv4p38=
+		Yfui4pc7JGo0GyW0/kpzTYtBI9U=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/camera_orientation.hpp</key>
 		<data>
@@ -650,7 +678,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect.hpp</key>
 		<data>
-		D1z7GGm8325gatrDqRxaSReHbzQ=
+		r1MG6m8xFy/90nfSQ5Q4fdoNOoA=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_activated_listener.hpp</key>
 		<data>
@@ -674,15 +702,15 @@
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_manager.hpp</key>
 		<data>
-		KK/hrvYEZcjdqqfd8+V+mFy1RkY=
+		/QfAhJFsd0Xlzb18WpkhzIk70Jw=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player.hpp</key>
 		<data>
-		Zz8/FMO6YB6CHEIrIul7+YneQ2w=
+		qjL5GeMYlD/lhu2FtJSZHOVz8yY=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player_configuration.hpp</key>
 		<data>
-		pp+XWJs3OsjG7TcKV33hFIfegRE=
+		Os+tUJbiBQv0H8PZ1I6ymPmuBlc=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player_playback_state.hpp</key>
 		<data>
@@ -708,6 +736,10 @@
 		<data>
 		lc5TIMiEMhoQxyABCC/0xgrMViQ=
 		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/frame_processor.hpp</key>
+		<data>
+		EfBPPfu+YMR10aUEjf5Uh/jV9Go=
+		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/hint_listener.hpp</key>
 		<data>
 		X1ddNx5UZmS1Ud8odmJ+jl2nyLI=
@@ -724,13 +756,29 @@
 		<data>
 		+fX/NLvJ4CUTvcsutJBtH5ARM9g=
 		</data>
-		<key>PrivateHeaders/bnb/effect_player/interfaces/nn_mode.hpp</key>
-		<data>
-		mqBM6ul+H8O9K0LHBNYVcLjmve4=
-		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/process_image_params.hpp</key>
 		<data>
 		zH76tx0lOLnR3WGQcTJwcpoo/64=
+		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_configuration.hpp</key>
+		<data>
+		EIH1JPXmkqnWBv5HGBfSBZ8oMcM=
+		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_result.hpp</key>
+		<data>
+		CEImbWbsZdG3NRgNQeyW/whsxn4=
+		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_status.hpp</key>
+		<data>
+		2eCAH5LcOU41SS4mJVzBEa3FY4U=
+		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_type.hpp</key>
+		<data>
+		g2bAZKN8PARptZsqjIyc+mTy4Zs=
+		</data>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/realtime_processor_mode.hpp</key>
+		<data>
+		y3JhqtLTCmiqY90qg5qPVfJwMPs=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/surface_data.hpp</key>
 		<data>
@@ -738,7 +786,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/types.hpp</key>
 		<data>
-		fTC/jj2AK1zmeAawOeuvEL6TTsI=
+		M481lObOc6Lya0ScfI0c+oGjd28=
 		</data>
 		<key>PrivateHeaders/bnb/effect_player/utility.hpp</key>
 		<data>
@@ -746,23 +794,19 @@
 		</data>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/all.hpp</key>
 		<data>
-		FsBoEdM4z6aKVT+MHqki3mtTNr4=
-		</data>
-		<key>PrivateHeaders/bnb/recognizer/interfaces/face_search_mode.hpp</key>
-		<data>
-		2HeqmagbUQ/aXWCEH7IzQhOMQ0g=
+		hz76mSclGgIo6ZlwbcwVbB+qNQ8=
 		</data>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/feature.hpp</key>
 		<data>
-		r8SqszQEMruxmcZgLc1prMHXfQw=
+		kYZaeFsBsrmz1reOtCd5TYa2NIk=
 		</data>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/feature_id.hpp</key>
 		<data>
-		ihxMVgTJJ62zTuj5nk1fkzR6nuE=
+		4DLwcZzqh3MH4TNXT9PHW0cqXs4=
 		</data>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/recognizer.hpp</key>
 		<data>
-		1YS4hO+S/sFdlmJ0LLsBI6rESSg=
+		bc/qGzV3Ig+7sni1bGqa8Az+c2c=
 		</data>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/recognizer_mode.hpp</key>
 		<data>
@@ -778,7 +822,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/all.hpp</key>
 		<data>
-		pC8JlntMlhID/rL+RX7izD2HQWU=
+		STXjp9zkTnvxrVvXBL+BDtjklkY=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/animation_mode.hpp</key>
 		<data>
@@ -851,10 +895,6 @@
 		<key>PrivateHeaders/bnb/scene/interfaces/cubemap.hpp</key>
 		<data>
 		5AyiTKqtdyemdvObkEO+hCVpXjA=
-		</data>
-		<key>PrivateHeaders/bnb/scene/interfaces/dual_filter_blur.hpp</key>
-		<data>
-		7qE2thn5XgEF19ww7Q9qmzZJLNg=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/entity.hpp</key>
 		<data>
@@ -966,7 +1006,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/procedural_texture.hpp</key>
 		<data>
-		5VYBNKySGCI87pHYyGn7s29C6xc=
+		Y8xet3ipS2SOnau99IimN2Q3C6E=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/projection_type.hpp</key>
 		<data>
@@ -974,7 +1014,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/render_backend_type.hpp</key>
 		<data>
-		MJhTeMdPItmUj7/A3VfSfvkndkU=
+		0mwowdNWukBuR264EZfjrYFn91E=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/render_info.hpp</key>
 		<data>
@@ -1002,7 +1042,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/segmentation_mask_type.hpp</key>
 		<data>
-		4DcTLVc0zYs67lEa9QZnFfBkIEA=
+		0+L5HxWrMCUw67ktP+YP9Kl4h8Y=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/shader_source.hpp</key>
 		<data>
@@ -1010,7 +1050,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/state.hpp</key>
 		<data>
-		Kq+A6aq0i6+Tr3HYwjTMyxdqKEs=
+		PUAdeuLw5k9oGb/HwF8RFPB80Lw=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/text_texture.hpp</key>
 		<data>
@@ -1038,7 +1078,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/types.hpp</key>
 		<data>
-		hBNHKnUJz/7LfD27UUBNjeoha1U=
+		pURIS3an+bkHvLm5K0x6BP/2xZc=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/vec3.hpp</key>
 		<data>
@@ -1050,7 +1090,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/video.hpp</key>
 		<data>
-		w2Yob47DxTCCc0SK0+V7NiHBq9w=
+		BnRoOJ2FJ3yUrXktH7vr4loqiEQ=
 		</data>
 		<key>PrivateHeaders/bnb/scene/interfaces/video_loading_result_listener.hpp</key>
 		<data>
@@ -1094,7 +1134,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/base_types.hpp</key>
 		<data>
-		rKsoNEC2HdLgzefuDtJo5OunFGQ=
+		T91NOI6FNsaAokwa5mmiRg2LtDA=
 		</data>
 		<key>PrivateHeaders/bnb/types/constants.hpp</key>
 		<data>
@@ -1102,11 +1142,11 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/conversion.hpp</key>
 		<data>
-		SuoEKHQQoLcSJ7Uo7BkgkLYeh4Y=
+		OhNbiZT/9yED4mB6Xwzr6VI8UD4=
 		</data>
 		<key>PrivateHeaders/bnb/types/full_image.hpp</key>
 		<data>
-		W1QV2YYIJdt73MYfmMGv7rZv2vA=
+		jJBvmF/DPaqXxY5CSvqRtSxr7Ns=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/acne_regions.hpp</key>
 		<data>
@@ -1126,7 +1166,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/all.hpp</key>
 		<data>
-		IHIIuo354DY8oSneL9pVEDRR4Uw=
+		qriavfpXMI5WfGvzeV6Kw1PSMls=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/brows_mask.hpp</key>
 		<data>
@@ -1134,7 +1174,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/camera_position.hpp</key>
 		<data>
-		QbKG8kkxtfWdPQ+Txh8eSUWanIw=
+		sLTkYn4hbJuH9K+Tc1fDfjDD5rI=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/depth_map.hpp</key>
 		<data>
@@ -1142,7 +1182,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/external_face_data.hpp</key>
 		<data>
-		hQ9JJi4/WdGTkMgdGO5f3PDeOzg=
+		Ezdn33+JOOu8WeKcCc+ZKeRe1A0=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/eyes_corneosclera_mask.hpp</key>
 		<data>
@@ -1170,7 +1210,7 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/face_data_source.hpp</key>
 		<data>
-		M05hb5NiMNnUVqOgqysVWKVN08k=
+		RUFZgIO4lCzdRICziVW8rBMrK9g=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/feature_parameter.hpp</key>
 		<data>
@@ -1178,11 +1218,11 @@
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/frame_data.hpp</key>
 		<data>
-		Vg4yv7UPMu4TwWT7IYrPBPmZUAI=
+		DEQZVV/0QjiCEkhijh3n1l8bEBo=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/frx_recognition_result.hpp</key>
 		<data>
-		3KCEtgU2Gl9KWpTfmeb0HZ3oDqo=
+		csXkD2ghJ2CpS10VEdAHv8IRvkQ=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/lips_shine_mask.hpp</key>
 		<data>
@@ -1211,6 +1251,10 @@
 		<key>PrivateHeaders/bnb/types/interfaces/rotation.hpp</key>
 		<data>
 		yaEmc06EWQp0+jIj2r3jw4kc35A=
+		</data>
+		<key>PrivateHeaders/bnb/types/interfaces/size.hpp</key>
+		<data>
+		JdNKo6JHVo04rx0hx3VSztbrUgI=
 		</data>
 		<key>PrivateHeaders/bnb/types/interfaces/touch.hpp</key>
 		<data>
@@ -1270,11 +1314,11 @@
 		</data>
 		<key>PrivateHeaders/bnb/utils/defs.hpp</key>
 		<data>
-		UYYnobYOqiuA8ffkN1T6gC/ABRo=
+		7TZ+T7zE+CWXgqxuIj7hr+DIFSM=
 		</data>
 		<key>PrivateHeaders/bnb/utils/event.hpp</key>
 		<data>
-		mJbOyprPd0ATNoDwXhsbW6d2R70=
+		cBhraCi4NP6UNMv7M6ALbQsJzYc=
 		</data>
 		<key>PrivateHeaders/bnb/utils/exceptions.hpp</key>
 		<data>
@@ -1322,35 +1366,23 @@
 		</data>
 		<key>PrivateHeaders/bnb/utils/std/filesystem.hpp</key>
 		<data>
-		pcQbkdsx9cZAm8IDs3oz0MXfOMQ=
+		jksjfH1RKl2PLRcJUSZO2aI11vU=
 		</data>
-		<key>bnb-resources/MoMoFRX/edgetopology1.ef</key>
+		<key>bnb-resources/MoMoFRX/edgetopology1.ef.i16</key>
 		<data>
-		ufpbz4aKYfmyywMbls/p5xLMYqA=
+		4dcgk9nb7mI7TRc1KvT2Po33rJA=
 		</data>
-		<key>bnb-resources/MoMoFRX/edgetopology1.ev</key>
+		<key>bnb-resources/MoMoFRX/edgetopology1.ev.i16</key>
 		<data>
-		nNf/zUEKgKw/fDIgoS5RaQKe/YA=
+		yuDD1cCqRVCqp7bS7unhlshd5uU=
 		</data>
-		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.blendshapes</key>
+		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.blendshapes.fp16</key>
 		<data>
-		OCbRAyN8pj96mVptXJtcTw9TYJQ=
+		Enn3UNKtprY6nBaQnLXKeda8jjE=
 		</data>
-		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.means</key>
+		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.means.fp16</key>
 		<data>
-		wtEika1+SAz1mQcH588cmbu+pcw=
-		</data>
-		<key>bnb-resources/MoMoFRX/head.verts</key>
-		<data>
-		HOEf8rdA3XmmDGJCPSYSA0py55A=
-		</data>
-		<key>bnb-resources/MoMoFRX/head1.triangles</key>
-		<data>
-		s5VdwtnJVu1kRh51Jnn5BjQC4LI=
-		</data>
-		<key>bnb-resources/MoMoFRX/head_au.tex</key>
-		<data>
-		p3snmjZUD9hVGCtVEsvRCS7hXgg=
+		cElzClkhE752eqskg54diDRW9M0=
 		</data>
 		<key>bnb-resources/bnb_js/.empty</key>
 		<data>
@@ -1394,31 +1426,31 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/decode_int1010102.glsl</key>
 		<data>
-		cIxz1y1pd4Ldus3If3lHXSNJ+xI=
+		ZPoySUUYV/kTjVp91j3eIpJITVc=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/get_bone.glsl</key>
 		<data>
-		/NYzjAj/l8FylP9SEz44JXigB14=
+		eJwE8sLyQryoYOwolJxG7BSV0nM=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/get_transform.glsl</key>
 		<data>
-		/DNshW6A4mhYvMK+p4LSzG9x0zo=
+		909t0NDVP1CT9QRpLT4dgImFiis=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/glsl.frag</key>
 		<data>
-		Eo3MmN/uSD1+MiQmDx/cgjl5BFQ=
+		nJRxRcT28f4nFVGXJfOHdCK3fWM=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/glsl.vert</key>
 		<data>
-		PF3XPd6CgPIi0lZ+fCqzo/mZLfM=
+		MXskyssAs67YPtwhltUr78+Ve/I=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/apply_light_streaks.frag</key>
 		<data>
-		l1AK2WRfFcXZYeWH/dI25drmsIo=
+		ypp/Y/VGP6ldKMUQsMvaLRxFcE4=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/apply_light_streaks.vert</key>
 		<data>
-		svK6fI5ZeuW94ZaN21pjFJByW0k=
+		xAlgNGbHsKVpJyH8OIibuBR9pAE=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph.frag</key>
 		<data>
@@ -1426,7 +1458,7 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph.vert</key>
 		<data>
-		BcFgqfGsn2Td9mHXimXP4rgGz/Y=
+		F2b3BCYUIbRJFxnYB0PSwZsW6/U=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph_fisheye.frag</key>
 		<data>
@@ -1434,147 +1466,139 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph_fisheye.vert</key>
 		<data>
-		OQoJQnf57SJG4AurRvLBDezo6WY=
+		ACYInei2sj4k+s/ZjhV7f7oj8Ic=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/beauty_morph.frag</key>
 		<data>
-		wN+sBi/djwQ96B98KGGc8o9z82U=
+		xxjJS2dJq+1XbRoeaASbMja/jh8=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/beauty_morph.vert</key>
 		<data>
-		BFOIb1ZzlI7bQrGQ/6L8bY2MnI8=
+		f5B6WXuvblsxmYEZhNaWRjC3IXs=
 		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_assosiation.frag</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_downscale.frag</key>
 		<data>
-		bOVyRF8kdsWI4kvqaIVy6XssGMY=
+		J5UHtYMPKB3V9bvVTn3fimWNSmQ=
 		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_assosiation.vert</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_downscale.vert</key>
 		<data>
-		StlQkAGCh88rvcDHL9/Yym9aABM=
+		ZHsP/CRc3raAJ6nt6YUn8cFABBM=
 		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_smoothing.frag</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale.frag</key>
 		<data>
-		fPb1yK/HSHOkzeqUR4ev3zQMsQM=
+		cVsIU8D9xixce6i4KfMW2L/0gc0=
 		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_smoothing.vert</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale.vert</key>
 		<data>
-		ICzUv3uDcQeRCUibkdjZPxChdhU=
+		Q1X6iWcmCv3D2pKRRt0val/H32k=
+		</data>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale_apply.frag</key>
+		<data>
+		8QoN5b9G7KDMZfZlc40sPfN2gmA=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/camera.frag</key>
 		<data>
-		PW9+RFoTMO7p/9+oqzuznruNiPI=
+		dpYn2lMvNb8kFck6jbCyHPj/2TU=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/camera.vert</key>
 		<data>
-		11i2TZxQFiq4k/0mXZKM89BHxYA=
+		iSWnIAv6vP6kl8oQU6ul/vq2L90=
+		</data>
+		<key>bnb-resources/bnb_shaders/bnb/lib/camera_bgmask.frag</key>
+		<data>
+		X5gWMxEah3Dg64o6EK7RUZt7o/I=
+		</data>
+		<key>bnb-resources/bnb_shaders/bnb/lib/camera_bgmask.vert</key>
+		<data>
+		apy2x72uII9CZKYWtM7qII6rfwc=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/copy_pixels.frag</key>
 		<data>
-		ugghY35eZZrz0qBzqIwmJ+IXfIY=
+		UBDkb+AbCqAU7YxIv2UNA6ju5VY=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/copy_pixels.vert</key>
 		<data>
-		svK6fI5ZeuW94ZaN21pjFJByW0k=
-		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_downscale.frag</key>
-		<data>
-		Tta9ixJ5Eq++MNsMvd7h2CFofKg=
-		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_downscale.vert</key>
-		<data>
-		ICzUv3uDcQeRCUibkdjZPxChdhU=
-		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_upscale.frag</key>
-		<data>
-		WISEfnHFBLCMug2l1YwjlhdO3J4=
-		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_upscale.vert</key>
-		<data>
-		ApgLVL6llEOkdyAZuDDm5zhC0gQ=
+		xAlgNGbHsKVpJyH8OIibuBR9pAE=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_0.frag</key>
 		<data>
-		6vtlxhzEuLuJP2aXf0dISxD7Etg=
+		3biTXT2kPWE1GOrNiDKGuLlSjuw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_0.vert</key>
 		<data>
-		hscHEk7/LKEj8tPvFZG8yMsZcDw=
+		8jBPUGs8Ahf5w38jxc9I/34H8Zo=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_1.frag</key>
 		<data>
-		6vtlxhzEuLuJP2aXf0dISxD7Etg=
+		3biTXT2kPWE1GOrNiDKGuLlSjuw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_1.vert</key>
 		<data>
-		6Wd9u7OsSYGNmmwsO7bxp+QiLQE=
+		lujhOPYYWxQi7NTyKTxwfOjkWsU=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_2.frag</key>
 		<data>
-		6vtlxhzEuLuJP2aXf0dISxD7Etg=
+		3biTXT2kPWE1GOrNiDKGuLlSjuw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_2.vert</key>
 		<data>
-		zOobDwW8/OaFrqCStw7C2pBiQBw=
+		QuDValuzXiaWu03nz7j7iGWT+CY=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_3.frag</key>
 		<data>
-		6vtlxhzEuLuJP2aXf0dISxD7Etg=
+		3biTXT2kPWE1GOrNiDKGuLlSjuw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_3.vert</key>
 		<data>
-		j3P1yku4g3Reb9dyGeVEQOjs/Tc=
+		CTdF6+iQ4Upw6heYYNF/OPqJtFE=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/gltf.frag</key>
 		<data>
-		2H31wnFnlYHTnIdiAoh83ADrwSY=
+		Hmpow3RvJ5v96mdMV2VnqVRi++M=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/gltf.vert</key>
 		<data>
-		Pk+vLN1pyjXZ0nJzjCqDtU4USAQ=
-		</data>
-		<key>bnb-resources/bnb_shaders/bnb/lib/improved_dual_filter_blur_downscale.frag</key>
-		<data>
-		nt+N0mwksG4Idn+B+ulsWSi56MQ=
+		uHKw5SffuRavz9IjHCS0oTVKQ6Q=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/init_light_streaks.frag</key>
 		<data>
-		Xdf4+x5tSndzLy0hvB8aFUub3J4=
+		wIKHNLSZ0yHS6badzrwBD/UbGhU=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/init_light_streaks.vert</key>
 		<data>
-		svK6fI5ZeuW94ZaN21pjFJByW0k=
+		xAlgNGbHsKVpJyH8OIibuBR9pAE=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/mesh_morph.frag</key>
 		<data>
-		wN+sBi/djwQ96B98KGGc8o9z82U=
+		xxjJS2dJq+1XbRoeaASbMja/jh8=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/mesh_morph.vert</key>
 		<data>
-		pMCsSfFbZv5983zBoWbE3V8JEWI=
+		mEK5I5QXm+7ZndEbIa7s/USyvMg=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_apply.frag</key>
 		<data>
-		OralhyDotDUFhbllk1YEKAAc04o=
+		+uoAaB5oG8M31BNoF9rzsjpqCeg=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_apply.vert</key>
 		<data>
-		OxGTy526m3zZH9gWZpTOQFqMXpY=
+		FAilkZ87N7i0nEC+cG2xLiDiSuw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_blur.frag</key>
 		<data>
-		55cO9FJobu5oNFGpozvWNKASW/U=
+		0Ox8YT4C6sgWqJceTyuAXQlUWZw=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_blur.vert</key>
 		<data>
-		EIUQ8YVKJ9gWfeDceYVko5zO3JE=
+		yiGQr/ieXO7UAIsVvHZ2zx97ZUA=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/retouch.frag</key>
 		<data>
-		SkhAQuQ5DarFoSSft2hYwVJ9Jgw=
+		7Avy4SYr9Oa5UfSGdjxgezu3bCg=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/retouch.vert</key>
 		<data>
-		w1+1xyifRKh6L3BorI9w1KNf9Rc=
+		8BbOla1r22FLyjyy4aBcQJ3ItXY=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/static_pos.frag</key>
 		<data>
@@ -1582,7 +1606,7 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/static_pos.vert</key>
 		<data>
-		eEfI8pM249kTVXnK+xct21Y5fAM=
+		qZH6G18g2sCI56elRzDHEJDTlPc=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/uv_morph.frag</key>
 		<data>
@@ -1590,35 +1614,39 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/uv_morph.vert</key>
 		<data>
-		Mrdedrhr1DD5zILgoLfcOTYunG8=
+		ACYInei2sj4k+s/ZjhV7f7oj8Ic=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/vbg.frag</key>
 		<data>
-		JTSuPyrrBydXXZoKEkt9KzXnMlQ=
+		IybNYBGrXeKDZdshsGngMG2KAdo=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lib/vbg.vert</key>
 		<data>
-		cUiVDT0FuVTugZGHOa9vVSQDtXc=
+		0hiThC1sNB7VKeCElClIhXIFCP8=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/lut.glsl</key>
 		<data>
-		VjDx6s5QJCxDhsyS8WcGhQdmRJ4=
+		vcA5tjKfpGKMQ0QeNuAFEQ8Roxo=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/math.glsl</key>
 		<data>
-		fXg7liWWxXRyak+owpjxworYA+o=
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/matrix_operations.glsl</key>
 		<data>
-		97tsSCM9IboXEy+LsRbpw7fQgQ8=
+		uMHdyoll8rjfJqI5O1ZQjEvPU7E=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/morph_transform.glsl</key>
 		<data>
-		fPSbVCKd7KNHW9opd3mzuVt/3Gc=
+		TYh7PIURseZ1wm5snUtR2NXwlP4=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/quat_rotation.glsl</key>
 		<data>
 		ly+fTYKgeCoLxZpgIs6ZI2Drslg=
+		</data>
+		<key>bnb-resources/bnb_shaders/bnb/sample_camera.glsl</key>
+		<data>
+		/kMrcpVF+MIdignyryoIfYE2Bnk=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/samplers_declaration.glsl</key>
 		<data>
@@ -1626,11 +1654,11 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/texture_bicubic.glsl</key>
 		<data>
-		4jhkQD6XjpMi1jpv3D+FPM75JqE=
+		/CtOfVaqUnM4xcmya1VpObNMMTs=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/textures_lookup.glsl</key>
 		<data>
-		9yDRxAusBex4jNR1NoLJOTtR2xQ=
+		50H4hGnTusNswwJiAb+RaRaFyEY=
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/transform_uv.glsl</key>
 		<data>
@@ -1638,7 +1666,7 @@
 		</data>
 		<key>bnb-resources/bnb_shaders/bnb/version.glsl</key>
 		<data>
-		yTPRmmZuCtrxfbFol5QvaysAwwc=
+		aR7cHrRbaePRYldN91wwfqerd/k=
 		</data>
 		<key>bnb-resources/cml/cmlBGLandscape.mlmodelc/analytics/coremldata.bin</key>
 		<data>
@@ -1834,27 +1862,27 @@
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		dXplSZyt0GEv1fZGlmNnvj0e/Rc=
+		HCqkuuBsLv8CYVHZNUVVDa3eyhk=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/coremldata.bin</key>
 		<data>
-		1Mh/ktpwCRvjTgnbmGP4c9EtzU0=
+		HKdOHiuf2AxA+vb+XfQlNfAdMz4=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/metadata.json</key>
 		<data>
-		oH8b1/AbSRKdjBt968hGboQZ8xA=
+		DRanJWym3vaH0ci/RG3lECW/gJs=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.net</key>
 		<data>
-		a/pZ2fpWJxTzxQNmsczMJnBTTY0=
+		dsDsYEMzLJClF3CwGFEwlxV655g=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.shape</key>
 		<data>
-		EWglbDfDd9ByE0to35JYQP2vm24=
+		35oofYWUu6gKvyt2NoCyQFNGJaU=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.weights</key>
 		<data>
-		OWHRHUsDiBB4oRz5S2Rudxeo+G8=
+		uWuCL4EQ2hWQebv+chMn382itpk=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -1862,31 +1890,31 @@
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<data>
-		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		tkgF5pxT7RlO+9uypQti9obolyA=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/analytics/coremldata.bin</key>
 		<data>
-		2xldmRxrtBkRaVZLOZHR7CfRJgk=
+		w/N5qDvqkZpBkMLfdbrmkY6Mg+0=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/coremldata.bin</key>
 		<data>
-		a2/xinF1ozTBRTdl3DLo0Tto6kE=
+		9DrwUc7HW3lhkPV/awhBZ0556Vs=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/metadata.json</key>
 		<data>
-		7VpdQ6u7AJqQkph6jeRHsi/eYZ0=
+		/JLTGmF3/bt3fr6i4xOtBMZYjtY=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.net</key>
 		<data>
-		0PmdCWNDdlne0Nt1VrE896a47lQ=
+		WK6jeeymsjrEhuSk5/JL3d7l8MM=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.shape</key>
 		<data>
-		5w8G5FbX+VIyVmjO7NbE9x5gKms=
+		F5KiRIo7jWUeoNjC8c9GnCvHy5E=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.weights</key>
 		<data>
-		SZ+smgI8wSJcuIunP7fyzPxMrZ8=
+		oR3x7m5wiDnDzwFGjF244sFiDuM=
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model/coremldata.bin</key>
 		<data>
@@ -1894,7 +1922,7 @@
 		</data>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/neural_network_optionals/coremldata.bin</key>
 		<data>
-		uA3l0Th1hUHF8FJlrRRKufqG0ds=
+		tkgF5pxT7RlO+9uypQti9obolyA=
 		</data>
 		<key>bnb-resources/cml/coreMLSkin.mlmodelc/coremldata.bin</key>
 		<data>
@@ -1922,35 +1950,35 @@
 		</data>
 		<key>bnb-resources/flow/brows_corrector.tflite.bbin</key>
 		<data>
-		ZqlXW9N8IHSUMIh7slMYH4qCUZI=
+		f1VnmclOfZh33+h88w/BV4y3TPM=
 		</data>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<data>
-		Otkd6Bj2sX98c2O8u4LdBOTIwXU=
+		IwcOgomYK/rl8uMYTdjLkDlwN8o=
 		</data>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<data>
-		tcDkA6WMfZdvUA/ZbMGSviunzAg=
+		AEbbgkDPSYPVAWCCcgNMihzcz84=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<data>
-		Z4hs4wBV5c2FP9hWFtNO199J/6U=
+		gWfPV5wZBf9AUm0RcNGDV8E8F6A=
 		</data>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<data>
-		CuPbdeGnxKMuL/4+/Aksj9wfuD4=
+		fojMhcUD6MdJ0Kr4JgRBPnJs7DA=
 		</data>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<data>
-		rz3ArZ7QFJD35W3Bs3HxUrhzvtk=
+		+HRu/zGfvtUJGsk2GoiYn90ho4U=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<data>
-		0Mv0i2r5mtYLw2vpv+eZXpkIQrM=
+		xcTvj+5C0g/LMOeMlZYfwSI7Whk=
 		</data>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<data>
-		Zen49g3aYYIHlOt1W5cJAe0LJUg=
+		iJ07OhDUArp0vdagtxTRFaiFdaY=
 		</data>
 		<key>bnb-resources/frx/frx.js</key>
 		<data>
@@ -1958,7 +1986,7 @@
 		</data>
 		<key>bnb-resources/resources-versions.txt</key>
 		<data>
-		QpXW+A9AVMO/H4EOStNd2xH5Mp8=
+		h6qSHvbaA+/nTVwhI8NZtrMinpI=
 		</data>
 		<key>bnb-resources/watermark.png</key>
 		<data>
@@ -1970,7 +1998,7 @@
 		</data>
 		<key>default.metallib</key>
 		<data>
-		N4RFG2M+kozKdQnjCUykf8TXPN0=
+		mxptttmHgdGvYzJI+3jLjPHPhR8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1979,21 +2007,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FhfDC1jxvXARzC0yWrJJZuejoAvxWG3nR0B/0+Xo/Os=
+			vNdR/QNrcfOuQgqPdvgJi9KPqdpxn4FyQro/Og0h+CA=
 			</data>
 		</dict>
 		<key>Headers/BNBActionUnits.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DphCH67Ikzvf2h3hN+nZhfTXSjpL91GChDTi9FpSvmE=
+			i/jFulVCFQEtziFAr5qJ8mWfwTvln1yLEXKX57Lb/OA=
 			</data>
 		</dict>
 		<key>Headers/BNBActionUnitsData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aACzAT71GHazKyVr6cjnTWK7bSjPBCGPY8TEsJbelqc=
+			vIRC3o3L1tFBsxjC3PHinKA9MKcZ9q0NtAELK5QCB9k=
 			</data>
 		</dict>
 		<key>Headers/BNBActionUnitsIndices.h</key>
@@ -2014,21 +2042,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TNi6Luo8ElRqcoO1JOQ7aQz8VyLVH6rYBLYO0I6KKBg=
+			htvbe+UAipwhw0ug/T73x4+nBZqfvL1YuMoL121c0WA=
 			</data>
 		</dict>
 		<key>Headers/BNBAttachment.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+9VAAtrsI1WCZUjIMMLKe50/9LgkfGzzZknoKrLi5JA=
+			+skELgByyk3pAJYvkNMhL2khpy0b6jxc0ja+IYC53TY=
 			</data>
 		</dict>
 		<key>Headers/BNBAttachmentInfo.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MvXLcuncOHZ13mz63ZOLsqZs72i293t4L3kk9JTJ+V4=
+			Gv2D2PTWgsPQmeQvIvQbZ3++2bGH71RFP5TbS411muI=
 			</data>
 		</dict>
 		<key>Headers/BNBAttachmentLoadOp.h</key>
@@ -2056,21 +2084,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gTMGX1L/ASGq8k76WNa/mpjN/PIZJpOyl98KHBjO4Og=
+			9isP2nNe8XSvYKgIs5aCDPBT8WjNPGAoNEHlinAFZXs=
 			</data>
 		</dict>
 		<key>Headers/BNBAutoTuneOutput.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6rnprfELvJ/K8+jBEgfXbZe4U5pha2ZraslPNWKtjkI=
+			Qc2KLd3hw4ZVHD0oD4sOdd+4oryo1TL3peLcvPpHh6s=
 			</data>
 		</dict>
 		<key>Headers/BNBBeautyMorphing.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0n7D2wwFdPRu2f1I3SNRLcvfbK0SgIezx6vTJCKUZZ4=
+			AhRPW2R/wslD6e7ou06U9xk8sAnX6OVZlPxbbxzzp6g=
 			</data>
 		</dict>
 		<key>Headers/BNBBlendingMode.h</key>
@@ -2080,25 +2108,32 @@
 			XQ7LoIrxABdhX9f5VxYoe66wSA801SYsMxYBs8mUM9E=
 			</data>
 		</dict>
+		<key>Headers/BNBBnbMorphResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EFCOIjgCzl340BljxfFOXJz2VJ40+829RtnyoIeX+vg=
+			</data>
+		</dict>
 		<key>Headers/BNBBrowsMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PgOIfpUJxZbsN0OiF4ggoVGhoz2mWf/DQ+YYfW/4uw8=
+			ybCMu4ik7Xzw41P4gPvOR6bHjjAQAp9XyzOeWUL8A90=
 			</data>
 		</dict>
 		<key>Headers/BNBCamera.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g1NNtj/jwly1J9spglYVBtsiWdmx41pYk2QCBOk4eI4=
+			SJ/naFzGPffPPaYt7U5DLLa2RjZTrmUDsKfdhIuTGWY=
 			</data>
 		</dict>
 		<key>Headers/BNBCameraComposer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kGNhmJDGSG99y/cmb1paPBT3Vm5kH/qPs2cWeValfxs=
+			6tS/akjFq7GOcHDo7Ft31OBgKMYddiImc/6TrNvFXk4=
 			</data>
 		</dict>
 		<key>Headers/BNBCameraOrientation.h</key>
@@ -2112,7 +2147,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wWu/BDfhIJ1wdjPeK3v9+X3Wi3MiJDqXN7evwqT5SEY=
+			k1f7nBlJUEfeRvjK5bWVqEUuhIaZ6aKQCmiFJne4n0A=
 			</data>
 		</dict>
 		<key>Headers/BNBCameraPoiListener.h</key>
@@ -2126,14 +2161,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dkexaXSe8dtystqx0hFYD4f20cJOOwzfB9DS32oyH+I=
+			PjbhvuABV2ocJevAlWarAI5snvWVjVi1WxXL8B0BpOo=
 			</data>
 		</dict>
 		<key>Headers/BNBCameraTexture.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			slDW3gJEvvGKpxnxAWG3jSQ76VT6GyV7GYk+csDbtts=
+			yq6xcBsWiSKfFfwzTg1ecMFa62Dfw3dJmUJvoKSZX6c=
 			</data>
 		</dict>
 		<key>Headers/BNBCameraTextureFormat.h</key>
@@ -2161,7 +2196,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6VZKxv+dhiCBWa7w2F9rIpslRFaOecDlKuuwyDnLRX8=
+			BdI8sVTvDPujLjKlNBmvN0Vp7w824lyYiVYHvM3cCII=
 			</data>
 		</dict>
 		<key>Headers/BNBComponentType.h</key>
@@ -2182,28 +2217,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AsDTsT9SBFtvpMku98NV0F3HoG/m+m9Xi/dYaK3dhRE=
+			zlpaYO0YvTLIpm6dHq0mDcjb2+W2oYLDO8TxmN0/vTI=
 			</data>
 		</dict>
 		<key>Headers/BNBDepthMap.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VV0Ghgl8UDoQ5jRx3DNaNjoTmJAUcqx/Z+NDJYC0NVQ=
-			</data>
-		</dict>
-		<key>Headers/BNBDualFilterBlur.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			7lOANOPVEo0cs9CFeu2Zz4AdfOcAHJQYIAdsi5GK0yA=
+			DpHpxAOKNsBpiIu+TakCdhUYGSUF+NA21iYflkjEESk=
 			</data>
 		</dict>
 		<key>Headers/BNBEffect.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJ1+TV0TCbMN4nimVm09tMmlPli7rLIZdlv5jYUtPFM=
+			enSx91PRYcOnAy1KwU0S33vcDYxYoykzx6mvCCWKsZI=
 			</data>
 		</dict>
 		<key>Headers/BNBEffectActivatedListener.h</key>
@@ -2231,7 +2259,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sWi1ipSFWeeimo/OG2rkaJ5a9pOS/b3RejqT+vx9BZA=
+			UfiHNEUMOtrRnMxE/Ahnx6Q5+dEK6v7229iQHcBnzT8=
 			</data>
 		</dict>
 		<key>Headers/BNBEffectInfoListener.h</key>
@@ -2245,21 +2273,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cm2kmxjZFEsx5vCOInA8+9jqwtl3hfK+WIqpcbv0bOI=
+			NCH7+8fXAeX0nBTzqRVSlvHLVSB2QCT2vEUTRFgTiR4=
 			</data>
 		</dict>
 		<key>Headers/BNBEffectPlayer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4LjHwPwGy17eulWd/zeRpkV06oBBiPLxBcHCYQwvZec=
+			azNn9JdQ3nuKrA48lG5/Ol0HPldM3VyODUTlNYdF8nE=
 			</data>
 		</dict>
 		<key>Headers/BNBEffectPlayerConfiguration.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cgoCC5sA2baJAiklC86+O2hblvaTzkio+yuJtTXLHas=
+			leQfX25gJL1FEA2h6JyHSwyrjVL9gDFRotKBTqzEqiQ=
 			</data>
 		</dict>
 		<key>Headers/BNBEffectPlayerPlaybackState.h</key>
@@ -2280,14 +2308,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6/vS7MzixbGATrKlyPawN4xdEey5muYl/xVV2wMIfS4=
+			qxJNpN8gJuwnU/DNXFwK1wpRNdlshFFnks5XpiSnQ3o=
 			</data>
 		</dict>
 		<key>Headers/BNBEntity.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YKpc3LFilAJCybjLuFJV5lPR9JzrJ5qP30F9loxWb6c=
+			kbJxeWIrqOWVaPpTOZTrxA2iHTmNMtTVgRy93Xv2gKI=
 			</data>
 		</dict>
 		<key>Headers/BNBErrorListener.h</key>
@@ -2301,77 +2329,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9mNTWmGRMyGMlUUvvlU2qVNvYFJSmG4kIviYkublo0k=
+			yS8wKibYz3Gbq6zfduLlrMZSPLWpd4umVWsfNIqa550=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesCorneoscleraMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VQD7+oK+RamplN/10yQcfzEpV+tmdqA5mccXtwK4oTg=
+			WGXN75u9XrZrA2GrISGYt44/GGFgne1QStG7XoBcYmY=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesIrisMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w+t8g5p4FplkOQ19HAl8N48+5eZENL2IAuuF76OQNnE=
+			9qE+X6/Fu8O2/7Wmbew8XZPjclPpICDP26EBqBElti0=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j0wBmRdgPp47pyW3A1HDN/ff4K+gIWu3/9I/E5yx6EQ=
+			apP0w/4DI9R4OnRKnxvx/RYfTCluSMMuR1wT2Ze9VVA=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesPupilMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9yIJm/EhG9SGBw3gahpEqIQJ8rsij7dChN0W5DbbM4I=
+			hnp3NX6MxX0UnFraGiHnwe0WcGZArj0ZEVyiwK8FGWc=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesState.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gxY9gkfYoqtVqV0T0yHcN9Gt9/Tvg8ydv3xkQ0kEp50=
+			6byznZs8Y4wzfeezcpULBzyTxIuG3uTjj9afsMC9KDs=
 			</data>
 		</dict>
 		<key>Headers/BNBEyesStatus.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qjPLfJCeO5ICPmDcDO5GiEtIlNRTbyYJbpfUH+CNwWw=
+			fapXGYk5g6bq+sf29p45vRfR6kwW9+g7TFc19IX9PCo=
 			</data>
 		</dict>
 		<key>Headers/BNBFace.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AojwBIDqWYv2hUT42lg4tLwfALRKtJoe0jRSK+rg/Fk=
+			VC7S+nUU+vdw2zhAvRCrdk+XjSEM+dEqZJor2YYcKvY=
 			</data>
 		</dict>
 		<key>Headers/BNBFaceData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ro1XvZQtvXA0OBl055UIeCpwRLZu84dIC2gYxlTEwJU=
+			OngSuWr0UpcG6eFN7Q/y32wygIFx60+uhGPUynhody8=
 			</data>
 		</dict>
 		<key>Headers/BNBFaceDataSource.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hLFnROf7PGWKkpg68HFtHi05HbiGaeTQWoPuNX7FPks=
+			M/FtoZWnObbK2h5n3Zw0XIRo0XdbXEIlOsg73f/v/lM=
 			</data>
 		</dict>
 		<key>Headers/BNBFaceMorphing.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bxQUUsdNc3TVFP46MWzBMAGIMglzQmzoMyWBn/tDKhE=
+			cXROYKuLQDLfq47uLjXOI+fplNKJbNEqe8wOuUt4WP4=
 			</data>
 		</dict>
 		<key>Headers/BNBFaceNumberListener.h</key>
@@ -2381,46 +2409,39 @@
 			CJZSH6EPu7Szedeh0Ln1Nt5id1jvzt2glAeqGb4a11U=
 			</data>
 		</dict>
-		<key>Headers/BNBFaceSearchMode.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			lNwOrFxnHqhyt8nTFBV4UqTqBH7z5NFmLa6xyWacRss=
-			</data>
-		</dict>
 		<key>Headers/BNBFaceTracker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3H7x0S42krybYlqs4/DXjg+GoB9u3UuTMwxX3wHqWWM=
+			W8H2gTzWnG0FoDILO86M2d3PCyF1pLiviVamGfyTEws=
 			</data>
 		</dict>
 		<key>Headers/BNBFeature.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dk7rhV5Kw5VQSNQmuLV0zPbL+IkGPIACucxxVhIL8eA=
+			ws/N1XYWOo/ctM9fSJkz4um3DfKggD39UMEIdpCExQA=
 			</data>
 		</dict>
 		<key>Headers/BNBFeatureId.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3PcBVBRU6qSkt0/wIRZbtPdzGK6mAntyZSvmxGZbNw=
+			RYzGzOsjNpWNc2L+LFMeptKz9LPE54sld5CqjN6nN6I=
 			</data>
 		</dict>
 		<key>Headers/BNBFeatureParameter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dj4+2ZxopydhHsNji4jM38++XXD0Pgfw0TX27M4hmac=
+			MDg+GTTffpGYl3LhIomgStvyl+BRnwwIP96bXJO0Zck=
 			</data>
 		</dict>
 		<key>Headers/BNBFrameData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZUVliprkUhCFYRlEl7ANnwEnZ33+ZSnpFVXX9lPuiIw=
+			JGzLHBsziMplHEChTpcMyr3QJvYV4q5dPbYIb1qJPTE=
 			</data>
 		</dict>
 		<key>Headers/BNBFrameDataListener.h</key>
@@ -2437,11 +2458,18 @@
 			o3AThooI10rD9aGcOEjUrA0OZV1DwkVm2mRE/tF/i6A=
 			</data>
 		</dict>
+		<key>Headers/BNBFrameProcessor.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			63+rKom4XkxYzeLY6qI1yrtzvS8qlvpgnQEPNIKiP4k=
+			</data>
+		</dict>
 		<key>Headers/BNBFrxRecognitionResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/sbYmM3jZvO0qOOl8IP8a+Eno+5OBLh/vin1A0CSOg=
+			BCMWEORRgqKzU9Mg2wbZ5wD9uWS84apKjf0i9C4PVA4=
 			</data>
 		</dict>
 		<key>Headers/BNBFullImageData.h</key>
@@ -2469,14 +2497,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sXkuWJQ+7K+Q+OafjD7ENo+CBESPxcqaVa19NOqJY6I=
+			twJKqHP9/SFstgqzHSUun35unw/t3R16ST/cg0y2JMc=
 			</data>
 		</dict>
 		<key>Headers/BNBHandTracker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0ubNg5DGgD22cfYj7g75Q2Ofei7zmmDaCdCUPI5Dis=
+			xIbR0I7DUeBpmcmtMWwvpbaLeNzgCUMFgfnB1q5se0U=
 			</data>
 		</dict>
 		<key>Headers/BNBHandTrackerType.h</key>
@@ -2490,7 +2518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4+YHgv58Od3a0zuvXLXWBWuH5IxKNsAlqdJdjyiR6Y8=
+			8cGrXnxz7XpHaXrOnV4w/FHi38JFvIa/wZgC5IQnTxg=
 			</data>
 		</dict>
 		<key>Headers/BNBHardwareClass.h</key>
@@ -2511,14 +2539,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0eqr4SA3L8JeOflUTaLwSS0mUGNeG+JGBTpNTPtwfWg=
+			tRQkU1gYx/oiczsxln5Cd2SBqqWAtOam19p8dct3wHo=
 			</data>
 		</dict>
 		<key>Headers/BNBImageReleaser.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PWa0VbABbvBATxTJUZVGe7MtXdrubXixEacvu5Zov6s=
+			2QXvEH2AbmndzSb/c4XpYmThMsW69UkTCN86imwiGBM=
 			</data>
 		</dict>
 		<key>Headers/BNBImageType.h</key>
@@ -2532,14 +2560,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w16TpuxfW5SYWJ44iZ4RA4Ty5qAhkMWONtHVg8TupYQ=
+			DfW6Tms9olRqllMyEBbTQ/C1HH1sxe7hHzeyKa13vls=
 			</data>
 		</dict>
 		<key>Headers/BNBInputManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZmRlmjTAtj7Dwpp+GA46NXkjhHIWX5vGkLN0XP+roNM=
+			KiRNN/zf20SRmm+QD9CnIgcAsCntd/b5aVCq5AU78KA=
 			</data>
 		</dict>
 		<key>Headers/BNBJsCallback.h</key>
@@ -2553,21 +2581,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PcqUjmilo+oZR4kfAipoIpk2P3UiLsL10OY56lrS/FI=
+			fu4JC6ajpgTaipyA1hTyf7JUDtMdmIMhWUn9ovfsNUM=
 			</data>
 		</dict>
 		<key>Headers/BNBLicenseManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			alMl2IDxpMDd+XjTkyswL9xAWUnrS2BS1FwVrrkW/Dw=
+			wHEu5/l+LfARXUmMv2yOom5YE2YGdbbUK7Zd7x6C1VY=
+			</data>
+		</dict>
+		<key>Headers/BNBLicenseStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x+q+g+UHueAzS7QHr0IaG8Eo1KbVHVVTyolcyrxvYt8=
 			</data>
 		</dict>
 		<key>Headers/BNBLipsShineMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rTR6f4MBN8gOVWVdX67rLdH6xwQ29WBnJbmlmq436Z8=
+			6uI1SDzsWQ0g40goFsCUIrRiS4n4u9H9EsJzQc5lnuE=
 			</data>
 		</dict>
 		<key>Headers/BNBLogRecordCallback.h</key>
@@ -2588,56 +2623,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j3niNdOCFDrYGBRR9OVQK81ixryzgjvZYygE4b0FIH4=
+			vmMP6hKQQlLWT74fRbxAdNaUT1Frmk+1cBdTILRJl1g=
 			</data>
 		</dict>
 		<key>Headers/BNBMat3x4.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ue75J9vMaz2BoELvMvZwBq0rl3FgSzzZAnbwPRws1No=
+			DrwYZLyuVVI/mtQruVWCRUImR1yMOX2Iz2dOt8bFVdc=
 			</data>
 		</dict>
 		<key>Headers/BNBMat4x4.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			05IyrA0di2EeOol9HP3pKYDKyFWUJAuZbd3pLUxJQeo=
+			W8ObjLoj5F093pyIo6VIDfzAN0uKJi3roRz+8kbHk5E=
 			</data>
 		</dict>
 		<key>Headers/BNBMaterial.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/SxASMdSQHVvQy5P3+Ou4tsyJHAPBlI4mW8jd8CtrmM=
+			FtnHksl4q6neX/Gn69KeB50FDxqww6kjB+fPpe7fRqo=
 			</data>
 		</dict>
 		<key>Headers/BNBMedia.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d2t8EFRCWZPqnvMZDlSjGVZTY9e6ZN3Rd1m6h2JtOSc=
+			5F611O/76vVYUNt6GA3mxkDEDnVrySPNXRpoPXUqOE4=
 			</data>
 		</dict>
 		<key>Headers/BNBMesh.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lPjx6TFo5qFoL9ofLmqj43XBWgrGlRoKoP24XyVXJqc=
+			A9u56J6kvOscsMyt8Ctok9POOL6vNd75U5IFcW28CUY=
 			</data>
 		</dict>
 		<key>Headers/BNBMeshInstance.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vxWCa/TUarM9l/yv9gwvwMGwSB3hNZDzmH00LljFmvo=
+			d/Iat0nmgCCGYs6iKYhyGdokL1NbHpdmaZiyHXvXT6s=
 			</data>
 		</dict>
 		<key>Headers/BNBMorphing.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1SrCzGxCmi1QS681MSRGAovdDuqu9sqmNTqCrsD1bn8=
+			Fm2xtiSSXFbzF3IKsUJnJrn8UA3GxXGlusYjg4yOe6o=
 			</data>
 		</dict>
 		<key>Headers/BNBMorphingType.h</key>
@@ -2651,42 +2686,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p/xTdnpGV9Dl791H2BEZQU0IxlEOHGh6EJm3bDDFG9A=
+			lNYBmWT3m/tCHNzEimQEAvq3eYT2mHvIXWlXANDqI4U=
 			</data>
 		</dict>
 		<key>Headers/BNBNeuroBeauty.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N34f5aJB29QLjv+QT893GiUX+o82e7c/ls3eNGsc10M=
+			I9VHTtU8AYcBtQv0a6t0OKbLM2QVv24ORAawpHUsOI8=
 			</data>
 		</dict>
 		<key>Headers/BNBNeuroBeautyData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QKs+LVF2cwzABG+ne1CHcASp7XnVm+QmX6eXUZzshxM=
+			AwdS9GeiCOWmWvdOzXXvuH88pyi9ExOlC4UqQ1cr/xc=
 			</data>
 		</dict>
 		<key>Headers/BNBNeuroBeautyInput.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dGi0AW4ejRyjM5tjAbQOFbS7zx2oeCYYKDlKzB4gBpA=
+			9Tav7xuHALO4cAF9fOC/ZvthjE5b1X+6Q3Mig+XENUQ=
 			</data>
 		</dict>
 		<key>Headers/BNBNeuroBeautyOutput.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/u6R5oQBX3UMpHrKAoO1XIr2pXdsD/bNkl8gISrIyJY=
-			</data>
-		</dict>
-		<key>Headers/BNBNnMode.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xaaHA6WnxCoVk6mFLizAqePW6THFLI9OygsJ5g06L4Q=
+			Sn8so48qZasH5bVzrnTvT0hBIvfS7Gx/fd+Gf3t2tok=
 			</data>
 		</dict>
 		<key>Headers/BNBObjC.h</key>
@@ -2707,21 +2735,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/wJwZvfHs9jyAIp4pFVcYuTbTd1at/dCIPeJuEwZJJA=
+			/8ZeZq6tpw2ocre0dHtbyGF69yIUiTgwAuLLZ/bPX44=
 			</data>
 		</dict>
 		<key>Headers/BNBPhysicsSimulator.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			93ipyher8fNnjqI7s0UyNWL8yBDekmAjgFspa2gfda0=
+			76OPpzE3fg4l8xkbf8/N9RT5HcmY5wX1EfKaqCouuq0=
 			</data>
 		</dict>
 		<key>Headers/BNBPixelBuffer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yhiYPdevBV9QPpu01qflYXOk8duBfDz+3z+vidhQgCc=
+			IkNm5pVmnYyqr3AayZX6niTLmFxB70Pm4bTJv3+82I4=
 			</data>
 		</dict>
 		<key>Headers/BNBPixelFormat.h</key>
@@ -2742,14 +2770,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			As10xpC4VW7z2hJg/3qR/mlpUy/zVBvpi7Oif6QVYI4=
+			JL0ajF/AUug5v4MdiWjvn17W9lVEKJ1orkLfRla6rb8=
 			</data>
 		</dict>
 		<key>Headers/BNBPoint2d.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TWltzNTYMSWZcvVOQNfYAegvCEt6k0HJsOKniUgG1D4=
+			BtlWnD8fC3JMCDImmfrEBBKeHNjXVEDmaVPH4Ojg/D8=
 			</data>
 		</dict>
 		<key>Headers/BNBProceduralAlgorithmType.h</key>
@@ -2763,14 +2791,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1NGKYF6xvpe6b2dNGJ+7oKbcGkv4ibtgrpC1AGKDUYM=
+			Q0eAUb0lqXNo8fRWzc342pEWTKkKoVzIQk4JRW6n6tA=
 			</data>
 		</dict>
 		<key>Headers/BNBProcessImageParams.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DloURFiuoGTO7ls/xfjkTyqb4qDkDxAD8H41oTg8Iak=
+			p1zIUOuyus1tQ4nOOWbcvlDBVsokXfgg3TKXjjEBBqI=
+			</data>
+		</dict>
+		<key>Headers/BNBProcessorConfiguration.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d8Pb5sODmjgwFLsUNDh5wPKYlQ1wrXToTmLlRcSuWvo=
+			</data>
+		</dict>
+		<key>Headers/BNBProcessorResult.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8m39z9BIzKp6rBKRaTwBaNeoV10gYyGFsOAmEPx9M7U=
+			</data>
+		</dict>
+		<key>Headers/BNBProcessorStatus.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KqSfD3+mLoE9ab7W+DKx5sJcbhKipi14IeektJX6cNo=
+			</data>
+		</dict>
+		<key>Headers/BNBProcessorType.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PtIJinGuwjzN47VFjitP13WH2f9Z6JOJDF3K8Wv6qpc=
 			</data>
 		</dict>
 		<key>Headers/BNBProjectionType.h</key>
@@ -2780,11 +2836,18 @@
 			e551o71ebgEBlG9WKBddzDlYJYAjiSqb/QXgQMgL/+k=
 			</data>
 		</dict>
+		<key>Headers/BNBRealtimeProcessorMode.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iFhYjJM5y/Odi482cKRtVuc5BWocIfgT73R5B2B0Fe0=
+			</data>
+		</dict>
 		<key>Headers/BNBRecognizer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3jr4z8sK9lyNhhASCjj4qhQQ+VaJuTky1jiMxIMjYtA=
+			E7sd61T5/gmkHSEddhKEczirPp/CrgG1p6+YcoGu1S8=
 			</data>
 		</dict>
 		<key>Headers/BNBRecognizerMode.h</key>
@@ -2798,42 +2861,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p6qgnE4pCh1aHptFmR6n0yZu7J3wDchnWx7oBpq/OLg=
+			HK56oxhibAfedjJVhQCIZKSXG4PFdaCdj908pyMlUDk=
 			</data>
 		</dict>
 		<key>Headers/BNBRenderInfo.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uYnMv5YYrCj/gM/DyiXHrjMcT1WFh5eeCsS8C3viUDM=
+			Qo8Kd6/c5L2VWEdvzOx5P07KGuUZ/5KXmaOriH0xOEo=
 			</data>
 		</dict>
 		<key>Headers/BNBRenderList.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gD864Ba+PIqgKE8oRFpc/cYbCMmV6M3l5EQjq4cDpmI=
+			BrcuGNHeGfW1vos0+BdvkWkrVrRqVz/HEd+DWXEgUTc=
 			</data>
 		</dict>
 		<key>Headers/BNBRenderTarget.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ObJ79fsQnu/nL/QKhgmrgCFvUHz2xeE1RHrFnQ1jER4=
+			gyQaOCaFy+DcCH+n9oVJMtIqV8F3cqcSjN2hzF7SYvo=
 			</data>
 		</dict>
 		<key>Headers/BNBRendererCommon.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TqEhhhQlXQrKtGtaV4w4UWx75mvZyO7i1+oPkteRnKo=
+			aI05YI3L6IxTDcYrs0p5bFopNOa73dLM6OPkBQPkfDc=
 			</data>
 		</dict>
 		<key>Headers/BNBResource.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qdK41MEgvk9OymZRUJfQQ18AiXmLCBbqwVmFHoIRqBU=
+			8buj+F9JuPbofOMNKS/iLwlhcx+JIGieWqjNVDbu8Ws=
 			</data>
 		</dict>
 		<key>Headers/BNBRotation.h</key>
@@ -2847,21 +2910,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KHNvaPjiU5R5atC/4oxiocwK6puQYOimSt9HnJ+rEVk=
+			PzWGaBv8J/Q7Xofe1+Zyuq5HfMv2saVK/h62wafShSI=
 			</data>
 		</dict>
 		<key>Headers/BNBSegmentationMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			etehjSfl2SoY2viYbcdNONFl2R77G4kFt49l95BBJ+o=
+			dExjFkeoTOEM5eBpltSl/1wS95f80I7Pn89vSHpilD8=
 			</data>
 		</dict>
 		<key>Headers/BNBSegmentationMaskType.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e3gmVlNS5bCmRqM7Axp+soVy4qWMG4fj49AGE9e/QwI=
+			6eHEs5UPrIVcl3wz+gC1VTOMpNZtG+/lAbQFqnhgJa4=
 			</data>
 		</dict>
 		<key>Headers/BNBSelectedLips.h</key>
@@ -2882,35 +2945,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3dCpwKeOAl8lwdjxSdbTIBy1MtfXIsSyCgNaE+Xb+XQ=
+			5h2T9yw5f1/BE/LOaY5Qy9jvbeHorSC/6nus7aDoSDo=
+			</data>
+		</dict>
+		<key>Headers/BNBSize.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XY7E96ACb6A0NwW+B0fkNIPhe3xP1A52PbsTlnth0k0=
 			</data>
 		</dict>
 		<key>Headers/BNBState.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V7oO874JdJG4Ren4rPJdnFFT9sHXSHOd8FwQRZe0fA0=
+			uXjtQddQ7Ibzvh92mDxJtsfoVWpyMpzzW4FMft2quR0=
 			</data>
 		</dict>
 		<key>Headers/BNBSurfaceData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2ZkI7TD5ezD6Owq0sqJIeA/9dscjzTU3woNZBa9YC6U=
+			qGajLuTjJyEf6FPptqJzYnAel/tN1I2XjG5jN4vwths=
 			</data>
 		</dict>
 		<key>Headers/BNBTextTexture.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lhOBPSmw1LJMaXx5T1Maj8bNQsYTyk9mddVIt2s8q6I=
+			ZiHjudOa2lsZZozWheb8hSzK4f4z+bSlL23ynQcLd+w=
 			</data>
 		</dict>
 		<key>Headers/BNBTexture.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5lt6nk7EWyNtHWvt3atvuBkb6LQ/VZwy8YANMsIhyoI=
+			PF/P6DeGj5c7JGPYOj3EgZk+yq4RBv8D9pm9Inuv2VI=
 			</data>
 		</dict>
 		<key>Headers/BNBTextureFilteringMode.h</key>
@@ -2924,56 +2994,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aB8ReFjsgtf2jX5vznqC8R4XQaFu3+SBKtlZWY3x4Eg=
+			Yr9/fKNZcKKFXrUJRwGKotuwVXJ5SG3tQVEkXlx7fzo=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformableEvent.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nnK3F4p3UBNH68MsITGXpMq3AdVBzyEgpoOBmjKoPqM=
+			AeW9+Cxd9RL7qiI5ZTfkAhOF6IV4mpenI7lRqbf0uBY=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformation.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tPdNa+0565esb5y5YU0NNnygs/WdqKTgkC1Chfkx4BE=
+			U1Z54IXpMXKqCj/XobFXr/1S0pHH3C545OJdKafuCBc=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformation3d.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E13Z6tRu5/a4//Tj2QAg+GB8z7yzgI85j+kHptebzko=
+			eT5XrgDTnO23dA6cPaPyxUvI3XuKFjZ3Nmm7EIswP8c=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformedMask.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7cy3C2Qxhg5aPJbDwOkbOrnOTQ8nkpoApMubg7iKvM=
+			Bl1MZbdD7tMGao6YBfNXGrpaDTmtCQ/XbcneFBtWWxQ=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformedMaskByte.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W4aoFrCu7NP6tHfJCREZeQQ3B1N0MS5/i4FeyOm0A1s=
+			r0iVX0gMd+joV6VAdBXmw9CY+aeQCBCGPq0YHGkoTVg=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformedMaskFloat.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			prbB/LxpSEmfwLj6f/ySwdk/T3mf2NDf3zt20IzXerY=
+			XOZ8n+VHd17oFE2+pAIBQQF3n2sGJBHqyBE041/wAOk=
 			</data>
 		</dict>
 		<key>Headers/BNBTransformedMaskGpu.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QiTBqVzXBzMbz3Sg+lFiGNU3iZHlObjX3Fpn4VTsoVc=
+			QGp6oZFceL38BpFfzU2/HG46qRZYLSqIuxBnCUfieJk=
 			</data>
 		</dict>
 		<key>Headers/BNBTriggerStatusType.h</key>
@@ -2994,28 +3064,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2an43SbuqoCKAnlRlaSmBaktsTynTuszBmXfnGS2Fb8=
+			8llp9XsYHL02CBKofgGtU36yzSNPjVgXVCO/0cA33cA=
 			</data>
 		</dict>
 		<key>Headers/BNBVec3.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PLh4pqyHy/YdIyvGByk5h31hBa4kUHWE4/wbgUYeJkA=
+			jYIgKljimV0hP4CoTQPnPbDjzEsI/4jUyL/5RZSD/d8=
 			</data>
 		</dict>
 		<key>Headers/BNBVec4.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			winx9TswFLn3A66Xx3cutVYMCpw71azLwqCxmEXjBlo=
+			+VkZD40psntiA0D5kIQvHSwjVu9/dN5zNI1wMTzMDCs=
 			</data>
 		</dict>
 		<key>Headers/BNBVideo.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			klRjt63ZplxU5WcO8rhaS2vScU15gehMDySzAdQV/vs=
+			1GFJWb5ZAht1W0JW8tBgjM9uKYSB5n8i6mnQn51XgKo=
 			</data>
 		</dict>
 		<key>Headers/BNBVideoLoadingResultListener.h</key>
@@ -3029,14 +3099,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x0yDVR6XiDVhetwZHG3VxrhpPHBcnvk+WZImpyvZgxM=
+			s4a4e2DOVeoYtPPSJNjV+ovPYQH//YmWrjnN6t8lKgg=
 			</data>
 		</dict>
 		<key>Headers/BanubaEffectPlayer.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILKMm50m3ZfBugqKBnyKUFLOPxYILjL/DUOdhOWGWnA=
+			1o4e3Be1mqudhwWHJTEETKhCJKrgggByN3gWIweawAc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -3044,6 +3114,13 @@
 			<key>hash2</key>
 			<data>
 			XN0GUT0SeyyL6brNEnVSstHB85qSwfgcUgyf0Za+kqs=
+			</data>
+		</dict>
+		<key>OEPShaders.dat</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fldZ14HxnghPtUnxoZVYKZgYmGxH/6d+VTh5EZwpEh8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/helpers.hpp</key>
@@ -3057,7 +3134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gT0ZO0Xyf+BD5tp+4INzV79VLAOnF+Vsv6/8Nfzw4AU=
+			MLVCTX3NEKb9rzEHbfZlsDWgDqWsO/8bX3R9Pszs8R4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/camera_orientation.hpp</key>
@@ -3099,7 +3176,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WPRA2px+PnNJa+41X6V3sYaWxyWdYvQOu4rLjnKmLoo=
+			+I95O1gCCPUPTO1+ypPtBcqyvLPfQ+bs0ii4tRH44sQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_activated_listener.hpp</key>
@@ -3141,21 +3218,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXVIeG/OB3haww5u64NV52YQm6fUE1DI/t3ElhvBJFg=
+			rhA9UMYVUdQDTXEDNO3u7zsx0mUv9ImLX07IjIGLvOo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KV0mG+f17DGQFMxGtfdWbardEcI7/Ds/mcpdMxl2wxg=
+			/JJ9Zy4HpMd6ECO4PwZMDc4Er5kQ0n4c2/AouJwPcoc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player_configuration.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XJSsGmLAzNGY434tlKWWOJWonOc0T14oY8FLcDpEw7I=
+			+ijH8U9NnXdrcOGq2txrOJfs+Br0c+YnjK9OIClxg80=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/effect_player_playback_state.hpp</key>
@@ -3200,6 +3277,13 @@
 			kitFcCBz9TqI2j2GnpzhFDkJmlks0qy8GExArbtvViI=
 			</data>
 		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/frame_processor.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ctxmHVtXMKyXC39uS0B0+AkLvkFCBddPzIanKXbkL3g=
+			</data>
+		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/hint_listener.hpp</key>
 		<dict>
 			<key>hash2</key>
@@ -3228,18 +3312,46 @@
 			sX8M0i3vzj7tJbOmz8gXcS+PJ6Hu+KhBViS6VxWmEi8=
 			</data>
 		</dict>
-		<key>PrivateHeaders/bnb/effect_player/interfaces/nn_mode.hpp</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KRVw1Imx8XJU/KVjrOL9nEp0YSMFTp38DKLr3KhnsAg=
-			</data>
-		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/process_image_params.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			+dBX7Igfo+0yimvzUqWynnp1yMSSGJ61+BMtW9WZ83o=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_configuration.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HrY8MxCphbEXJuA91rJCCWgnPehhDIb8uS56lVDXl3E=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_result.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			juoDNI0kmnh6b8aSvfNfVHWWgQT6CkX97QP6z1wT7T8=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_status.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2yy1DtaDMuZzIlLC2bC/93tvKpG6uK1EYmMT6FJEDsg=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/processor_type.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			39SoBraa+TNwvaPqBjJg8O2JQpQNPLh93ikuTaawtb4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/effect_player/interfaces/realtime_processor_mode.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P28dadQOFOSNon5e+X4/qQD+/HbYHREgIkHNdUN848g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/interfaces/surface_data.hpp</key>
@@ -3253,7 +3365,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kzbn4qh1ECU4Au6I5Djelr30/Uj6ucpx/hJGyuyvp00=
+			eJaoK+ZgBynmedZ8m1I0AYVuqhTmO6OD8yPN7akuLEA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/effect_player/utility.hpp</key>
@@ -3267,35 +3379,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gdwNmmDHs6awSfk5b9sg1DOiTMIKSrQb1S+ar2NVRJk=
-			</data>
-		</dict>
-		<key>PrivateHeaders/bnb/recognizer/interfaces/face_search_mode.hpp</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Kkb0Y1WzihEgc8XGnzfxud+OPI4YHmjDFjt9JISZeFA=
+			aF3UjpR9CiNHJ+uLi/Co5ZKx0gXXMHQlXNHh3cHbyxs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/feature.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ouDxN2+PYBVSSdJcdEnpY2peaLE8rjJFKYJVt4SlzJg=
+			DtNLc7hgFY06xy12UOkdRUDCw2Yq4agQSySmJw2QKHU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/feature_id.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s1Ct3FYFTSIkbsXcKDSGnjpP0zU2WPHAsz2M9rtPMmQ=
+			otBhHCiRnKUAUztEgpgQU0qEFJRpkG5JKa5irn/eBhM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/recognizer.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8lTGyjfsFB70fC1uWkNEtnrQiDDdKfcC/59TqLFGQAw=
+			QIShtfOAbhSAvxKHKvueP9SLwqdr8BDhab9+cVGP+EU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/recognizer/interfaces/recognizer_mode.hpp</key>
@@ -3323,7 +3428,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Hnwa9oJB0xo1GTk99AHCS+OVKrJ8HQNBESCHu23iOA=
+			tqtgnfhdKSF6Ppqtm79hcC+qR3j5V45samwE9/jSVT8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/animation_mode.hpp</key>
@@ -3450,13 +3555,6 @@
 			<key>hash2</key>
 			<data>
 			4BPwy72SjP+meYoOdndrs4ZNsrk4AiMry0ZJfm7RM/k=
-			</data>
-		</dict>
-		<key>PrivateHeaders/bnb/scene/interfaces/dual_filter_blur.hpp</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SW4FW4JObDDs4WKpYMrGx6YnwuBnYjMDpe5w2unj6zw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/entity.hpp</key>
@@ -3652,7 +3750,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iy0RzEs7KOaEGKZRxtjijo58qf3U3iJm43PZj+jZ3wE=
+			dKa22kB7D1r7j+WMzUNGsgysTL4vJySBMsa9cc5Yaz0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/projection_type.hpp</key>
@@ -3666,7 +3764,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yoqlQ5S9FvI4K6hoctdeo0MVk7TzkkxpUVVJs0LoFys=
+			NF121MIE/9+7NFBmR3NaynP5dcyJfvjEfTFYl+n6VdQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/render_info.hpp</key>
@@ -3715,7 +3813,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HEWnQLLJNupNvcq0eRbK4W0vNeFvX+wOuMlOqgofnPs=
+			tfmNF9BLfw3R5VAMfCxupQfkWAoAamENyU53OwXH2ww=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/shader_source.hpp</key>
@@ -3729,7 +3827,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CDh5o9Z7SmiSRGzB5vNwMhN0qjYJSI90k2T/LlAC8sk=
+			Kfrb92kGLDyyuccHwZh0Zbl8w+P2EFxA8e3PAM8QOcs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/text_texture.hpp</key>
@@ -3778,7 +3876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jxtZdX8Y3xWAYhlYqi4hcUw4FZfXEtkV4NbvZPrep3w=
+			0/asNhX+CH9suJs21fvY0QGGBpqBHLnyIE3JL736fvc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/vec3.hpp</key>
@@ -3799,7 +3897,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jkza3IFDBiAH1BIExoUAKPp/FszsEfHVxdqSz+rwrc=
+			tdPkvtHqOrtZrCtpOpVT+umlspO0vMCauTY66Gc/IwU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/scene/interfaces/video_loading_result_listener.hpp</key>
@@ -3876,7 +3974,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uFFdUlJLpuWgzY5CG6c0bl4ZDoprDc68nJnJBnkqDyk=
+			0IQ8zC2aCEtq22iXfDZbCmeMctr5cPntePSLHv57lyA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/constants.hpp</key>
@@ -3890,14 +3988,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			70pfqhGtZ31KXS5LlTCuPqZDSsvnca7kBsz0w69KmMs=
+			L0l8Kqt5k/cOy9qZWbhpJ+P5vIvPxN7BBgRxU0MXu+E=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/full_image.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7OoIJUpf143ahQnfdNyodn/Z+sycZZOcKtaCUS7s84=
+			qe7jqPGOs3pBP9a3R9vIfxxcqihJGJnb1Jv4Z7AkEKQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/acne_regions.hpp</key>
@@ -3932,7 +4030,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0LtcxRvik0nE7GdcsDwAx0Qd9G66ECx7dPYG5TXc2wI=
+			j8J7PmxANaCX09EapC7EUeQF+GpmCA3yqL55N6kcGiE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/brows_mask.hpp</key>
@@ -3946,7 +4044,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C7lb+rmmkCNhNDaFE9uw+B+zZXD0bhuwM0n+BHruL9g=
+			c876bMpXiXSaOqnsdfg6WNA//PRPdv7r+fkL9hUVroc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/depth_map.hpp</key>
@@ -3960,7 +4058,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Eqc1q0hFOgLVxcJXxN0qaFtCV3da7uqVzUGR8URyaaQ=
+			GN/B0cIUNKVPZfIfr6GGsLxznBvX7/iYNjacfbys1wg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/eyes_corneosclera_mask.hpp</key>
@@ -4009,7 +4107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8VniRzN4O1IzzC/6pRZoGF9es49Z6aEmLC049RSV4eY=
+			oeeGEPg/cZwZ+PmTM1CfQGKdx4qVbS2l3c++BWacU3g=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/feature_parameter.hpp</key>
@@ -4023,14 +4121,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			68DAFtn4RqNe1MMCXk2hvqJ3SuME2MeIh54ghJzCJZ8=
+			W9QGxB+umpLTepa0+GjnVlB1DB8uJSNKIUT5fR8tqUs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/frx_recognition_result.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			02M9BIbFxWM8AK6HnBM6wdUrqe2l7moayiTtNo04fZ8=
+			Ef1Yh/18qyyrfLX6Sq+IkweNxNCxgXOyLRhz1pa6OVw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/lips_shine_mask.hpp</key>
@@ -4080,6 +4178,13 @@
 			<key>hash2</key>
 			<data>
 			JwxBAh9Hoo8/S4HonZd+TWFlatRqt3iv4RBcVHKnEq4=
+			</data>
+		</dict>
+		<key>PrivateHeaders/bnb/types/interfaces/size.hpp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7/c2WcmggHGppL71a4LPJ3qVKY/8/oWYO0hI0W3uduw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/types/interfaces/touch.hpp</key>
@@ -4184,14 +4289,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4qJh0WE8SpHt/cXl0JeYOgmh4/eTrkNPG9mERugqow=
+			K+QkdKBoalH+pj5SaIxgBcB/FSUR73cD415INRCLfHY=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/utils/event.hpp</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			orNXbkDeLZu6zn9ESeMptAVyQX4SXpphZ7cpfmucrzw=
+			0KkAFCRcyrIoNl3Ge04PBS/ZBQylHGxKGFBagvWUz4E=
 			</data>
 		</dict>
 		<key>PrivateHeaders/bnb/utils/exceptions.hpp</key>
@@ -4275,56 +4380,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTZJ9+wAzzsvvQfEdCNnTpw8LPVGlqmVk8hFEqZr91k=
+			6OIqtXfhzs2wyr+yvhF+X2EgAhQt5+OAzwXMcFo6qME=
 			</data>
 		</dict>
-		<key>bnb-resources/MoMoFRX/edgetopology1.ef</key>
+		<key>bnb-resources/MoMoFRX/edgetopology1.ef.i16</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zbWHaMHNdoNYNS96pw7OyA1Sv75gnHWn82T6fkw2nSQ=
+			LKlWIbdPN6a7svn+3TlcKWZnbDTmoyamZJwYgkVITV4=
 			</data>
 		</dict>
-		<key>bnb-resources/MoMoFRX/edgetopology1.ev</key>
+		<key>bnb-resources/MoMoFRX/edgetopology1.ev.i16</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yIxaOiO39XmEZUUEEZCNWaj4A4Zl6T4EKpu4hxTD2KE=
+			hXCXaaIVZLVQNSxuoI7A4KoGKduuOhSr5oifU0UYPFs=
 			</data>
 		</dict>
-		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.blendshapes</key>
+		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.blendshapes.fp16</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GgNUeR6aXW/lnnHfUiBhNR+2HKYVfO0ks32BalR8dCc=
+			3V09j9ECUt6pESgf99XGXn4by2GkXSjuyX4zOPlrdZM=
 			</data>
 		</dict>
-		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.means</key>
+		<key>bnb-resources/MoMoFRX/head.3308.DA.c30.tm.pca2.86.means.fp16</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VtP/yCds3t6Gav5kJ/u6XC9Tjt0oHbolqwWvc9fDTuw=
-			</data>
-		</dict>
-		<key>bnb-resources/MoMoFRX/head.verts</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SAfRyOedlG/PYlDqicMnH2cXK8uJX31UlrN1b1JQGzQ=
-			</data>
-		</dict>
-		<key>bnb-resources/MoMoFRX/head1.triangles</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4g9B83KO6APPMsYD2lADCUYYu2BdQn62jzs4KBCuQ/M=
-			</data>
-		</dict>
-		<key>bnb-resources/MoMoFRX/head_au.tex</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vKlkhXcLSwPzAx8epKwQyVPS3utvtFo5hBRTTgp4E54=
+			lOYftc6rZnlAYdVA8s9pihLkBajRiR7iuFz0Ec9mEOg=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_js/.empty</key>
@@ -4401,49 +4485,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jX1JlYDGvoy6ZlK1V+J3y11cBOgNRkGWZaZPjEgbD80=
+			U/E2ecUXouHPHqCIoHD4ahNyUgx9dZ/Q75UvIFLV2YU=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/get_bone.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hdsuJPZilHf/VgeJJ18XQIEhYHAz5ZJFUxGXsm7F/qo=
+			eNawVQUPKGBlWhiEret6waFCJ1T0ix9EtQXI23ibRgY=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/get_transform.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2UNtuhSg4EKSHrSEl5lRwwglYkWIyMQFsMvTUnXieFQ=
+			6OMndDYojc8TmejGDZTtVUnFYwUQvUps5MYql6nDhq4=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/glsl.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+M1VsFceXy8yMYHtirecwiFD99jnKz5UgRs0+lS7Xo=
+			FjcS6Vr1R/IoAt7BRBd0tFnFk9HIv6P3VpLqJvW87Vo=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/glsl.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bq0FVOi9BsJN1nX1NhfP86CJdUKPV0sysQdgUVLKN0g=
+			JeHfB0/9dweDIFM2QaRkb3sH9EhjUhCqviQjRLiaLN8=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/apply_light_streaks.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kA/tIJisQTxKtnvamjIRrozZbo4dyoitqL7OMY8LpvA=
+			Bdp185Jv8Xn3CCt6EByEf/1d64ugRIsxtbwHPYWw5eI=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/apply_light_streaks.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aimyg3rP1YlfntynAyo4Ciz9fgLtqA/Mw64HkVxsve4=
+			PmxwXK+KBtJIht0OPZGCJHw+Lsh6u6QKnSrs61ciyU0=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph.frag</key>
@@ -4457,7 +4541,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PjsByByNiJAFACx5NQOLhMFcTpttToBSnAcfeXuyW6E=
+			d6q6g427cNSSyBRJg/xZlDtqFtWOcA6bRUYUa79TOJQ=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/auto_morph_fisheye.frag</key>
@@ -4471,252 +4555,238 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			V6GDTznGFurJiOfoIxE2vmY0nNMyEwQDpY+oAwNX3s0=
+			6MQgiQxgZWXccrCQoMJE1JJl2/AUQ0a/pysSc7urLRc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/beauty_morph.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			49X3yo8RZNU5gpvmfT5SK+Qt3W3ukFaniXaqTEVNSxY=
+			x5pOW9dj2p8gcT7ZcFwD3F8R3AbkNw96nWjZXPAmwTE=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/beauty_morph.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o9EkkBrGNQq9uDIDQCIhjTz3CRTcBQYnxeIXVeckNug=
+			cURJHUTRr3Kk6dy45MlKb03S4CHEZZFOwx70NerDwqc=
 			</data>
 		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_assosiation.frag</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_downscale.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLkC5ORoAzymJPzEzeDAwsmwy7X2l2aMJl+sklPZT+0=
+			wUAMYTFseAOjS77aOwaf50qN5YA6fvZlTDOYk4Eey5E=
 			</data>
 		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_assosiation.vert</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_downscale.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RK+JIuPTj2NnM4p5bI8DP4jqH4OW15Uoaw0uKFh+AGU=
+			YY75YMzYXmT55HAH895Z/fPcuaIuCIufyUZoU5HoWN0=
 			</data>
 		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_smoothing.frag</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L3W+ZpqZIMHP0iiFBnJf7g9s5sUv0TGAXYb7LtSS2kk=
+			Uwry7zTglNLEWCcYagixvY4sdjjCQcKjXAtLyv7iIgE=
 			</data>
 		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/bg_mask_smoothing.vert</key>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6e1qkBugKczcHmnrjYOUCf/rF16MBDV0YRnu/8eV17E=
+			hZ8Mp/jfWce8QYWj6CrHwK7sNskm+DWle/Aree1zjzg=
+			</data>
+		</dict>
+		<key>bnb-resources/bnb_shaders/bnb/lib/bg_blur_upscale_apply.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mFPlBXMZTlXy7QC0q6KDHR+akhGAds0nshALbgoETaE=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/camera.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ophcS8HeetEVbXE1CVWtEQPcEJyphJ6iJJwfHjpganw=
+			ecYzAj1emcQCWzysKgdWDQmUa+pXSWrhoYQ1bzHmuuM=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/camera.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vHQ8hoquyqpK5MDQhFfFD/0pQThmM6Kt7PvBbt3gbD0=
+			uuvjlFlwilkmNqcGtsGHDh1iJ1O3yIYlItpdD9Vf5sQ=
+			</data>
+		</dict>
+		<key>bnb-resources/bnb_shaders/bnb/lib/camera_bgmask.frag</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LxSdVMCdKnvxGnKsTXM4ADav6eGnH6vNSSEBPZjuhLg=
+			</data>
+		</dict>
+		<key>bnb-resources/bnb_shaders/bnb/lib/camera_bgmask.vert</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b8w9npK8ILAuGv5mSHbcQZjcMAxOhEtZxX21YfFeXxA=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/copy_pixels.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EtKqtzoYrHVHXKtDi+Nt6+i/ShPoMeT2ZHi+DQEvYW8=
+			o5DYcz7f3SPTIhKugwZ3t3INxgJLMIxk/480yHwXKns=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/copy_pixels.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aimyg3rP1YlfntynAyo4Ciz9fgLtqA/Mw64HkVxsve4=
-			</data>
-		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_downscale.frag</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AbBg6vXVyn4yeJ3Aa75a4Wy6whoV5VK8VlG9Drzjruo=
-			</data>
-		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_downscale.vert</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6e1qkBugKczcHmnrjYOUCf/rF16MBDV0YRnu/8eV17E=
-			</data>
-		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_upscale.frag</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2TXi8nAl2MyKlE//dFYDAReyKHIZoB05sQUG7RaYb9k=
-			</data>
-		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/dual_filter_blur_upscale.vert</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZvCHt3uJa7MlzJdI8wIJ08AMiHuokiUy4iiI9QYxzwo=
+			PmxwXK+KBtJIht0OPZGCJHw+Lsh6u6QKnSrs61ciyU0=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_0.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGiSbjA8SOxw/JKfMppf9cZNKoHBfaxVODdHRZ55AaM=
+			CTjGssF19rPeb8MX1dEu4J1AeC8V3BoiJKiqZEUgTmc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_0.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8mUd2WIanlQcBsOWLP9gtmEA3z6QuJHhMQ4qPPkL+UQ=
+			tMfNCeTsR5qO272kVyI80eyV3vPuwVDJ6VkIq8wQ/L0=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_1.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGiSbjA8SOxw/JKfMppf9cZNKoHBfaxVODdHRZ55AaM=
+			CTjGssF19rPeb8MX1dEu4J1AeC8V3BoiJKiqZEUgTmc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_1.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TqxFxlkWfN5O/zyVzxEk7KFg/2UT8LZrOqBHZQqq1Mo=
+			AGnnSuqeprPvnIQFgepdNn8mfEGSltIBMmcOfV4CC1o=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_2.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGiSbjA8SOxw/JKfMppf9cZNKoHBfaxVODdHRZ55AaM=
+			CTjGssF19rPeb8MX1dEu4J1AeC8V3BoiJKiqZEUgTmc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_2.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WuA7Dc1IR+yHuNuEZIUAOHR7kza8hknZdkz2nk3ZY4E=
+			Bl6N8vTOH20C4lubZZ72E8P6R4IUPGJUVjqsBabETwQ=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_3.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hGiSbjA8SOxw/JKfMppf9cZNKoHBfaxVODdHRZ55AaM=
+			CTjGssF19rPeb8MX1dEu4J1AeC8V3BoiJKiqZEUgTmc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/filter_light_streaks_3.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3gp3HhtQQTpbnkJwIaOoq4BdSlHy09Q0AkIktakFdfA=
+			0YqOyjcrjbrQWQMZRsly8Akmr6PCS5bjDac3WaBQ77k=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/gltf.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PSNRJcd8KR4/xozgXHeudxO23ZDywwE6b1LR0I2jmwc=
+			DxFCnY8F9d5MPuhAa2EdL3KeL7vOF2Ro5mxLU5bJe8A=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/gltf.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nkEF6l29XFG0DkPRA2tEM4gwIrB6HxjhChub7lNOMuM=
-			</data>
-		</dict>
-		<key>bnb-resources/bnb_shaders/bnb/lib/improved_dual_filter_blur_downscale.frag</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CZnS79ThUChAZK7Of9iWcAlprUHlDpi/mdCTFBTYNi4=
+			5wf0pU4ynEjQ0yvTV6B+JOQ6xukWsVOgSOZH4LRLkdo=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/init_light_streaks.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QskJsW3gLAPb4e6GGJ1h7EPSKn5L+ZvpbME1Q6C2i/M=
+			OEj+arFh9jGKZU7MinvTvlSTYzZIVehbxeuXnGlbtz8=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/init_light_streaks.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aimyg3rP1YlfntynAyo4Ciz9fgLtqA/Mw64HkVxsve4=
+			PmxwXK+KBtJIht0OPZGCJHw+Lsh6u6QKnSrs61ciyU0=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/mesh_morph.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			49X3yo8RZNU5gpvmfT5SK+Qt3W3ukFaniXaqTEVNSxY=
+			x5pOW9dj2p8gcT7ZcFwD3F8R3AbkNw96nWjZXPAmwTE=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/mesh_morph.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1Ta9HXiLnfT+y2TVujz24BE52V3+ciZi04RjU38xQ2s=
+			Xb2M+YViM+CCbW1BW3QORguUloEBkZwbpcOnYvdF68E=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_apply.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qt7tUeLV05s+mEPI8Ugtl3mZUegb2CVzVl4G11hzIQ4=
+			sB66EmvuGLvgYRuzp5QAAMsrSbWgWLCWIaEQi7H/Ynk=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_apply.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a6AqLxdQnSWlH8xFjGrSgaQYgf7qbIqsb+8/gK9RyEo=
+			YtI4wvOZ3Xndf7S/5rXDalxI66wup1+pZeOP4MRJS3I=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_blur.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ObIgSshC6VsKTU+NaavzRkZ7/nehzutyIC1wEHTZeAM=
+			lNfjJXPnNaIL4Ev0ObOmhaQVr2AH/LJnCtFbb1wyMNk=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/morph_blur.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VB9QVu6WqawtHE4YvqrfHwpMmVdy4zAXyqUh2+w8DRI=
+			w+gcTKfhLaN+YsDeCwts7ora+zBdYKI9hIrNwfbb04o=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/retouch.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X0RMHtJBTgSxSJGjSJ5emWOe37KAowKIUPSIy4VKKIs=
+			17tVzs5QnEDqD9VdQvb/45YeL3MF9IaD8cCJ4xPkYP0=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/retouch.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TMuKgRtw9/XfF1CtFTURokpNmv91w25iOHb7I0TXxGE=
+			t7YamuQWJs2Au1S7hAGZvPQHvdhZ7ebnSLUmzdXlyDg=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/static_pos.frag</key>
@@ -4730,7 +4800,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ip1QFmvLjJNowb3UJp/V9wZ14pYrmLJ9g5IyU0YyeE4=
+			F1mfqU66ArCG2DwMSWHNgo9nsEkWcXWQpxnNU0cLeic=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/uv_morph.frag</key>
@@ -4744,49 +4814,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mwsIlGt5XKjo2pPZ/Oq6PHWnE5VP0SIzHe4+/7pIq6s=
+			6MQgiQxgZWXccrCQoMJE1JJl2/AUQ0a/pysSc7urLRc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/vbg.frag</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FpkO4Vb7envNSd5RPIbzz81MyJlT1JAwraeFjghWA1g=
+			9C5PCL9j+6IliCpp0e18UCrPnen61BS/PzghgD7g2Kc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lib/vbg.vert</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			99xDkl/qjl7yvqQW2ZJdKOEKMfLxkvSFsd4cnvIRzXA=
+			yrE/pJPhvQrKqu43yr0aeIkpKvEYDvadRp2c/iQbStk=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/lut.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KzQjqs6ZPNzPSbSM3soGo8jixgivm05Aw42KoA8Ix2M=
+			l1tnxN2HWG3EZbfkBbICePp/+cUPnhpukyjSTmN9IA8=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/math.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XIG4G3fwOBlg+SIhf9ocYnl5uF+TzNRkZ+e/n2FhFOs=
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/matrix_operations.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			54dclFuS6j41lVkts5JXN38zlr9Z/wQhjBdIgGSdhUM=
+			Tqr0eAYoeUPHgS2R0ZfuTKH8dpgccchKiY0yIz8GWEw=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/morph_transform.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zLLuEYSSOWHmmLXnLLi+7ClKxokH9BWxg6MbJChWnr4=
+			o6TAImIbF/sp/ZUgBvwuEEgSkWLAwdHObyWX5bivGwY=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/quat_rotation.glsl</key>
@@ -4794,6 +4864,13 @@
 			<key>hash2</key>
 			<data>
 			jSWAhaRt97+eFqjPoeJ8bDBX+bJej8XG6uo9Md/rQz4=
+			</data>
+		</dict>
+		<key>bnb-resources/bnb_shaders/bnb/sample_camera.glsl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mdfUpdZBJeSMQ1QygTuGOpwHSV5D1lEHVslUdRIYHCs=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/samplers_declaration.glsl</key>
@@ -4807,14 +4884,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p3lDYWzDXlhTj0keF/Qx3q4GTKt2xfrJtqvA7XNgNZk=
+			ksfIa3gg3dJuEZBoqhULu2YRYiq6P26zwrfAlnWSNuU=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/textures_lookup.glsl</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ye+CgQfieMo+Xh4RdS5OXUs9ThG9myKZI69yxFw/KPY=
+			6hO8VQL/9F2m/UticFzc1b+oBH09OPsVfOTorh+8oMc=
 			</data>
 		</dict>
 		<key>bnb-resources/bnb_shaders/bnb/transform_uv.glsl</key>
@@ -4828,7 +4905,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uhfa7rObPs7lYaU6Cjy9SxuVN1ecBojN3zQjc8nSyhc=
+			324Mltx5zYVNBENYkUh12QKe8gu/q6soUALAVa2K5Fs=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/cmlBGLandscape.mlmodelc/analytics/coremldata.bin</key>
@@ -5171,42 +5248,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4LiprLSi3BUl8D4y3LKLjHDbyaRbxvF30nMl7S5J9u8=
+			zhv4XbueDQ+UgB/lSv38E5vvU39E533go6XBUzrequE=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iJbvtts+fdrn7oqu2wk6aDIeMOkngMVqsNYqR86+A7g=
+			LBIqhic6CGUsrOtiKQ3Pf9e3SKO3NsyWnuxTpeC5GeI=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JouuYVAjlvho6hwXiACHwJKP7wZgRxnxpNb78wm+gA4=
+			Dnce9H4lZyBwmvKF9MvNt7SpAlzB97/2dsjRXJJFEN0=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.net</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z6i2vAkEA1afaaKvzVfi4PfklGmAkwlNnehwsy9OPCg=
+			V2XBxpXIlwQTpfUs5aInKviK2HSebWQ4RmrzlIMMwac=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.shape</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AmaJLAwnXvcD5onWxYTEu42g76AMLFxxaRQbphu05RE=
+			TMX5L7G0Gx0eBigNBkcqGtSF4F90wpFhNDNL/TGkjew=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qlTUni1ElA2HLlxoiYXSSvc5p+PyEMHCZj55DMum67w=
+			JdICwFi1dEFw0ifVNCGYff4OIe2Lvn4JdraS29y5/r4=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_offline.mlmodelc/model/coremldata.bin</key>
@@ -5220,49 +5297,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/analytics/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYElNvKVVTbNOPnN8jnEiILg87AROK5cxKLMRcSjGH4=
+			ymq8MUVtiT+vf2OHMcNVF2w6Kl5XedFQE/UF9NgJgKA=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/coremldata.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nLiX5D/m2sSXpBQzeb/7HtZ4w52iS4tLc8MtqQifhH4=
+			eXfuQt8TnuWvZp5OEAz3whoEPBO6PEyjUiButLyQ7Bs=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/metadata.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/WXC528fKj+4ngochHtTh6txqsQxuTwOpoIA2PHeFPg=
+			PjyAm6tt6EvXOWbJuLiWUmIyzHjAYpYacGJ+EbZdaOY=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.net</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYNacEWxglT03kMyQJ1fXPkJkt/KFmPJf+bepEF0jPU=
+			/hUtPlsmAfSvCYyWLerusNxwkZkWYBGs3gSMdQpNUyI=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.shape</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			04rMQDhRFu3Cg7fLXrn1irTluwUQXM6+Nk6t4DjUcyY=
+			WDaQfPksQ0ACF7zQqQhgA+C4TpM7myE73taq+fME6sA=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model.espresso.weights</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zbm5u67ack25W2RTFf+4sxS2adZI0MYLubOkPYMkRhE=
+			VZt+a/ErNLQAh0tcIk3oYr/Lqg5DyXhIK3npzSrwZIE=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSSD_online.mlmodelc/model/coremldata.bin</key>
@@ -5276,7 +5353,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LDTOHfI7g4xavyp/ZDfMo9MGftUJ/yXxHfaxG1grUes=
+			WTG9U2xFUClKISxvyNPBvuddqBeYC6C2cchgPa+zYjg=
 			</data>
 		</dict>
 		<key>bnb-resources/cml/coreMLSkin.mlmodelc/coremldata.bin</key>
@@ -5325,56 +5402,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+5kem2xuRd08gxux3ylI09zaaFwHofW6TL+/jFp3X0Y=
+			oNXjN9QbxODqLjJBdDzh8MnOcnL9/6zmRfrQuTU3h0o=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/frx_prior.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GnKyHeNHdf0fBQFLOWk2j01+dG40H/8NeRK613Dji6I=
+			ZOaCDfVNkdeXlCIaMNQNW3pA3QLDau3j1duVIdoLwuw=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_224.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lvPURHqUPFZ1X7qrXbJNEncl7k7vxUFuPVToVu+2QlE=
+			DaTo47tnOIhYWjCTXTGMqYPAFJfpbZKtyUpGebtUF+I=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BiwSsi6Us5r/nXsH0yb5nmJafzVivXBla0FtLcPpGAs=
+			tAG4dY6fd1CSQtAjwiC6YcIbm12zxTrAStnDovqh4qM=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_contour_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c8v20lqzLcKeHr+rUQtn58kwYCSxwCZlA8G1JAZjCaQ=
+			cRJkSwtMnbLuZuVd+Y38pdUrGFXPU53vRINCFvkxKAU=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_eyes.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X8lpGIK7St1oyz7WR1NlV47AVCwqxrEIMhjVSxAoMQ4=
+			F6qAXZVbBZ3FcWjYch4TJCt+ETQgieWlcR9bsBI2LI0=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qR28gWOvN9pQ4f61k4IcMVEYMgDUEaP1IsxmJ9K/6rY=
+			kMTuAgLbC6cmKmqCRF1F5XmGwHFxLnXw9QpiG4GLqTA=
 			</data>
 		</dict>
 		<key>bnb-resources/flow/landmarks_lips_filter.tflite.bbin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M1t6ET1obkMMjQPjauF8GI0Jj/AF0Tn3gNgQBAG0hCw=
+			wjBx7M1pkNcLYgcJM/D8E5tKSeQKxFVbKYbBtkwuPYs=
 			</data>
 		</dict>
 		<key>bnb-resources/frx/frx.js</key>
@@ -5388,7 +5465,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CV8lJJXlZY20at6scb9iehdfazlmKDfr3ZIVwvLhq/8=
+			s2TUuiFewmAJDSftez+IVlvSqF40qYGEJ3QBzMNn8zY=
 			</data>
 		</dict>
 		<key>bnb-resources/watermark.png</key>
@@ -5409,7 +5486,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3+MooANkmr9QYVPsE18vYudfHe3g5dNH4GqH7lFgzlI=
+			eKLdOBXZS1Pk3ljEwxRk+mNCAyMpx2wfVslp/wLQ5ss=
 			</data>
 		</dict>
 	</dict>

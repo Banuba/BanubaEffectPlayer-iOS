@@ -18,7 +18,6 @@
 #include <bnb/scene/interfaces/component.hpp>
 #include <bnb/scene/interfaces/component_type.hpp>
 #include <bnb/scene/interfaces/cubemap.hpp>
-#include <bnb/scene/interfaces/dual_filter_blur.hpp>
 #include <bnb/scene/interfaces/entity.hpp>
 #include <bnb/scene/interfaces/eyes_status.hpp>
 #include <bnb/scene/interfaces/face.hpp>

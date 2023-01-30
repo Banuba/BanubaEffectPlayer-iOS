@@ -14,19 +14,13 @@
 
 //---------- In-out ----------
 
-#if defined(BNB_GL_ES_1)
-    #define BNB_IN(l) varying
-    #define bnb_FragColor gl_FragColor
-    #define BNB_CENTROID
-#elif defined(BNB_GL_ES_3) || defined(BNB_GL)
+#if defined(BNB_GL_ES_3) || defined(BNB_GL)
     #define BNB_IN(l) in
-// declare out color
-layout(location = 0) out vec4 bnb_FragColor;
-    #define BNB_CENTROID centroid
 #else
     #define BNB_IN(l) layout(location = l) in
-layout(location = 0) out vec4 bnb_FragColor;
-    #define BNB_CENTROID centroid
 #endif
 
+#define BNB_CENTROID centroid
+// declare out color
+layout(location = 0) out vec4 bnb_FragColor;
 #endif // BNB_FRAGMENT_SHADER

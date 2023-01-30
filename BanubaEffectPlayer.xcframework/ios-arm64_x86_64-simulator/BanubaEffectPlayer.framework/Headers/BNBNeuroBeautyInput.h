@@ -4,7 +4,13 @@
 #import <Foundation/Foundation.h>
 
 /** Tuple with apply_texture neuro_beauty input. */
-__attribute__((__visibility__("default"))) @interface BNBNeuroBeautyInput : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBNeuroBeautyInput : NSObject
 - (nonnull instancetype)initWithSkinSmoothStrength:(float)skinSmoothStrength
                                            lutPath:(nonnull NSString *)lutPath
                                        lutOnlySkin:(BOOL)lutOnlySkin

@@ -13,7 +13,6 @@
 namespace bnb { namespace interfaces {
 
 class camera_composer;
-class dual_filter_blur;
 class image;
 class neuro_beautification_processed_texture;
 enum class procedural_algorithm_type;
@@ -40,8 +39,6 @@ public:
     virtual std::shared_ptr<neuro_beautification_processed_texture> as_neuro_beautification_processed_texture() = 0;
 
     virtual std::shared_ptr<camera_composer> as_camera_composer() = 0;
-
-    virtual std::shared_ptr<dual_filter_blur> as_dual_filter_blur() = 0;
 };
 
 } }  // namespace bnb::interfaces

@@ -6,7 +6,13 @@
 @class BNBResource;
 
 
-__attribute__((__visibility__("default"))) @interface BNBTextTexture : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTextTexture : NSObject
 
 - (void)loadResource:(nullable BNBResource *)res;
 

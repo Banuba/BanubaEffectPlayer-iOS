@@ -6,7 +6,13 @@
 
 
 /**Class represents audio track interface. Subclass of media */
-__attribute__((__visibility__("default"))) @interface BNBAudioTrack : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBAudioTrack : NSObject
 
 /**
  *set current audio track playback volume.

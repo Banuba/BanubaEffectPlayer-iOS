@@ -6,7 +6,13 @@
 #import "BNBEyesPupilMask.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBEyesMask : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEyesMask : NSObject
 - (nonnull instancetype)initWithIris:(nonnull BNBEyesIrisMask *)iris
                         corneosclera:(nonnull BNBEyesCorneoscleraMask *)corneosclera
                                pupil:(nonnull BNBEyesPupilMask *)pupil;

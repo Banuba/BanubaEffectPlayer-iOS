@@ -24,7 +24,13 @@
  * getters throw exceptions when data are not available
  * android NNs usually output gpu masks
  */
-__attribute__((__visibility__("default"))) @interface BNBFrameData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFrameData : NSObject
 
 /** Creates empty `FrameData`. Use `add*` function to fill it.  */
 + (nullable BNBFrameData *)create;
@@ -55,6 +61,8 @@ __attribute__((__visibility__("default"))) @interface BNBFrameData : NSObject
 - (float)getRuler;
 
 - (nonnull BNBEyesState *)getEyesState;
+
+- (float)getLightCorrection;
 
 - (nonnull BNBTransformedMaskByte *)getBackground;
 

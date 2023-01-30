@@ -3,7 +3,13 @@
 
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBShaderSource : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBShaderSource : NSObject
 - (nonnull instancetype)initWithVs:(nonnull NSString *)vs
                                 fs:(nonnull NSString *)fs;
 + (nonnull instancetype)shaderSourceWithVs:(nonnull NSString *)vs

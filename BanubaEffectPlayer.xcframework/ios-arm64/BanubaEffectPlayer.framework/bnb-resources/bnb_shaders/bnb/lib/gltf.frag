@@ -1,12 +1,8 @@
 #include <bnb/glsl.frag>
 
-#ifndef BNB_GL_ES_1
-
 precision mediump float;
 precision mediump sampler2DArray;
 precision mediump sampler2DShadow;
-
-#endif /* BNB_GL_ES_1 */
 
 BNB_IN(0)
 vec2 var_uv;
@@ -54,18 +50,18 @@ vec2 brdf_approx(float Roughness, float NoV)
 
 void main()
 {
-    vec4 base_opacity = BNB_TEXTURE_2D(BNB_SAMPLER_2D(base_color), var_uv);
+    vec4 base_opacity = texture(BNB_SAMPLER_2D(base_color), var_uv);
 
     vec3 base = g2l(base_opacity.xyz);
     float opacity = base_opacity.w;
 
-    vec3 mrao = BNB_TEXTURE_2D(BNB_SAMPLER_2D(metallic_roughness), var_uv).xyz;
+    vec3 mrao = texture(BNB_SAMPLER_2D(metallic_roughness), var_uv).xyz;
 
     float metallic = mrao.z;
     float roughness = mrao.y;
     float ao = mrao.x;
 
-    vec3 N = normalize(mat3(var_t, var_b, var_n) * (BNB_TEXTURE_2D(BNB_SAMPLER_2D(normal), var_uv).xyz * 2. - 1.));
+    vec3 N = normalize(mat3(var_t, var_b, var_n) * (texture(BNB_SAMPLER_2D(normal), var_uv).xyz * 2. - 1.));
 
     vec3 V = normalize(-var_v);
     float cN_V = max(0., dot(N, V));
@@ -76,10 +72,10 @@ void main()
     vec3 F = fresnel_schlick_roughness(cN_V, F0, roughness);
     vec3 kD = (1. - F) * (1. - metallic);
 
-    vec3 diffuse = BNB_TEXTURE_CUBE(BNB_SAMPLER_CUBE(tex_ibl_diff), N).xyz * base;
+    vec3 diffuse = texture(BNB_SAMPLER_CUBE(tex_ibl_diff), N).xyz * base;
 
     const float MAX_REFLECTION_LOD = 7.; // number of mip levels in tex_ibl_spec
-    vec3 prefilteredColor = BNB_TEXTURE_CUBE_LOD(BNB_SAMPLER_CUBE(tex_ibl_spec), R, roughness * MAX_REFLECTION_LOD).xyz;
+    vec3 prefilteredColor = textureLod(BNB_SAMPLER_CUBE(tex_ibl_spec), R, roughness * MAX_REFLECTION_LOD).xyz;
     vec2 brdf = brdf_approx(roughness, cN_V);
     vec3 specular = prefilteredColor * (F0 * brdf.x + brdf.y);
 

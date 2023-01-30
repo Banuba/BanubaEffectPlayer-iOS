@@ -14,12 +14,6 @@ vec4 cubic(float v)
     return vec4(x, y, z, w) * (1.0 / 6.0);
 }
 
-#if defined(BNB_GL_ES_1)
-vec4 bnb_texture_bicubic(BNB_DECLARE_SAMPLER_2D_ARGUMENT(tex), vec2 uv)
-{
-    return BNB_TEXTURE_2D(BNB_PASS_SAMPLER_ARGUMENT(tex), uv);
-}
-#else
 vec4 bnb_texture_bicubic(BNB_DECLARE_SAMPLER_2D_ARGUMENT(tex), vec2 uv)
 {
     vec2 tex_size = vec2(textureSize(BNB_SAMPLER_2D(tex), 0));
@@ -40,10 +34,10 @@ vec4 bnb_texture_bicubic(BNB_DECLARE_SAMPLER_2D_ARGUMENT(tex), vec2 uv)
 
     offset *= invtex_size.xxyy;
 
-    vec4 sample0 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex), offset.xz);
-    vec4 sample1 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex), offset.yz);
-    vec4 sample2 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex), offset.xw);
-    vec4 sample3 = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex), offset.yw);
+    vec4 sample0 = textureLod(BNB_SAMPLER_2D(tex), offset.xz, 0.);
+    vec4 sample1 = textureLod(BNB_SAMPLER_2D(tex), offset.yz, 0.);
+    vec4 sample2 = textureLod(BNB_SAMPLER_2D(tex), offset.xw, 0.);
+    vec4 sample3 = textureLod(BNB_SAMPLER_2D(tex), offset.yw, 0.);
 
     float sx = s.x / (s.x + s.y);
     float sy = s.z / (s.z + s.w);
@@ -54,6 +48,5 @@ vec4 bnb_texture_bicubic(BNB_DECLARE_SAMPLER_2D_ARGUMENT(tex), vec2 uv)
         sy
     );
 }
-#endif
 
 #endif // BNB_TEXTURE_BICUBIC_GLSL

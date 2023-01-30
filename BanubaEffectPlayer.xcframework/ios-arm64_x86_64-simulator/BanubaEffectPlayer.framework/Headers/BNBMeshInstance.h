@@ -11,7 +11,13 @@
 
 
 /**class which is the container for meshes and materials and provide interface for animation controlling. Subclass of component */
-__attribute__((__visibility__("default"))) @interface BNBMeshInstance : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBMeshInstance : NSObject
 
 /**
  *Fabric method for mesh_instance creating.

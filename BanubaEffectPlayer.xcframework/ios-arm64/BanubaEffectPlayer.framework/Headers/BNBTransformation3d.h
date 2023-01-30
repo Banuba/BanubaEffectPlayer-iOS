@@ -7,7 +7,13 @@
 @class BNBTransformation3d;
 
 
-__attribute__((__visibility__("default"))) @interface BNBTransformation3d : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTransformation3d : NSObject
 
 /**
  *Fabric method for transformation creating.

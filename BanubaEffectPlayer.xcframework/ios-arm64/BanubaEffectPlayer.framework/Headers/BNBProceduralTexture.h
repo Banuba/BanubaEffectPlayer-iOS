@@ -4,7 +4,6 @@
 #import "BNBProceduralAlgorithmType.h"
 #import <Foundation/Foundation.h>
 @class BNBCameraComposer;
-@class BNBDualFilterBlur;
 @class BNBImage;
 @class BNBNeuroBeautificationProcessedTexture;
 
@@ -15,7 +14,13 @@
  * Image processing occurs before any render list task executing.
  * Subclass of image.
  */
-__attribute__((__visibility__("default"))) @interface BNBProceduralTexture : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBProceduralTexture : NSObject
 
 - (BNBProceduralAlgorithmType)getAlgorithmType;
 
@@ -29,7 +34,5 @@ __attribute__((__visibility__("default"))) @interface BNBProceduralTexture : NSO
 - (nullable BNBNeuroBeautificationProcessedTexture *)asNeuroBeautificationProcessedTexture;
 
 - (nullable BNBCameraComposer *)asCameraComposer;
-
-- (nullable BNBDualFilterBlur *)asDualFilterBlur;
 
 @end

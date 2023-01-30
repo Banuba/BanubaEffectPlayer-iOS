@@ -65,6 +65,8 @@ enum class feature_id : int {
     face_mesh_correction,
     /** Activates brows mesh corrector */
     brows_mesh_correction,
+    /** Computes coefficient for light correction */
+    light_correction,
 };
 
 } }  // namespace bnb::interfaces

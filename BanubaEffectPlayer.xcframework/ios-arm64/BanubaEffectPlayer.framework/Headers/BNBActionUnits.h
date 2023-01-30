@@ -4,7 +4,13 @@
 #import <Foundation/Foundation.h>
 
 /**for order of values in action units array see action_units_indices enum */
-__attribute__((__visibility__("default"))) @interface BNBActionUnits : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBActionUnits : NSObject
 - (nonnull instancetype)initWithRotX:(float)rotX
                                 rotY:(float)rotY
                                 rotZ:(float)rotZ

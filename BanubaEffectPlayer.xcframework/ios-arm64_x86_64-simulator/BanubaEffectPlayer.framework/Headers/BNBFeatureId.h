@@ -58,4 +58,6 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
     BNBFeatureIdFaceMeshCorrection,
     /** Activates brows mesh corrector */
     BNBFeatureIdBrowsMeshCorrection,
+    /** Computes coefficient for light correction */
+    BNBFeatureIdLightCorrection,
 };

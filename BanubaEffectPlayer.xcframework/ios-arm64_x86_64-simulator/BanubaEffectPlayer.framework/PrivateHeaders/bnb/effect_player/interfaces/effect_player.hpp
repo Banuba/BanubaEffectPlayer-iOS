@@ -7,12 +7,10 @@
 
 #pragma once
 
-#include "bnb/recognizer/interfaces/face_search_mode.hpp"
 #include "bnb/scene/interfaces/render_backend_type.hpp"
 #include "bnb/types/interfaces/frame_data.hpp"
 #include "bnb/types/interfaces/pixel_buffer.hpp"
 #include "bnb/types/interfaces/pixel_format.hpp"
-#include "bnb/types/interfaces/pixel_rect.hpp"
 #include <bnb/types/base_types.hpp>
 #include <bnb/types/full_image.hpp>
 #include <bnb/utils/defs.hpp>
@@ -28,14 +26,15 @@ class camera_poi_listener;
 class effect_activation_completion_listener;
 class effect_info_listener;
 class effect_manager;
+class effect_player_configuration;
 class face_number_listener;
 class frame_data_listener;
 class frame_duration_listener;
+class frame_processor;
 class input_manager;
 enum class camera_orientation;
 enum class consistency_mode;
 enum class effect_player_playback_state;
-struct effect_player_configuration;
 struct process_image_params;
 
 /**
@@ -88,21 +87,7 @@ class BNB_EXPORT effect_player {
 public:
     virtual ~effect_player() {}
 
-    static std::shared_ptr<effect_player> create(const effect_player_configuration & configuration);
-
-    /**
-     * Get major version of EffectPlayer. Use this method to filter out breaking changes in
-     * implementation of this class.
-     * @note this is not version of SDK.
-     * @see EffectPlayer.versionMinor
-     */
-    static int32_t version_major();
-
-    /**
-     * Get minor version of EffectPlayer
-     * @see EffectPlayer.versionMajor
-     */
-    static int32_t version_minor();
+    static std::shared_ptr<effect_player> create(const std::shared_ptr<effect_player_configuration> & configuration);
 
     /**
      * Add callback to receive FPS information.
@@ -269,16 +254,6 @@ public:
     virtual void set_render_consistency_mode(consistency_mode value) = 0;
 
     /**
-     * Request display of sub-area of the input image into sub-area of the output surface, with optional x,y flips
-     * image_rect is fitted inside viewport_rect
-     * Resets transform to default if either rect has 0 dimensions
-     * @param image_rect rectangle in input image coordinates(pixels) after applying input rotations and flips
-     * @param viewport_rect rectangle in output surface coordinates(pixels)
-     * MUST be called from the render thread
-     */
-    virtual void set_render_transform(const ::bnb::interfaces::pixel_rect & image_rect, const ::bnb::interfaces::pixel_rect & viewport_rect, bool x_flip, bool y_flip) = 0;
-
-    /**
      * Process an image with current effect.
      *
      * Must be called from the render thread.
@@ -336,7 +311,7 @@ public:
      * Must contain full image.
      * Thread-safe. May be called from any thread
      */
-    virtual void push_frame_data_with_number(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data, int32_t frame_number) = 0;
+    virtual void push_frame_data_with_number(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data, int64_t frame_number) = 0;
 
     /** MUST be called from the main(render) thread */
     virtual void playback_play() = 0;
@@ -347,9 +322,6 @@ public:
 
     /** Thread-safe. May be called from any thread */
     virtual effect_player_playback_state get_playback_state() = 0;
-
-    /** Set audio enabled */
-    virtual void enable_audio(bool enable) = 0;
 
     /**
      * Get interface to control user iterations. This events will be passed to effect.
@@ -433,13 +405,6 @@ public:
     virtual void on_video_record_end() = 0;
 
     /**
-     * Check is device compatible with Neural Networks player
-     * Thread-safe. May be called from any thread
-     * On some platforms (e.g. Android) may require the first invocation to be on the render thread
-     */
-    virtual bool is_device_nn_compatible() = 0;
-
-    /**
      * Get effect manager object
      * Thread-safe. May be called from any thread
      */
@@ -458,21 +423,21 @@ public:
      */
     virtual void set_recognizer_use_future_filter(bool on) = 0;
 
+    /**
+     * Set frame processor as current
+     * Thread-safe. May be called from any thread
+     */
+    virtual void set_frame_processor(const std::shared_ptr<::bnb::interfaces::frame_processor> & processor) = 0;
+
+    /**
+     * Get current frame processor
+     * Thread-safe. May be called from any thread
+     */
+    virtual std::shared_ptr<::bnb::interfaces::frame_processor> frame_processor() = 0;
+
     static void set_render_backend(::bnb::interfaces::render_backend_type backend_type);
 
     static ::bnb::interfaces::render_backend_type get_current_render_backend_type();
-
-    /**
-     * Change face search mode
-     * Thread-safe. May be called from any thread
-     */
-    virtual void set_face_search_mode(::bnb::interfaces::face_search_mode face_search) = 0;
-
-    /**
-     * process pushed frame, if available (for syncronous recognizer mode)
-     * return true if frame was processed
-     */
-    virtual bool recognizer_process_from_buffer() = 0;
 };
 
 } }  // namespace bnb::interfaces

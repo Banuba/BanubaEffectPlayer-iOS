@@ -9,6 +9,8 @@
 
 #include <chrono>
 #include <functional>
+#include <unordered_map>
+#include <string>
 
 namespace bnb
 {
@@ -89,6 +91,20 @@ namespace bnb
     template<int Count>
     class empty_event : public base_event<empty_event<Count>>
     {
+    };
+
+    class effect_event : public base_event<effect_event>
+    {
+    public:
+        using params_t = std::unordered_map<std::string, std::string>;
+        explicit effect_event(const std::string& a_name, const params_t& a_params)
+            : name(a_name)
+            , params(a_params)
+        {
+        }
+
+        const std::string name;
+        const params_t params;
     };
 
     using base_event_ptr = std::shared_ptr<const base_event_iface>;

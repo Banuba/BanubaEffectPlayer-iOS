@@ -50,11 +50,6 @@ namespace bnb::interfaces
     using cubemap_uptr = std::unique_ptr<cubemap>;
     using cubemap_ptr = bnb::interfaces::cubemap*;
 
-    using dual_filter_blur_sptr = std::shared_ptr<dual_filter_blur>;
-    using dual_filter_blur_wptr = std::weak_ptr<dual_filter_blur>;
-    using dual_filter_blur_uptr = std::unique_ptr<dual_filter_blur>;
-    using dual_filter_blur_ptr = bnb::interfaces::dual_filter_blur*;
-
     using entity_sptr = std::shared_ptr<entity>;
     using entity_wptr = std::weak_ptr<entity>;
     using entity_uptr = std::unique_ptr<entity>;

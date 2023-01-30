@@ -8,7 +8,13 @@
 
 
 /**Class, which repesent 2D texture interface. Subclass of image */
-__attribute__((__visibility__("default"))) @interface BNBTexture : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTexture : NSObject
 
 - (void)loadResource:(nullable BNBResource *)res;
 

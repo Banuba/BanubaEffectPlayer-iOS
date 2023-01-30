@@ -12,7 +12,13 @@
  *Face tracker component. All transformations components of entity with face_tracker component will update
  *relatively face, which index was specified in face asset. Also updates face asset resources. Subclass of component.
  */
-__attribute__((__visibility__("default"))) @interface BNBFaceTracker : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFaceTracker : NSObject
 
 /**
  *Fabric method for face tracker creating.

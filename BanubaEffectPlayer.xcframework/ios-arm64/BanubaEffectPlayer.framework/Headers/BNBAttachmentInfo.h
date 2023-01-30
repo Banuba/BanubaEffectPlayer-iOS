@@ -7,7 +7,13 @@
 #import "BNBVec4.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBAttachmentInfo : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBAttachmentInfo : NSObject
 - (nonnull instancetype)initWithLoadBehaviour:(BNBAttachmentLoadOp)loadBehaviour
                                storeBehaviour:(BNBAttachmentStoreOp)storeBehaviour
                                        format:(BNBPixelFormatType)format

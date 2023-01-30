@@ -29,10 +29,12 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBPixelFormat.h>
 #import <BanubaEffectPlayer/BNBRenderList.h>
 #import <BanubaEffectPlayer/BNBFrxRecognitionResult.h>
+#import <BanubaEffectPlayer/BNBFrameProcessor.h>
 #import <BanubaEffectPlayer/BNBMat4x4.h>
 #import <BanubaEffectPlayer/BNBLowLightListener.h>
 #import <BanubaEffectPlayer/BNBNeuroBeauty.h>
 #import <BanubaEffectPlayer/BNBSegmentationMask.h>
+#import <BanubaEffectPlayer/BNBSize.h>
 #import <BanubaEffectPlayer/BNBMedia.h>
 #import <BanubaEffectPlayer/BNBImageReleaser.h>
 #import <BanubaEffectPlayer/BNBRecognizerMode.h>
@@ -46,7 +48,6 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBAttachmentInfo.h>
 #import <BanubaEffectPlayer/BNBTransformation3d.h>
 #import <BanubaEffectPlayer/BNBCubemap.h>
-#import <BanubaEffectPlayer/BNBNnMode.h>
 #import <BanubaEffectPlayer/BNBProcessImageParams.h>
 #import <BanubaEffectPlayer/BNBHardwareClass.h>
 #import <BanubaEffectPlayer/BNBPixelBuffer.h>
@@ -71,11 +72,11 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBSelectedLips.h>
 #import <BanubaEffectPlayer/BNBTransformation.h>
 #import <BanubaEffectPlayer/BNBLogRecordCallback.h>
+#import <BanubaEffectPlayer/BNBProcessorType.h>
 #import <BanubaEffectPlayer/BNBSeverityLevel.h>
 #import <BanubaEffectPlayer/BNBComponent.h>
 #import <BanubaEffectPlayer/BNBEntity.h>
 #import <BanubaEffectPlayer/BNBAttachment.h>
-#import <BanubaEffectPlayer/BNBFaceSearchMode.h>
 #import <BanubaEffectPlayer/BNBEffectEventListener.h>
 #import <BanubaEffectPlayer/BNBRenderInfo.h>
 #import <BanubaEffectPlayer/BNBHand.h>
@@ -90,11 +91,14 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBEyesIrisMask.h>
 #import <BanubaEffectPlayer/BNBAnimationMode.h>
 #import <BanubaEffectPlayer/BNBCamera.h>
+#import <BanubaEffectPlayer/BNBRealtimeProcessorMode.h>
 #import <BanubaEffectPlayer/BNBHaptic.h>
 #import <BanubaEffectPlayer/BNBFrameDataListener.h>
+#import <BanubaEffectPlayer/BNBBnbMorphResult.h>
 #import <BanubaEffectPlayer/BNBEglContext.h>
 #import <BanubaEffectPlayer/BNBResource.h>
 #import <BanubaEffectPlayer/BNBNeuroBeautyData.h>
+#import <BanubaEffectPlayer/BNBProcessorConfiguration.h>
 #import <BanubaEffectPlayer/BNBAttachmentLoadOp.h>
 #import <BanubaEffectPlayer/BNBErrorListener.h>
 #import <BanubaEffectPlayer/BNBEffectActivationCompletionListener.h>
@@ -115,6 +119,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBAcneRegions.h>
 #import <BanubaEffectPlayer/BNBActionUnits.h>
 #import <BanubaEffectPlayer/BNBMeshInstance.h>
+#import <BanubaEffectPlayer/BNBProcessorResult.h>
 #import <BanubaEffectPlayer/BNBMorphingType.h>
 #import <BanubaEffectPlayer/BNBEyesCorneoscleraMask.h>
 #import <BanubaEffectPlayer/BNBHintListener.h>
@@ -125,6 +130,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBProceduralAlgorithmType.h>
 #import <BanubaEffectPlayer/BNBSurfaceData.h>
 #import <BanubaEffectPlayer/BNBJsCallback.h>
+#import <BanubaEffectPlayer/BNBLicenseStatus.h>
 #import <BanubaEffectPlayer/BNBEyesMask.h>
 #import <BanubaEffectPlayer/BNBFaceDataSource.h>
 #import <BanubaEffectPlayer/BNBCameraParameters.h>
@@ -145,10 +151,10 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBBrowsMask.h>
 #import <BanubaEffectPlayer/BNBRendererCommon.h>
 #import <BanubaEffectPlayer/BNBConsistencyMode.h>
-#import <BanubaEffectPlayer/BNBDualFilterBlur.h>
 #import <BanubaEffectPlayer/BNBFaceTracker.h>
 #import <BanubaEffectPlayer/BNBEffectPlayer.h>
 #import <BanubaEffectPlayer/BNBScene.h>
+#import <BanubaEffectPlayer/BNBProcessorStatus.h>
 #import <BanubaEffectPlayer/BNBPixelRect.h>
 #import <BanubaEffectPlayer/BNBVideoLoadingResultListener.h>
 #import <BanubaEffectPlayer/BNBTextTexture.h>

@@ -27,7 +27,13 @@
  * and it implicitly placed in each entity.
  *
  */
-__attribute__((__visibility__("default"))) @interface BNBEntity : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEntity : NSObject
 
 /**
  * Set a new name to the entity. Name could be empty.

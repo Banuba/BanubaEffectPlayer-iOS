@@ -8,7 +8,13 @@
  * processing. Meaning of this parameters are defined by features itself. 
  * Passed in list to `FrameData.addFeatureParameters`. 
  */
-__attribute__((__visibility__("default"))) @interface BNBFeatureParameter : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBFeatureParameter : NSObject
 - (nonnull instancetype)initWithX:(float)x
                                 y:(float)y
                                 z:(float)z

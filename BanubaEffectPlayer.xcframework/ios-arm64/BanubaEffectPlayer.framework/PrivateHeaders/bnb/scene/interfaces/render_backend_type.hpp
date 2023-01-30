@@ -13,7 +13,6 @@ namespace bnb { namespace interfaces {
 
 enum class render_backend_type : int {
     opengl,
-    webgl1,
     metal,
 };
 

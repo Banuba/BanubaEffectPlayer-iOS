@@ -4,15 +4,29 @@
 #import <Foundation/Foundation.h>
 
 /** Holds recognition result from an external source (ARKit, ARCore, etc.) */
-__attribute__((__visibility__("default"))) @interface BNBExternalFaceData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBExternalFaceData : NSObject
 - (nonnull instancetype)initWithVertices:(nonnull NSArray<NSNumber *> *)vertices
                                 modelMat:(nonnull NSArray<NSNumber *> *)modelMat
                                  viewMat:(nonnull NSArray<NSNumber *> *)viewMat
-                                 projMat:(nonnull NSArray<NSNumber *> *)projMat;
+                                 projMat:(nonnull NSArray<NSNumber *> *)projMat
+                               landmarks:(nonnull NSArray<NSNumber *> *)landmarks
+                           landmarksMask:(nonnull NSArray<NSNumber *> *)landmarksMask
+                          landmarksBrows:(nonnull NSArray<NSNumber *> *)landmarksBrows
+                                 latents:(nonnull NSArray<NSNumber *> *)latents;
 + (nonnull instancetype)externalFaceDataWithVertices:(nonnull NSArray<NSNumber *> *)vertices
                                             modelMat:(nonnull NSArray<NSNumber *> *)modelMat
                                              viewMat:(nonnull NSArray<NSNumber *> *)viewMat
-                                             projMat:(nonnull NSArray<NSNumber *> *)projMat;
+                                             projMat:(nonnull NSArray<NSNumber *> *)projMat
+                                           landmarks:(nonnull NSArray<NSNumber *> *)landmarks
+                                       landmarksMask:(nonnull NSArray<NSNumber *> *)landmarksMask
+                                      landmarksBrows:(nonnull NSArray<NSNumber *> *)landmarksBrows
+                                             latents:(nonnull NSArray<NSNumber *> *)latents;
 
 @property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * vertices;
 
@@ -21,5 +35,13 @@ __attribute__((__visibility__("default"))) @interface BNBExternalFaceData : NSOb
 @property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * viewMat;
 
 @property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * projMat;
+
+@property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * landmarks;
+
+@property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * landmarksMask;
+
+@property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * landmarksBrows;
+
+@property (nonatomic, readonly, nonnull) NSArray<NSNumber *> * latents;
 
 @end

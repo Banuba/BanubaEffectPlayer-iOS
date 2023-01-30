@@ -18,7 +18,13 @@
 
 
 /**Factory for assets creating and their data uploading. */
-__attribute__((__visibility__("default"))) @interface BNBAssetManager : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBAssetManager : NSObject
 
 /**
  *create image of given type

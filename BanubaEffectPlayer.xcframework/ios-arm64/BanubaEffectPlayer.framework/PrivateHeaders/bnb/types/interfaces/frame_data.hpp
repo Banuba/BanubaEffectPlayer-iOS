@@ -68,6 +68,8 @@ public:
 
     virtual eyes_state get_eyes_state() = 0;
 
+    virtual float get_light_correction() = 0;
+
     virtual transformed_mask_byte get_background() = 0;
 
     virtual transformed_mask_gpu get_background_gpu() = 0;

@@ -4,7 +4,13 @@
 #import <Foundation/Foundation.h>
 
 /** Tuple with neuro_beauty output. */
-__attribute__((__visibility__("default"))) @interface BNBNeuroBeautyOutput : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBNeuroBeautyOutput : NSObject
 - (nonnull instancetype)initWithWidth:(int32_t)width
                                height:(int32_t)height
                              channels:(int32_t)channels

@@ -4,7 +4,13 @@
 #import <Foundation/Foundation.h>
 
 /** Data for creating surface */
-__attribute__((__visibility__("default"))) @interface BNBSurfaceData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBSurfaceData : NSObject
 - (nonnull instancetype)initWithGpuDevicePtr:(int64_t)gpuDevicePtr
                              commandQueuePtr:(int64_t)commandQueuePtr
                                   surfacePtr:(int64_t)surfacePtr;

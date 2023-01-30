@@ -25,4 +25,5 @@ typedef NS_ENUM(NSInteger, BNBSegmentationMaskType)
     BNBSegmentationMaskTypeLBrow,
     BNBSegmentationMaskTypeRBrow,
     BNBSegmentationMaskTypeNails,
+    BNBSegmentationMaskTypeFace,
 };

@@ -7,7 +7,13 @@
  * User touch object.
  * Coordinate system is normalized to (-1, 1) with center in (0, 0).
  */
-__attribute__((__visibility__("default"))) @interface BNBTouch : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTouch : NSObject
 - (nonnull instancetype)initWithX:(float)x
                                 y:(float)y
                                id:(int64_t)id;

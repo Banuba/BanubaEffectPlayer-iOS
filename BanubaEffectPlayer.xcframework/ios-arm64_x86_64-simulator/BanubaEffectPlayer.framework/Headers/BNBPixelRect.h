@@ -3,7 +3,13 @@
 
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBPixelRect : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBPixelRect : NSObject
 - (nonnull instancetype)initWithX:(int32_t)x
                                 y:(int32_t)y
                                 w:(int32_t)w

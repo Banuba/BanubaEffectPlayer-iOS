@@ -6,7 +6,13 @@
 #import "BNBTransformedMaskFloat.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBNeuroBeautyData : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBNeuroBeautyData : NSObject
 - (nonnull instancetype)initWithTextureRoi:(nonnull BNBPixelRect *)textureRoi
                                    eyesRoi:(nonnull BNBPixelRect *)eyesRoi
                                   browsRoi:(nonnull BNBPixelRect *)browsRoi

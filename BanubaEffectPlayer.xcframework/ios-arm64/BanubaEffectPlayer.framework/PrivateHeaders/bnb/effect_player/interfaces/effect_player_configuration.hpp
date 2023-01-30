@@ -7,40 +7,25 @@
 
 #pragma once
 
-#include "bnb/effect_player/interfaces/nn_mode.hpp"
-#include "bnb/recognizer/interfaces/face_search_mode.hpp"
+#include <bnb/utils/defs.hpp>
 #include <cstdint>
-#include <utility>
+#include <memory>
 
 namespace bnb { namespace interfaces {
 
 /** Configuration for EffectPlayer */
-struct effect_player_configuration final {
-    /** Width of effect rendering area */
-    int32_t fx_width;
-    /** Height of effect rendering area */
-    int32_t fx_height;
-    /** Neural Networks enabling mode */
-    nn_mode nn_enable;
-    /** This setting is used for real time only. Mode is always "good" for photo and video */
-    ::bnb::interfaces::face_search_mode face_search;
-    bool js_debugger_enable;
-    /** Init audio device. Works only on iOs */
-    bool manual_audio;
+class BNB_EXPORT effect_player_configuration {
+public:
+    virtual ~effect_player_configuration() {}
 
-    effect_player_configuration(int32_t fx_width_,
-                                int32_t fx_height_,
-                                nn_mode nn_enable_,
-                                ::bnb::interfaces::face_search_mode face_search_,
-                                bool js_debugger_enable_,
-                                bool manual_audio_)
-    : fx_width(std::move(fx_width_))
-    , fx_height(std::move(fx_height_))
-    , nn_enable(std::move(nn_enable_))
-    , face_search(std::move(face_search_))
-    , js_debugger_enable(std::move(js_debugger_enable_))
-    , manual_audio(std::move(manual_audio_))
-    {}
+    /**
+     * @param fx_width Width of effect rendering area
+     * @param fx_height Height of effect rendering area
+     */
+    static std::shared_ptr<effect_player_configuration> create(int32_t fx_width, int32_t fx_height);
+
+    /** Init audio device. */
+    virtual void set_audio_enabled(bool enabled) = 0;
 };
 
 } }  // namespace bnb::interfaces

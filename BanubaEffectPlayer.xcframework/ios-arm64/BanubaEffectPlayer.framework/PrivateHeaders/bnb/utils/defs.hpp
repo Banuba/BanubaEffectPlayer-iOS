@@ -5,6 +5,11 @@
  * @{
  */
 
+#ifdef BNB_EXPORT
+    // fix warning about macro redefinition, BNB_EXPORT is also defined in wraps/c_api_common/include/interfaces/bnb/export.h
+    #undef BNB_EXPORT
+#endif
+
 #ifdef _WIN32
     #if BNB_SDK_SHARED_LIBRARY
         #define BNB_EXPORT __declspec(dllexport)

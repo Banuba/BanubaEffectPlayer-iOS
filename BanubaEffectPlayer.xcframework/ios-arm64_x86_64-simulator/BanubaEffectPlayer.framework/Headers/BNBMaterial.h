@@ -10,7 +10,13 @@
 
 
 /**Class, represents material interface */
-__attribute__((__visibility__("default"))) @interface BNBMaterial : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBMaterial : NSObject
 
 /**@return material name (string) */
 - (nonnull NSString *)getName;

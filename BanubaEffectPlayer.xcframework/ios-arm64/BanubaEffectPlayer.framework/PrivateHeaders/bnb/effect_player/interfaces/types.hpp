@@ -45,6 +45,11 @@ namespace bnb::interfaces
     using effect_player_uptr = std::unique_ptr<effect_player>;
     using effect_player_ptr = bnb::interfaces::effect_player*;
 
+    using effect_player_configuration_sptr = std::shared_ptr<effect_player_configuration>;
+    using effect_player_configuration_wptr = std::weak_ptr<effect_player_configuration>;
+    using effect_player_configuration_uptr = std::unique_ptr<effect_player_configuration>;
+    using effect_player_configuration_ptr = bnb::interfaces::effect_player_configuration*;
+
     using error_listener_sptr = std::shared_ptr<error_listener>;
     using error_listener_wptr = std::weak_ptr<error_listener>;
     using error_listener_uptr = std::unique_ptr<error_listener>;
@@ -65,6 +70,11 @@ namespace bnb::interfaces
     using frame_duration_listener_uptr = std::unique_ptr<frame_duration_listener>;
     using frame_duration_listener_ptr = bnb::interfaces::frame_duration_listener*;
 
+    using frame_processor_sptr = std::shared_ptr<frame_processor>;
+    using frame_processor_wptr = std::weak_ptr<frame_processor>;
+    using frame_processor_uptr = std::unique_ptr<frame_processor>;
+    using frame_processor_ptr = bnb::interfaces::frame_processor*;
+
     using hint_listener_sptr = std::shared_ptr<hint_listener>;
     using hint_listener_wptr = std::weak_ptr<hint_listener>;
     using hint_listener_uptr = std::unique_ptr<hint_listener>;
@@ -84,5 +94,10 @@ namespace bnb::interfaces
     using low_light_listener_wptr = std::weak_ptr<low_light_listener>;
     using low_light_listener_uptr = std::unique_ptr<low_light_listener>;
     using low_light_listener_ptr = bnb::interfaces::low_light_listener*;
+
+    using processor_configuration_sptr = std::shared_ptr<processor_configuration>;
+    using processor_configuration_wptr = std::weak_ptr<processor_configuration>;
+    using processor_configuration_uptr = std::unique_ptr<processor_configuration>;
+    using processor_configuration_ptr = bnb::interfaces::processor_configuration*;
 
 }

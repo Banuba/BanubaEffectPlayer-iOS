@@ -4,7 +4,13 @@
 #import "BNBTransformedMaskByte.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBEyesIrisMask : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEyesIrisMask : NSObject
 - (nonnull instancetype)initWithLeft:(nonnull BNBTransformedMaskByte *)left
                                right:(nonnull BNBTransformedMaskByte *)right;
 + (nonnull instancetype)eyesIrisMaskWithLeft:(nonnull BNBTransformedMaskByte *)left

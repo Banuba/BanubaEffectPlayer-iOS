@@ -3,7 +3,13 @@
 
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBEyesStatus : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBEyesStatus : NSObject
 - (nonnull instancetype)initWithIsLeftOpen:(BOOL)isLeftOpen
                                isRightOpen:(BOOL)isRightOpen;
 + (nonnull instancetype)eyesStatusWithIsLeftOpen:(BOOL)isLeftOpen

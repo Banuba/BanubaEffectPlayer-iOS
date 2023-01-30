@@ -8,7 +8,13 @@
 @class BNBTransformation;
 
 
-__attribute__((__visibility__("default"))) @interface BNBTransformation : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTransformation : NSObject
 
 /** Constructs identity transform */
 + (nullable BNBTransformation *)makeIdentity;

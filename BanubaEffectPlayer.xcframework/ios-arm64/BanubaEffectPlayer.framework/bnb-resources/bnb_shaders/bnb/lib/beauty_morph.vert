@@ -1,11 +1,9 @@
 #include <bnb/glsl.vert>
 
-BNB_LAYOUT_LOCATION(0)
-BNB_IN vec3 attrib_original;
-BNB_LAYOUT_LOCATION(1)
-BNB_IN vec3 attrib_morph;
+layout(location = 0) in vec3 attrib_original;
+layout(location = 1) in vec3 attrib_morph;
 
-BNB_CENTROID BNB_OUT(0) vec2 var_c;
+centroid BNB_OUT(0) vec2 var_c;
 
 void main()
 {

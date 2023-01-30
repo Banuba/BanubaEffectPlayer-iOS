@@ -6,7 +6,13 @@
 
 
 /** Class, represents render_target (render pass) interface */
-__attribute__((__visibility__("default"))) @interface BNBRenderTarget : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBRenderTarget : NSObject
 
 /**@return render target name (string) */
 - (nonnull NSString *)getName;

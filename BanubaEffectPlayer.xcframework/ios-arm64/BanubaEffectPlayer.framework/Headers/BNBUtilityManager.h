@@ -7,7 +7,13 @@
 #import <Foundation/Foundation.h>
 
 
-__attribute__((__visibility__("default"))) @interface BNBUtilityManager : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBUtilityManager : NSObject
 
 + (void)initialize:(nonnull NSArray<NSString *> *)resourcePaths
        clientToken:(nonnull NSString *)clientToken;

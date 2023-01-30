@@ -4,7 +4,13 @@
 #import "BNBTransformedMask.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBTransformedMaskGpu : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBTransformedMaskGpu : NSObject
 - (nonnull instancetype)initWithMeta:(nonnull BNBTransformedMask *)meta
                                 mask:(int32_t)mask;
 + (nonnull instancetype)transformedMaskGpuWithMeta:(nonnull BNBTransformedMask *)meta

@@ -19,7 +19,13 @@
  * hierarchy of Entities with their Components,  AssetManager and RenderList
  * and makes it work all together.
  */
-__attribute__((__visibility__("default"))) @interface BNBScene : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBScene : NSObject
 
 /** Set a new name for a scene. The name could be empty. */
 - (void)setName:(nonnull NSString *)name;

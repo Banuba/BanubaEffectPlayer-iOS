@@ -1,7 +1,6 @@
 #include <bnb/glsl.vert>
 
-BNB_LAYOUT_LOCATION(0)
-BNB_IN vec2 attrib_pos;
+layout(location = 0) in vec2 attrib_pos;
 
 BNB_OUT(0)
 vec2 var_uv;

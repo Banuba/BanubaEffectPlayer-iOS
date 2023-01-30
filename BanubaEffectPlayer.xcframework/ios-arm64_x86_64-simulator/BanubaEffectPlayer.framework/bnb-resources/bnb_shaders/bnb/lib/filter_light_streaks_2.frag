@@ -17,13 +17,13 @@ void main()
     float o1 = 1. + 0.179044 / s1;
     float o2 = 3. + 0.067234 / s2;
 
-    vec4 c = s0 * BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv);
+    vec4 c = s0 * textureLod(BNB_SAMPLER_2D(s), uv, 0.);
 
     vec2 uv_off = d * o1;
-    c += s1 * vec4(BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + uv_off).x, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + vec2(uv_off.x, -uv_off.y)).y, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv - uv_off).z, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + vec2(-uv_off.x, uv_off.y)).w);
+    c += s1 * vec4(textureLod(BNB_SAMPLER_2D(s), uv + uv_off, 0.).x, textureLod(BNB_SAMPLER_2D(s), uv + vec2(uv_off.x, -uv_off.y), 0.).y, textureLod(BNB_SAMPLER_2D(s), uv - uv_off, 0.).z, textureLod(BNB_SAMPLER_2D(s), uv + vec2(-uv_off.x, uv_off.y), 0.).w);
 
     uv_off = d * o2;
-    c += s2 * vec4(BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + uv_off).x, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + vec2(uv_off.x, -uv_off.y)).y, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv - uv_off).z, BNB_TEXTURE_2D(BNB_SAMPLER_2D(s), uv + vec2(-uv_off.x, uv_off.y)).w);
+    c += s2 * vec4(textureLod(BNB_SAMPLER_2D(s), uv + uv_off, 0.).x, textureLod(BNB_SAMPLER_2D(s), uv + vec2(uv_off.x, -uv_off.y), 0.).y, textureLod(BNB_SAMPLER_2D(s), uv - uv_off, 0.).z, textureLod(BNB_SAMPLER_2D(s), uv + vec2(-uv_off.x, uv_off.y), 0.).w);
 
     bnb_FragColor = c * 1.3;
 }

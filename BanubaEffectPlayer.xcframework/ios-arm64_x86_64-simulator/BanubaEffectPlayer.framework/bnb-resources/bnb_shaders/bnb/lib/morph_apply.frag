@@ -8,9 +8,9 @@ vec2 var_uv;
 
 void main()
 {
-    vec2 o = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_warp), var_uv).xy;
+    vec2 o = textureLod(BNB_SAMPLER_2D(tex_warp), var_uv, 0.).xy;
 #if defined(BNB_VK_1)
     o = vec2(o.x, -o.y);
 #endif
-    bnb_FragColor = BNB_TEXTURE_2D(BNB_SAMPLER_2D(tex_frame), var_uv + o);
+    bnb_FragColor = textureLod(BNB_SAMPLER_2D(tex_frame), var_uv + o, 0.);
 }

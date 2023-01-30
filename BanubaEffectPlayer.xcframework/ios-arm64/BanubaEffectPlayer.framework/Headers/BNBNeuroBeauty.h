@@ -10,7 +10,13 @@
 @class BNBNeuroBeauty;
 
 
-__attribute__((__visibility__("default"))) @interface BNBNeuroBeauty : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBNeuroBeauty : NSObject
 
 + (nullable BNBNeuroBeauty *)create;
 

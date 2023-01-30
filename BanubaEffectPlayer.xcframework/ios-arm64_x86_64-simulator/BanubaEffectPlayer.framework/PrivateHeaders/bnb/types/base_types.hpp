@@ -4,7 +4,7 @@
     #include <bnb/utils/defs.hpp>
     #include <bnb/types/config.hpp>
     #include <bnb/utils/assert.hpp>
-    #include <bnb/utils/log.hpp>
+    #include <bnb/utils/logger.hpp>
 #endif
 
 #include <vector>
@@ -139,14 +139,14 @@ namespace bnb
             , size(other.size)
         {
             BNB_ASSERT_MSG(false, "bnb::data_t copy constructor!");
-            bnb::log_w("bnb::data_t", "copy constructor called, possible memory issue!");
+            bnb::logger::print(bnb::severity_level::warning, "bnb::data_t", "copy constructor called, possible memory issue!");
         }
 
         // WARNING: it is NOT deep copy operator, it provides weak (non-owning) copy
         data_t& operator=(const data_t& other)
         {
             BNB_ASSERT_MSG(false, "bnb::data_t copy operator!");
-            bnb::log_w("bnb::data_t", "copy operator called, possible memory issue!");
+            bnb::logger::print(bnb::severity_level::warning, "bnb::data_t", "copy operator called, possible memory issue!");
             data = uptr(other.data.get(), [](pointer) { /* DO NOTHING */ });
             size = other.size;
             return *this;

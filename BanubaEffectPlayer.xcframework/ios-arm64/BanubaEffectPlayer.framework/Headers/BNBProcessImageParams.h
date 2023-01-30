@@ -4,7 +4,13 @@
 #import "BNBPixelRect.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBProcessImageParams : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBProcessImageParams : NSObject
 - (nonnull instancetype)initWithAcneProcessing:(BOOL)acneProcessing
                                  acneUserAreas:(nullable NSArray<BNBPixelRect *> *)acneUserAreas
                               faceDataJsonPath:(nullable NSString *)faceDataJsonPath;

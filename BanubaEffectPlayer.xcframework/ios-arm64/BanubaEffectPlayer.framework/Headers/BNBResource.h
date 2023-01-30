@@ -5,7 +5,13 @@
 
 
 /** Class, which resource abstraction.  */
-__attribute__((__visibility__("default"))) @interface BNBResource : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBResource : NSObject
 
 - (BOOL)loaded;
 

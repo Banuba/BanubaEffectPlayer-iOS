@@ -11,7 +11,13 @@
  * or RGBA camera texture representations camera texture can be represented in Y, UV, RGBA formats, depends on
  * platfrom. Subclass of image
  */
-__attribute__((__visibility__("default"))) @interface BNBCameraTexture : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBCameraTexture : NSObject
 
 /**@return camera texture format (camera_texture_format). Can be Y, UV, or RGBA. */
 - (BNBCameraTextureFormat)getFormat;

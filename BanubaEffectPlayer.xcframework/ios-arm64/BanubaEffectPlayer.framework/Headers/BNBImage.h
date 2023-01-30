@@ -15,7 +15,13 @@
 
 
 /**Base class, which represented basic image interface */
-__attribute__((__visibility__("default"))) @interface BNBImage : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBImage : NSObject
 
 /**@return image name (string) */
 - (nonnull NSString *)getName;

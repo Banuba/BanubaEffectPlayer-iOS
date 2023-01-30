@@ -29,6 +29,8 @@ public:
     virtual void clean() = 0;
 
     virtual void process(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data) = 0;
+
+    virtual void postprocess(const std::shared_ptr<::bnb::interfaces::frame_data> & fd, const std::shared_ptr<::bnb::interfaces::frame_data> & future_fd) = 0;
 };
 
 } }  // namespace bnb::interfaces

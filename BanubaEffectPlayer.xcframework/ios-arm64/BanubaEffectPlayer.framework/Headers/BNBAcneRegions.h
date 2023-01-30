@@ -4,7 +4,13 @@
 #import "BNBPixelRect.h"
 #import <Foundation/Foundation.h>
 
-__attribute__((__visibility__("default"))) @interface BNBAcneRegions : NSObject
+
+#ifndef DJINNI_EXPORT
+    #define DJINNI_EXPORT __attribute__((__visibility__("default")))
+#endif
+
+DJINNI_EXPORT
+@interface BNBAcneRegions : NSObject
 - (nonnull instancetype)initWithRegions:(nonnull NSArray<BNBPixelRect *> *)regions
                          basisTransform:(nonnull NSArray<NSNumber *> *)basisTransform;
 + (nonnull instancetype)acneRegionsWithRegions:(nonnull NSArray<BNBPixelRect *> *)regions
