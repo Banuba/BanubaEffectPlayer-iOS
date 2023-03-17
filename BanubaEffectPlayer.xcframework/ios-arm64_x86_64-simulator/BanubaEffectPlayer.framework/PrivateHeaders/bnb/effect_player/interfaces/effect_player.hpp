@@ -8,6 +8,7 @@
 #pragma once
 
 #include "bnb/scene/interfaces/render_backend_type.hpp"
+#include "bnb/types/interfaces/feature_parameter.hpp"
 #include "bnb/types/interfaces/frame_data.hpp"
 #include "bnb/types/interfaces/pixel_buffer.hpp"
 #include "bnb/types/interfaces/pixel_format.hpp"
@@ -438,6 +439,8 @@ public:
     static void set_render_backend(::bnb::interfaces::render_backend_type backend_type);
 
     static ::bnb::interfaces::render_backend_type get_current_render_backend_type();
+
+    virtual void set_feature_parameters(const std::vector<::bnb::interfaces::feature_parameter> & feature_param) = 0;
 };
 
 } }  // namespace bnb::interfaces

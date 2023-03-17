@@ -4,6 +4,7 @@
 #import "BNBCameraOrientation.h"
 #import "BNBConsistencyMode.h"
 #import "BNBEffectPlayerPlaybackState.h"
+#import "BNBFeatureParameter.h"
 #import "BNBFrameData.h"
 #import "BNBPixelBuffer.h"
 #import "BNBPixelFormat.h"
@@ -461,5 +462,7 @@ DJINNI_EXPORT
 + (void)setRenderBackend:(BNBRenderBackendType)backendType;
 
 + (BNBRenderBackendType)getCurrentRenderBackendType;
+
+- (void)setFeatureParameters:(nonnull NSArray<BNBFeatureParameter *> *)featureParam;
 
 @end

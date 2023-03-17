@@ -5,7 +5,10 @@
 
 typedef NS_ENUM(NSInteger, BNBLicenseStatus)
 {
+    /** everything is ok */
     BNBLicenseStatusValid,
+    /** canceled by Banuba */
     BNBLicenseStatusRevoked,
+    /** before begin time or expired */
     BNBLicenseStatusTimeBombed,
 };
