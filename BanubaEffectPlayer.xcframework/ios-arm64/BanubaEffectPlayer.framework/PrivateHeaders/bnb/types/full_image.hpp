@@ -481,7 +481,7 @@ namespace bnb
          */
         void normalize_orientation();
 
-#if BNB_OS_ANDROID
+#if BNB_OS_ANDROID || BNB_OS_EMSCRIPTEN
         unsigned ext_camera_tex_id = 0;     /** external texture for optimisation on android (check this PR: https://bitbucket.org/BanubaLimited/banuba_sdk/pull-requests/4391 )*/
         unsigned ext_camera_tex_width = 0;  /** Width of external texture in pixels. */
         unsigned ext_camera_tex_height = 0; /** Height of external texture in pixels. */

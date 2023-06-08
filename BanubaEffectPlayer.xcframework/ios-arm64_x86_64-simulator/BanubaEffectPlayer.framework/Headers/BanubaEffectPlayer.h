@@ -92,7 +92,6 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBAnimationMode.h>
 #import <BanubaEffectPlayer/BNBCamera.h>
 #import <BanubaEffectPlayer/BNBRealtimeProcessorMode.h>
-#import <BanubaEffectPlayer/BNBHaptic.h>
 #import <BanubaEffectPlayer/BNBFrameDataListener.h>
 #import <BanubaEffectPlayer/BNBBnbMorphResult.h>
 #import <BanubaEffectPlayer/BNBEglContext.h>
@@ -101,6 +100,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBProcessorConfiguration.h>
 #import <BanubaEffectPlayer/BNBAttachmentLoadOp.h>
 #import <BanubaEffectPlayer/BNBErrorListener.h>
+#import <BanubaEffectPlayer/BNBFullImageFormat.h>
 #import <BanubaEffectPlayer/BNBEffectActivationCompletionListener.h>
 #import <BanubaEffectPlayer/BNBParameter.h>
 #import <BanubaEffectPlayer/BNBComponentType.h>
@@ -116,7 +116,6 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBAttachmentStoreOp.h>
 #import <BanubaEffectPlayer/BNBEffectActivatedListener.h>
 #import <BanubaEffectPlayer/BNBVec4.h>
-#import <BanubaEffectPlayer/BNBAcneRegions.h>
 #import <BanubaEffectPlayer/BNBActionUnits.h>
 #import <BanubaEffectPlayer/BNBMeshInstance.h>
 #import <BanubaEffectPlayer/BNBProcessorResult.h>

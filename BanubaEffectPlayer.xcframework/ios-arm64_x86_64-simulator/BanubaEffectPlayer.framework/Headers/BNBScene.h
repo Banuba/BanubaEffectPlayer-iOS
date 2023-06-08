@@ -3,6 +3,7 @@
 
 #import "BNBComponentType.h"
 #import "BNBFeatureId.h"
+#import "BNBFeatureParameter.h"
 #import "BNBTriggerStatusType.h"
 #import "BNBTriggerType.h"
 #import <Foundation/Foundation.h>
@@ -62,6 +63,9 @@ DJINNI_EXPORT
 - (void)enableRecognizerFeature:(BNBFeatureId)feature;
 
 - (void)disableRecognizerFeature:(BNBFeatureId)feature;
+
+- (void)addFeatureParam:(BNBFeatureId)feature
+                 params:(nonnull NSArray<BNBFeatureParameter *> *)params;
 
 - (BNBTriggerStatusType)getTriggerStatus:(BNBTriggerType)trigger;
 

@@ -7,6 +7,7 @@
 
 #pragma once
 
+#include "bnb/types/interfaces/feature_id.hpp"
 #include "bnb/types/interfaces/frame_data.hpp"
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
@@ -16,7 +17,6 @@
 namespace bnb { namespace interfaces {
 
 class feature;
-enum class feature_id;
 enum class recognizer_mode;
 
 class BNB_EXPORT recognizer {
@@ -25,13 +25,13 @@ public:
 
     static std::shared_ptr<recognizer> create(recognizer_mode mode);
 
-    static int64_t get_feature_id(feature_id feature);
+    static int64_t get_feature_id(::bnb::interfaces::feature_id feature);
 
-    virtual std::shared_ptr<feature> get_feature(feature_id feature) = 0;
+    virtual std::shared_ptr<feature> get_feature(::bnb::interfaces::feature_id feature) = 0;
 
-    virtual void set_features(const std::unordered_set<feature_id> & features) = 0;
+    virtual void set_features(const std::unordered_set<::bnb::interfaces::feature_id> & features) = 0;
 
-    virtual void add_feature(const std::shared_ptr<feature> & feature, const std::unordered_set<feature_id> & dependencies) = 0;
+    virtual void add_feature(const std::shared_ptr<feature> & feature, const std::unordered_set<::bnb::interfaces::feature_id> & dependencies) = 0;
 
     virtual void remove_feature(const std::shared_ptr<feature> & feature) = 0;
 
@@ -47,6 +47,14 @@ public:
      * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
      */
     virtual void set_use_future_filter(bool on) = 0;
+
+    /**
+     * Set future frame interpolation mode.
+     * Produce faster recognition result (skip even frames), however adds inconsistency in push'ed/pop'ed frames (one frame lag)
+     * Applied only in push_camera_frame/pop_frame_data methods, when offline mode is disabled.
+     * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+     */
+    virtual void set_use_future_interpolate(bool on) = 0;
 
     virtual void process(const std::shared_ptr<::bnb::interfaces::frame_data> & frame_data) = 0;
 

@@ -22,6 +22,7 @@ namespace bnb
         constexpr uint32_t NEURO_FRX_LNDS_CNT = 68;
         constexpr uint32_t NEURO_FRX_VERTS_CNT = 3308;
         constexpr uint32_t NEURO_FRX_TRIANGLES_CNT = 19308;
+        constexpr uint32_t NEURO_FRX_BROWS_LNDS_CNT = 20;
 
         // TODO add support for reduced
 #define FULL_IBUG_68 1

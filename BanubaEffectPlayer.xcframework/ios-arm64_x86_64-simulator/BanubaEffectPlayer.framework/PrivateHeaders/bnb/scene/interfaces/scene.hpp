@@ -7,7 +7,8 @@
 
 #pragma once
 
-#include "bnb/recognizer/interfaces/feature_id.hpp"
+#include "bnb/types/interfaces/feature_id.hpp"
+#include "bnb/types/interfaces/feature_parameter.hpp"
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
 #include <memory>
@@ -70,6 +71,8 @@ public:
     virtual void enable_recognizer_feature(::bnb::interfaces::feature_id feature) = 0;
 
     virtual void disable_recognizer_feature(::bnb::interfaces::feature_id feature) = 0;
+
+    virtual void add_feature_param(::bnb::interfaces::feature_id feature, const std::vector<::bnb::interfaces::feature_parameter> & params) = 0;
 
     virtual trigger_status_type get_trigger_status(trigger_type trigger) const = 0;
 

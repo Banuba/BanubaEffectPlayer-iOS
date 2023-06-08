@@ -7,9 +7,12 @@
 
 #include <bnb/types/base_types.hpp>
 #include <bnb/spal/camera/base_mocker.hpp>
+#include <bnb/utils/defs.hpp>
 
-#include <opencv2/core/core.hpp>
-#include <opencv2/videoio.hpp>
+#if !BNB_OS_EMSCRIPTEN
+
+    #include <opencv2/core/core.hpp>
+    #include <opencv2/videoio.hpp>
 
 
 namespace bnb
@@ -40,3 +43,5 @@ namespace bnb
     };
 
 } // namespace bnb
+
+#endif

@@ -61,6 +61,11 @@ namespace bnb
             return point2d{x / f, y / f};
         }
 
+        point2d operator*(float a) const noexcept
+        {
+            return point2d{x * a, y * a};
+        }
+
         point2d operator*(const point2d& p) const noexcept
         {
             return point2d{x * p.x, y * p.y};
@@ -84,6 +89,51 @@ namespace bnb
             float x, y, z;
         };
         float data[3];
+
+        void clear()
+        {
+            x = y = z = 0.0f;
+        }
+
+        float sum()
+        {
+            return x + y + z;
+        }
+
+        point3d sqr() const noexcept
+        {
+            return *this * *this;
+        }
+
+        point3d operator/(const point3d& p) const noexcept
+        {
+            return point3d{x / p.x, y / p.y, z / p.z};
+        }
+
+        point3d operator/(float f) const noexcept
+        {
+            return point3d{x / f, y / f, z / f};
+        }
+
+        point3d operator*(const point3d& p) const noexcept
+        {
+            return point3d{x * p.x, y * p.y, z * p.z};
+        }
+
+        point3d operator*(float a) const noexcept
+        {
+            return point3d{x * a, y * a, z * a};
+        }
+
+        point3d operator-(const point3d& p) const noexcept
+        {
+            return point3d{x - p.x, y - p.y, z - p.z};
+        }
+
+        point3d operator+(const point3d& p) const noexcept
+        {
+            return point3d{x + p.x, y + p.y, z + p.z};
+        }
     };
 
     struct size

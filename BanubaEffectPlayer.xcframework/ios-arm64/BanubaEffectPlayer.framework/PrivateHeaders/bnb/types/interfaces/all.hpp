@@ -1,6 +1,5 @@
 #pragma once
 
-#include <bnb/types/interfaces/acne_regions.hpp>
 #include <bnb/types/interfaces/action_units.hpp>
 #include <bnb/types/interfaces/action_units_data.hpp>
 #include <bnb/types/interfaces/action_units_indices.hpp>
@@ -15,9 +14,11 @@
 #include <bnb/types/interfaces/eyes_state.hpp>
 #include <bnb/types/interfaces/face_data.hpp>
 #include <bnb/types/interfaces/face_data_source.hpp>
+#include <bnb/types/interfaces/feature_id.hpp>
 #include <bnb/types/interfaces/feature_parameter.hpp>
 #include <bnb/types/interfaces/frame_data.hpp>
 #include <bnb/types/interfaces/frx_recognition_result.hpp>
+#include <bnb/types/interfaces/full_image_format.hpp>
 #include <bnb/types/interfaces/lips_shine_mask.hpp>
 #include <bnb/types/interfaces/neuro_beauty_data.hpp>
 #include <bnb/types/interfaces/pixel_buffer.hpp>

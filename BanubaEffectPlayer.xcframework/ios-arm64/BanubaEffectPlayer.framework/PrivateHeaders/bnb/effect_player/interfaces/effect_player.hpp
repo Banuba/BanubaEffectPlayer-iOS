@@ -8,7 +8,6 @@
 #pragma once
 
 #include "bnb/scene/interfaces/render_backend_type.hpp"
-#include "bnb/types/interfaces/feature_parameter.hpp"
 #include "bnb/types/interfaces/frame_data.hpp"
 #include "bnb/types/interfaces/pixel_buffer.hpp"
 #include "bnb/types/interfaces/pixel_format.hpp"
@@ -425,6 +424,13 @@ public:
     virtual void set_recognizer_use_future_filter(bool on) = 0;
 
     /**
+     * Set future frame interpolation mode.
+     * Produce faster recognition result (skip even frames), however adds inconsistency in push'ed/pop'ed frames (one frame lag)
+     * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+     */
+    virtual void set_recognizer_use_future_interpolate(bool on) = 0;
+
+    /**
      * Set frame processor as current
      * Thread-safe. May be called from any thread
      */
@@ -439,8 +445,6 @@ public:
     static void set_render_backend(::bnb::interfaces::render_backend_type backend_type);
 
     static ::bnb::interfaces::render_backend_type get_current_render_backend_type();
-
-    virtual void set_feature_parameters(const std::vector<::bnb::interfaces::feature_parameter> & feature_param) = 0;
 };
 
 } }  // namespace bnb::interfaces

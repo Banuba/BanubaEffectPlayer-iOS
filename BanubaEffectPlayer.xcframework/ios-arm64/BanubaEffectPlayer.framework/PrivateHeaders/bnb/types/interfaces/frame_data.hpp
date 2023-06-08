@@ -11,13 +11,14 @@
 #include <bnb/utils/defs.hpp>
 #include <cstdint>
 #include <memory>
+#include <unordered_map>
 #include <vector>
 
 namespace bnb { namespace interfaces {
 
 class frx_recognition_result;
 enum class face_data_source;
-struct acne_regions;
+enum class feature_id;
 struct action_units_data;
 struct brows_mask;
 struct depth_map;
@@ -25,6 +26,7 @@ struct external_face_data;
 struct eyes_mask;
 struct eyes_state;
 struct feature_parameter;
+struct full_image_format;
 struct lips_shine_mask;
 struct neuro_beauty_data;
 struct transformed_mask_byte;
@@ -41,6 +43,8 @@ public:
     /** Creates empty `FrameData`. Use `add*` function to fill it.  */
     static std::shared_ptr<frame_data> create();
 
+    virtual full_image_format get_full_img_format() = 0;
+
     virtual std::vector<float> get_full_img_transform() = 0;
 
     /** Get frx_recognition_result or null if not exists */
@@ -49,8 +53,6 @@ public:
     virtual void set_frx_recognition_result(const std::shared_ptr<frx_recognition_result> & result) = 0;
 
     virtual action_units_data get_action_units() = 0;
-
-    virtual acne_regions get_acne_regions() = 0;
 
     virtual neuro_beauty_data get_neuro_beauty_data() = 0;
 
@@ -98,8 +100,6 @@ public:
 
     virtual transformed_mask_byte get_face() = 0;
 
-    virtual transformed_mask_byte get_face_skin() = 0;
-
     virtual void add_full_img(::bnb::full_image_t img) = 0;
 
     virtual void replace_full_img(::bnb::full_image_t img) = 0;
@@ -118,7 +118,7 @@ public:
      * Extra parameters during in-CPU feature calculations.
      * Reference feature documentation. 
      */
-    virtual void add_feature_parameters(const std::vector<feature_parameter> & params) = 0;
+    virtual void add_feature_parameters(const std::unordered_map<feature_id, std::vector<feature_parameter>> & params) = 0;
 };
 
 } }  // namespace bnb::interfaces

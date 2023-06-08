@@ -111,10 +111,24 @@ DJINNI_EXPORT
 /**
  *creates material
  *@param name (string): material name
+ *@param path (string): path to shaders
  *@return created material (material).
  */
 - (nullable BNBMaterial *)createMaterial:(nonnull NSString *)name
                                     path:(nonnull NSString *)path;
+
+/**
+ *creates material
+ *@param name (string): material name
+ *@param vsPath (string): path to vertex shader
+ *@param fsPath (string): path to fragment shader
+ *@param instanceCount (i32): 
+ *@return created material (material).
+ */
+- (nullable BNBMaterial *)createMaterialExt:(nonnull NSString *)name
+                                     vsPath:(nonnull NSString *)vsPath
+                                     fsPath:(nonnull NSString *)fsPath
+                              instanceCount:(int32_t)instanceCount;
 
 /**
  *Find image by specified name. Returns null if image not found.

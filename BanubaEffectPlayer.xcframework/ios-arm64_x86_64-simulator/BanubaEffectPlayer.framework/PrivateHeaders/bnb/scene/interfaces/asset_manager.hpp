@@ -8,6 +8,7 @@
 #pragma once
 
 #include <bnb/utils/defs.hpp>
+#include <cstdint>
 #include <memory>
 #include <string>
 
@@ -111,9 +112,20 @@ public:
     /**
      *creates material
      *@param name (string): material name
+     *@param path (string): path to shaders
      *@return created material (material).
      */
     virtual std::shared_ptr<material> create_material(const std::string & name, const std::string & path) = 0;
+
+    /**
+     *creates material
+     *@param name (string): material name
+     *@param vs_path (string): path to vertex shader
+     *@param fs_path (string): path to fragment shader
+     *@param instance_count (i32): 
+     *@return created material (material).
+     */
+    virtual std::shared_ptr<material> create_material_ext(const std::string & name, const std::string & vs_path, const std::string & fs_path, int32_t instance_count) = 0;
 
     /**
      *Find image by specified name. Returns null if image not found.

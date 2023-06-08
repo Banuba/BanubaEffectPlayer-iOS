@@ -7,7 +7,7 @@
 
 #pragma once
 
-#include "bnb/recognizer/interfaces/feature_id.hpp"
+#include "bnb/types/interfaces/feature_id.hpp"
 #include <string>
 #include <unordered_set>
 #include <utility>

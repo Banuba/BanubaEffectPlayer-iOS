@@ -17,13 +17,24 @@ DJINNI_EXPORT
 + (nullable BNBProcessorConfiguration *)create;
 
 /**
- * Use future frame filter, improves anti-jitter, adds processed frame inconsistency
+ * Use future frame to filter prediction, improves anti-jitter, adds processed frame inconsistency
+ * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+ * Cannot be used together with other configurations
  * Default: true
  */
 - (void)setUseFutureFilter:(BOOL)value;
 
 /**
- * Use offline recognizer mode for processing
+ * Use future frame to interpolate prediction, improves performance, adds processed frame inconsistency
+ * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+ * Cannot be used together with other configurations
+ * Default: false
+ */
+- (void)setUseFutureInterpolate:(BOOL)value;
+
+/**
+ * Use offline NN's for processing, improces accuracy in exchange to performance
+ * Cannot be used together with other configurations
  * Default: false
  */
 - (void)setUseOfflineMode:(BOOL)value;

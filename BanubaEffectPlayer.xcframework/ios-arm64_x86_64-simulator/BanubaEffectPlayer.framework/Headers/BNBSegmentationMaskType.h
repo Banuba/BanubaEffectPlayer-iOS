@@ -20,8 +20,6 @@ typedef NS_ENUM(NSInteger, BNBSegmentationMaskType)
     BNBSegmentationMaskTypeBody,
     BNBSegmentationMaskTypeHairStrand,
     BNBSegmentationMaskTypeNeck,
-    BNBSegmentationMaskTypeNeckSmoothing,
-    BNBSegmentationMaskTypeSkinSmoothing,
     BNBSegmentationMaskTypeLBrow,
     BNBSegmentationMaskTypeRBrow,
     BNBSegmentationMaskTypeNails,

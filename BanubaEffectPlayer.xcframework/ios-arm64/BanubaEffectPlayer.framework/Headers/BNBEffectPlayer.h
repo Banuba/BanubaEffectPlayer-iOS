@@ -4,7 +4,6 @@
 #import "BNBCameraOrientation.h"
 #import "BNBConsistencyMode.h"
 #import "BNBEffectPlayerPlaybackState.h"
-#import "BNBFeatureParameter.h"
 #import "BNBFrameData.h"
 #import "BNBPixelBuffer.h"
 #import "BNBPixelFormat.h"
@@ -448,6 +447,13 @@ DJINNI_EXPORT
 - (void)setRecognizerUseFutureFilter:(BOOL)on;
 
 /**
+ * Set future frame interpolation mode.
+ * Produce faster recognition result (skip even frames), however adds inconsistency in push'ed/pop'ed frames (one frame lag)
+ * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+ */
+- (void)setRecognizerUseFutureInterpolate:(BOOL)on;
+
+/**
  * Set frame processor as current
  * Thread-safe. May be called from any thread
  */
@@ -462,7 +468,5 @@ DJINNI_EXPORT
 + (void)setRenderBackend:(BNBRenderBackendType)backendType;
 
 + (BNBRenderBackendType)getCurrentRenderBackendType;
-
-- (void)setFeatureParameters:(nonnull NSArray<BNBFeatureParameter *> *)featureParam;
 
 @end

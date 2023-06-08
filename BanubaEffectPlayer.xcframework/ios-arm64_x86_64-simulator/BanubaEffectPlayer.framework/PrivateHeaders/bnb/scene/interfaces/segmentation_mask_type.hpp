@@ -27,8 +27,6 @@ enum class segmentation_mask_type : int {
     body,
     hair_strand,
     neck,
-    neck_smoothing,
-    skin_smoothing,
     l_brow,
     r_brow,
     nails,

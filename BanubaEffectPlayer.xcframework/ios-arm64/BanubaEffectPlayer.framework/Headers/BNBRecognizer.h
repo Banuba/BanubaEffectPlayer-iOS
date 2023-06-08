@@ -43,6 +43,14 @@ DJINNI_EXPORT
  */
 - (void)setUseFutureFilter:(BOOL)on;
 
+/**
+ * Set future frame interpolation mode.
+ * Produce faster recognition result (skip even frames), however adds inconsistency in push'ed/pop'ed frames (one frame lag)
+ * Applied only in push_camera_frame/pop_frame_data methods, when offline mode is disabled.
+ * Example: push frame 1 - pop frame 1, push frame 2 - pop frame 1, push frame 3 - pop frame 2, ...
+ */
+- (void)setUseFutureInterpolate:(BOOL)on;
+
 - (void)process:(nullable BNBFrameData *)frameData;
 
 - (void)pushCameraFrame:(nullable BNBFrameData *)inputFrameData;
