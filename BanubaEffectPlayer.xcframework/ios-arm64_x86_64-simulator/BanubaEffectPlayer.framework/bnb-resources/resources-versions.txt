@@ -1,18 +1,21 @@
 1.4.0 flow/frx_prior.tflite
-1.7.0 flow/landmarks_224.tflite
 1.7.0 flow/face_detector_offline.tflite
-1.4.0 flow/landmarks_lips_filter.tflite
-1.7.0 flow/landmarks_eyes.tflite
+1.7.0 flow/landmarks_224.tflite
 1.4.0 flow/landmarks_contour_filter.tflite
-1.7.0 flow/landmarks_lips_fast.tflite
-1.7.0 flow/landmarks_contour_prior.tflite
+1.4.0 flow/landmarks_lips_filter.tflite
 1.7.0 flow/face_detector_online.tflite
+1.7.0 flow/landmarks_contour_prior.tflite
+1.7.0 flow/landmarks_lips_fast.tflite
+1.7.0 flow/landmarks_eyes.tflite
+1.7.0 cml/coreMLBGLandscapeHigh.mlmodelc
 1.7.0 cml/coreMLBGPortraitLow.mlmodelc
+1.7.0 cml/coreMLBGPortraitHigh.mlmodelc
 1.7.0 cml/coreMLBGLandscapeLow.mlmodelc
 0.38.2 cml/coreMLHair_336x192.mlmodelc
 0.38.2 cml/coreMLEyes_v3.mlmodelc
 1.4.0 cml/coreMLLips.mlmodelc
 0.38.2 cml/coreMLSkin.mlmodelc
+1.8.0 flow/vision_gelu_tanh_float16.tflite
 5.0.0 other_assets
 --------
-17.186.6
+20.208.6

@@ -19,6 +19,7 @@ namespace bnb { namespace interfaces {
 class frx_recognition_result;
 enum class face_data_source;
 enum class feature_id;
+struct acne_regions;
 struct action_units_data;
 struct brows_mask;
 struct depth_map;
@@ -53,6 +54,8 @@ public:
     virtual void set_frx_recognition_result(const std::shared_ptr<frx_recognition_result> & result) = 0;
 
     virtual action_units_data get_action_units() = 0;
+
+    virtual acne_regions get_acne_regions() = 0;
 
     virtual neuro_beauty_data get_neuro_beauty_data() = 0;
 

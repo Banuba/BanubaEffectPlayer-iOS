@@ -1,0 +1,1173 @@
+{
+  "layer_shapes" : {
+    "model\/up_sampling2d_1\/resize\/ResizeNearestNeighbor_channel_first_resize" : {
+      "k" : 128,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/conv2d_7\/BiasAdd" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/conv2d_4\/BiasAdd" : {
+      "k" : 24,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/block_6_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_1_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 96,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_8_add\/add" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_6_depthwise_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_10_depthwise_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "input1" : {
+      "k" : 4,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 144
+    },
+    "model\/block_10_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_expand_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/tf.math.reduce_mean\/Mean" : {
+      "k" : 48,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/multiply_1\/mul" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/add_3\/add" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/expanded_conv_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/conv2d_2\/BiasAdd" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_8_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_8_depthwise_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_4_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_8_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_3_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/activation_10\/Relu" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_9_add\/add" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/Conv1_relu\/Relu6__relu6_neg__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_3_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_5_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_2_depthwise_relu\/Relu6" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_11_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_11_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_8_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_9\/Sigmoid" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/block_4_expand_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/activation_1\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_2_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_7_depthwise_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/Conv1_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_1_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 96,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/batch_normalization\/FusedBatchNormV3_nchw" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_12_depthwise_relu\/Relu6" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_2_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_7_add\/add" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "output1" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 144
+    },
+    "model\/block_3_expand_relu\/Relu6" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_9_depthwise_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_7_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_11_add\/add" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/add_2\/add" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/batch_normalization_4\/FusedBatchNormV3_nchw" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_4_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_7_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_4_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_4_add\/add" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_12_expand_relu\/Relu6" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/add\/add" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_11_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_3_depthwise_relu\/Relu6" : {
+      "k" : 144,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_5_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_1_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 96,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/concatenate_1\/concat" : {
+      "k" : 48,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_7_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_12_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_2\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/expanded_conv_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_12_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_8_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_8_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_6_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_5_add\/add" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/Conv1_relu\/Relu6" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_10_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/batch_normalization_8\/FusedBatchNormV3_nchw" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/activation_7\/Relu" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_4_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_6_expand_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_11_expand_relu\/Relu6" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_2_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_1_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 96,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/add_5\/add" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 144
+    },
+    "model\/block_1_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 96,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_11_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_8_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/Conv1_relu\/Relu6__relu6_relu__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/expanded_conv_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_2_add\/add" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_3_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 144,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_3_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 144,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_12_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_6_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_expand_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_9_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_7_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/add_1\/add" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_6_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_6_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_10_expand_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_4_depthwise_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_10_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_4_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_8_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_3_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 32,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_10_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_11_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_8\/Relu" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/tf.math.reduce_mean_1\/Mean" : {
+      "k" : 32,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/block_1_expand_relu\/Relu6" : {
+      "k" : 96,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_4_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_9_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_2_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_7_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/expanded_conv_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_2_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_6_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_10_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_5\/Relu" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/concatenate_2\/concat" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_4_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_8_expand_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_11_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/expanded_conv_depthwise_relu\/Relu6" : {
+      "k" : 32,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_12_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_12_add\/add" : {
+      "k" : 96,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/add_4\/add" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_12_expand_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_7_expand_relu\/Relu6" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 64,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/up_sampling2d_3\/resize\/ResizeNearestNeighbor_channel_first_resize" : {
+      "k" : 4,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/activation_11\/Relu" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_7_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_depthwise_relu\/Relu6" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_7_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_9_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation\/Relu" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_5_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_11_depthwise_relu\/Relu6" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_3_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 144,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_10_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_12\/Relu" : {
+      "k" : 16,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/multiply\/mul" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/up_sampling2d\/resize\/ResizeNearestNeighbor_channel_first_resize" : {
+      "k" : 96,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_1_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/up_sampling2d_2\/resize\/ResizeNearestNeighbor_channel_first_resize" : {
+      "k" : 24,
+      "w" : 128,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 72
+    },
+    "model\/block_11_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/activation_4\/Sigmoid" : {
+      "k" : 24,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/activation_6\/Relu" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/conv2d_9\/BiasAdd" : {
+      "k" : 16,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/activation_13\/Relu" : {
+      "k" : 4,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/block_1_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 96,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/conv2d_transpose\/BiasAdd" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 144
+    },
+    "model\/block_2_project_BN\/FusedBatchNormV3_nchw" : {
+      "k" : 24,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_12_depthwise_relu\/Relu6__relu6_threshold6__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_10_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 384,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_1_depthwise_relu\/Relu6" : {
+      "k" : 96,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_2_depthwise_relu\/Relu6__relu6_neg__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_12_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 576,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/block_5_expand_relu\/Relu6__relu6_neg__" : {
+      "k" : 192,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    },
+    "model\/conv2d_transpose_1\/BiasAdd" : {
+      "k" : 1,
+      "w" : 256,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 144
+    },
+    "model\/block_3_expand_relu\/Relu6__relu6_relu__" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/block_2_expand_relu\/Relu6" : {
+      "k" : 144,
+      "w" : 64,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 36
+    },
+    "model\/activation_3\/Relu" : {
+      "k" : 24,
+      "w" : 1,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 1
+    },
+    "model\/block_6_depthwise_relu\/Relu6__relu6_relu__" : {
+      "k" : 192,
+      "w" : 16,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 9
+    },
+    "model\/concatenate\/concat" : {
+      "k" : 128,
+      "w" : 32,
+      "n" : 1,
+      "_rank" : 4,
+      "h" : 18
+    }
+  }
+}

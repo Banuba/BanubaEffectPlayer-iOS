@@ -18,7 +18,10 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
     BNBFeatureIdLipsShine,
     BNBFeatureIdOcclussion,
     BNBFeatureIdGlasses,
+    BNBFeatureIdAcne,
     BNBFeatureIdHandSkelet,
+    BNBFeatureIdEyeBags,
+    BNBFeatureIdFaceAcne,
     BNBFeatureIdRuler,
     BNBFeatureIdHairStrand,
     BNBFeatureIdRing,
@@ -29,6 +32,8 @@ typedef NS_ENUM(NSInteger, BNBFeatureId)
     BNBFeatureIdNails,
     /** Neuro beauty preprocessing */
     BNBFeatureIdBeautyPreproc,
+    /** Combined face acne and eyebags removal */
+    BNBFeatureIdAcneEyebags,
     BNBFeatureIdHandGestures,
     BNBFeatureIdTexturedNails,
     /** Activates eyes corrector */

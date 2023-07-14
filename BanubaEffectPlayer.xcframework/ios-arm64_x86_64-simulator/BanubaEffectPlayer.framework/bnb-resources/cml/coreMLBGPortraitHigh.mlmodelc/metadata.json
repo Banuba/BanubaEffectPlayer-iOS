@@ -1,0 +1,66 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float16",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32)",
+        "shortDescription" : "",
+        "shape" : "[]",
+        "name" : "output1",
+        "type" : "MultiArray"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "Concat" : 3,
+      "UnaryThreshold" : 26,
+      "Convolution" : 58,
+      "ActivationSigmoid" : 3,
+      "PaddingConstant" : 3,
+      "UpsampleNearestNeighbor" : 4,
+      "Deconvolution" : 2,
+      "Add" : 14,
+      "Multiply" : 2,
+      "ActivationLinear" : 52,
+      "ActivationReLU" : 38,
+      "PoolingAverage" : 2
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "6.2",
+      "com.github.apple.coremltools.source" : "tensorflow==2.8.1"
+    },
+    "generatedClassName" : "bnb_mnv2_hybrid_coreml_fix_nearest_rc_data_prior_fix2_after_portrait_h5_fp16",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 4 × 144 × 256)",
+        "shortDescription" : "",
+        "shape" : "[1, 4, 144, 256]",
+        "name" : "input1",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <bnb/types/interfaces/acne_regions.hpp>
 #include <bnb/types/interfaces/action_units.hpp>
 #include <bnb/types/interfaces/action_units_data.hpp>
 #include <bnb/types/interfaces/action_units_indices.hpp>

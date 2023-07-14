@@ -112,10 +112,12 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBVideo.h>
 #import <BanubaEffectPlayer/BNBImageType.h>
 #import <BanubaEffectPlayer/BNBEffectStatus.h>
+#import <BanubaEffectPlayer/BNBVisualClip.h>
 #import <BanubaEffectPlayer/BNBEyesPupilMask.h>
 #import <BanubaEffectPlayer/BNBAttachmentStoreOp.h>
 #import <BanubaEffectPlayer/BNBEffectActivatedListener.h>
 #import <BanubaEffectPlayer/BNBVec4.h>
+#import <BanubaEffectPlayer/BNBAcneRegions.h>
 #import <BanubaEffectPlayer/BNBActionUnits.h>
 #import <BanubaEffectPlayer/BNBMeshInstance.h>
 #import <BanubaEffectPlayer/BNBProcessorResult.h>
@@ -149,6 +151,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBTransformableEvent.h>
 #import <BanubaEffectPlayer/BNBBrowsMask.h>
 #import <BanubaEffectPlayer/BNBRendererCommon.h>
+#import <BanubaEffectPlayer/BNBVisualClipVideo.h>
 #import <BanubaEffectPlayer/BNBConsistencyMode.h>
 #import <BanubaEffectPlayer/BNBFaceTracker.h>
 #import <BanubaEffectPlayer/BNBEffectPlayer.h>

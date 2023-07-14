@@ -25,7 +25,10 @@ enum class feature_id : int {
     lips_shine,
     occlussion,
     glasses,
+    acne,
     hand_skelet,
+    eye_bags,
+    face_acne,
     ruler,
     hair_strand,
     ring,
@@ -36,6 +39,8 @@ enum class feature_id : int {
     nails,
     /** Neuro beauty preprocessing */
     beauty_preproc,
+    /** Combined face acne and eyebags removal */
+    acne_eyebags,
     hand_gestures,
     textured_nails,
     /** Activates eyes corrector */
