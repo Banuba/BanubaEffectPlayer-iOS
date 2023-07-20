@@ -4,6 +4,7 @@
 #import "BNBVisualClipVideo.h"
 #import <Foundation/Foundation.h>
 @class BNBVisualClip;
+@protocol BNBVisualClipListener;
 
 
 
@@ -22,7 +23,8 @@ DJINNI_EXPORT
  */
 + (nullable BNBVisualClip *)create:(nonnull NSString *)musicDbPath
                      visualEffects:(nonnull NSArray<NSString *> *)visualEffects
-                 transitionEffects:(nonnull NSArray<NSString *> *)transitionEffects;
+                 transitionEffects:(nonnull NSArray<NSString *> *)transitionEffects
+                          listener:(nullable id<BNBVisualClipListener>)listener;
 
 /**
  * Process video and get recomendations

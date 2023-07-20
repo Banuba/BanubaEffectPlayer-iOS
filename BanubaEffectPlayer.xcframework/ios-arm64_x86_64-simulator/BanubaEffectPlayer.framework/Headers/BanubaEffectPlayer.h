@@ -41,6 +41,7 @@ FOUNDATION_EXPORT const double BNBEffectPlayerVersionNumber;
 #import <BanubaEffectPlayer/BNBExternalFaceData.h>
 #import <BanubaEffectPlayer/BNBTransformedMaskByte.h>
 #import <BanubaEffectPlayer/BNBProjectionType.h>
+#import <BanubaEffectPlayer/BNBVisualClipListener.h>
 #import <BanubaEffectPlayer/BNBColorStd.h>
 #import <BanubaEffectPlayer/BNBRecognizer.h>
 #import <BanubaEffectPlayer/BNBTriggerStatusType.h>
